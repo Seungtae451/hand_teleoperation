@@ -1,0 +1,133 @@
+{
+  "selection": "prompt schedule, not verified gesture labels",
+  "clips": [
+    {
+      "id": "open",
+      "label": "OPEN - Hold all fingers straight",
+      "start_s": 6.0,
+      "duration_s": 6.0,
+      "video": "gestures/open.mp4",
+      "preview": "gestures/open.gif"
+    },
+    {
+      "id": "fist_slow",
+      "label": "FIST SLOW - Open, close, open slowly",
+      "start_s": 12.0,
+      "duration_s": 6.0,
+      "video": "gestures/fist_slow.mp4",
+      "preview": "gestures/fist_slow.gif"
+    },
+    {
+      "id": "fist_hold",
+      "label": "FIST HOLD - Hold a comfortable fist",
+      "start_s": 18.0,
+      "duration_s": 6.0,
+      "video": "gestures/fist_hold.mp4",
+      "preview": "gestures/fist_hold.gif"
+    },
+    {
+      "id": "index",
+      "label": "INDEX - Bend only index, then extend",
+      "start_s": 24.0,
+      "duration_s": 6.0,
+      "video": "gestures/index.mp4",
+      "preview": "gestures/index.gif"
+    },
+    {
+      "id": "middle",
+      "label": "MIDDLE - Bend only middle, then extend",
+      "start_s": 30.0,
+      "duration_s": 6.0,
+      "video": "gestures/middle.mp4",
+      "preview": "gestures/middle.gif"
+    },
+    {
+      "id": "ring",
+      "label": "RING - Bend only ring, then extend",
+      "start_s": 36.0,
+      "duration_s": 6.0,
+      "video": "gestures/ring.mp4",
+      "preview": "gestures/ring.gif"
+    },
+    {
+      "id": "pinky",
+      "label": "PINKY - Bend only pinky, then extend",
+      "start_s": 42.0,
+      "duration_s": 6.0,
+      "video": "gestures/pinky.mp4",
+      "preview": "gestures/pinky.gif"
+    },
+    {
+      "id": "thumb",
+      "label": "THUMB - Move thumb across palm, return",
+      "start_s": 48.0,
+      "duration_s": 6.0,
+      "video": "gestures/thumb.mp4",
+      "preview": "gestures/thumb.gif"
+    },
+    {
+      "id": "pinch_index",
+      "label": "PINCH - Thumb to index, release, repeat",
+      "start_s": 54.0,
+      "duration_s": 6.0,
+      "video": "gestures/pinch_index.mp4",
+      "preview": "gestures/pinch_index.gif"
+    },
+    {
+      "id": "pinch_middle",
+      "label": "PINCH - Thumb to middle, release, repeat",
+      "start_s": 60.0,
+      "duration_s": 6.0,
+      "video": "gestures/pinch_middle.mp4",
+      "preview": "gestures/pinch_middle.gif"
+    },
+    {
+      "id": "pinch_ring",
+      "label": "PINCH - Thumb to ring, release, repeat",
+      "start_s": 66.0,
+      "duration_s": 6.0,
+      "video": "gestures/pinch_ring.mp4",
+      "preview": "gestures/pinch_ring.gif"
+    },
+    {
+      "id": "pinch_pinky",
+      "label": "PINCH - Thumb to pinky, release, repeat",
+      "start_s": 72.0,
+      "duration_s": 6.0,
+      "video": "gestures/pinch_pinky.mp4",
+      "preview": "gestures/pinch_pinky.gif"
+    },
+    {
+      "id": "spread",
+      "label": "SPREAD - Spread and gather fingers",
+      "start_s": 78.0,
+      "duration_s": 6.0,
+      "video": "gestures/spread.mp4",
+      "preview": "gestures/spread.gif"
+    },
+    {
+      "id": "wrist",
+      "label": "WRIST - Rotate wrist with open fingers",
+      "start_s": 84.0,
+      "duration_s": 6.0,
+      "video": "gestures/wrist.mp4",
+      "preview": "gestures/wrist.gif"
+    },
+    {
+      "id": "occlusion",
+      "label": "OCCLUSION - Hide right hand briefly, return",
+      "start_s": 90.0,
+      "duration_s": 6.0,
+      "video": "gestures/occlusion.mp4",
+      "preview": "gestures/occlusion.gif"
+    },
+    {
+      "id": "free",
+      "label": "FREE - Mix open, fist and pinch",
+      "start_s": 96.0,
+      "duration_s": 6.0,
+      "video": "gestures/free.mp4",
+      "preview": "gestures/free.gif"
+    }
+  ]
+}

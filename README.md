@@ -10,7 +10,7 @@ Meta Quest 3의 손 추적을 **공식 Tesollo DG-5F 오른손 URDF, 20개 관�
 
 **[전체 비교 영상 · 108초](docs/media/video_benchmark_002/comparison_all.mp4)** · [정지 화면](docs/media/video_benchmark_002/comparison_preview.png)
 
-왼쪽은 실제 Quest passthrough 영상이고, 오른쪽 위는 MANUS-style / AnyDex, 아래는 Wuji / GeoRT다. 로봇은 모델 목표를 바로 그린 것이 아니라 **공통 제어기를 거친 MuJoCo 실제 상태**다. GIF를 누르면 MP4 파일로 이동한다. 로컬에서는 MP4를 영상 플레이어로 연다.
+왼쪽은 실제 Quest passthrough 영상이고, 오른쪽 위는 MANUS-style / AnyDex, 아래는 Wuji / GeoRT다. 로봇은 모델 목표를 바로 그린 것이 아니라 **공통 제어기를 거친 MuJoCo 실제 상태**다. 카메라는 기존 손등 방향의 정확한 반대편인 **방위각 215°·고도 +20°**에서 손바닥을 본다. GIF를 누르면 MP4 파일로 이동한다. 로컬에서는 MP4를 영상 플레이어로 연다.
 
 | 실제 손과 개별 방법 · 각각 108초 | 동작별 짧은 비교 |
 |---|---|
@@ -18,6 +18,21 @@ Meta Quest 3의 손 추적을 **공식 Tesollo DG-5F 오른손 URDF, 20개 관�
 | [AnyDex](docs/media/video_benchmark_002/comparison_anydex.mp4) | [손가락별 움직임 · 24초](docs/media/video_benchmark_002/clip_individual_fingers.mp4) |
 | [Wuji](docs/media/video_benchmark_002/comparison_wuji.mp4) | [네 가지 핀치 · 24초](docs/media/video_benchmark_002/clip_pinches.mp4) |
 | [GeoRT](docs/media/video_benchmark_002/comparison_geort.mp4) | [손목·가림 안내 구간 · 12초](docs/media/video_benchmark_002/clip_wrist_occlusion.mp4) |
+
+### 동작별 6초 영상
+
+아래 미리보기는 각각 독립된 **6초 구간**이다. GIF를 누르면 같은 구간의 **1920×1080 MP4**를 볼 수 있다. 모든 구간은 실제 손과 네 알고리즘의 **손바닥 방향**을 함께 보여준다. 분할 기준은 촬영 안내 시각이며, 실제 동작을 성공 판정한 라벨은 아니다.
+
+| 동작 | 동작 |
+|---|---|
+| **손 펴기**<br>[![손 펴기](docs/media/video_benchmark_002/gestures/open.gif)](docs/media/video_benchmark_002/gestures/open.mp4) | **천천히 주먹 쥐기·펴기**<br>[![천천히 주먹 쥐기·펴기](docs/media/video_benchmark_002/gestures/fist_slow.gif)](docs/media/video_benchmark_002/gestures/fist_slow.mp4) |
+| **주먹 유지**<br>[![주먹 유지](docs/media/video_benchmark_002/gestures/fist_hold.gif)](docs/media/video_benchmark_002/gestures/fist_hold.mp4) | **엄지 움직임**<br>[![엄지 움직임](docs/media/video_benchmark_002/gestures/thumb.gif)](docs/media/video_benchmark_002/gestures/thumb.mp4) |
+| **검지 단독**<br>[![검지 단독](docs/media/video_benchmark_002/gestures/index.gif)](docs/media/video_benchmark_002/gestures/index.mp4) | **중지 단독**<br>[![중지 단독](docs/media/video_benchmark_002/gestures/middle.gif)](docs/media/video_benchmark_002/gestures/middle.mp4) |
+| **약지 단독**<br>[![약지 단독](docs/media/video_benchmark_002/gestures/ring.gif)](docs/media/video_benchmark_002/gestures/ring.mp4) | **새끼 단독**<br>[![새끼 단독](docs/media/video_benchmark_002/gestures/pinky.gif)](docs/media/video_benchmark_002/gestures/pinky.mp4) |
+| **엄지–검지 핀치**<br>[![엄지–검지 핀치](docs/media/video_benchmark_002/gestures/pinch_index.gif)](docs/media/video_benchmark_002/gestures/pinch_index.mp4) | **엄지–중지 핀치**<br>[![엄지–중지 핀치](docs/media/video_benchmark_002/gestures/pinch_middle.gif)](docs/media/video_benchmark_002/gestures/pinch_middle.mp4) |
+| **엄지–약지 핀치**<br>[![엄지–약지 핀치](docs/media/video_benchmark_002/gestures/pinch_ring.gif)](docs/media/video_benchmark_002/gestures/pinch_ring.mp4) | **엄지–새끼 핀치**<br>[![엄지–새끼 핀치](docs/media/video_benchmark_002/gestures/pinch_pinky.gif)](docs/media/video_benchmark_002/gestures/pinch_pinky.mp4) |
+| **손가락 벌리기·모으기**<br>[![손가락 벌리기·모으기](docs/media/video_benchmark_002/gestures/spread.gif)](docs/media/video_benchmark_002/gestures/spread.mp4) | **손목 회전**<br>[![손목 회전](docs/media/video_benchmark_002/gestures/wrist.gif)](docs/media/video_benchmark_002/gestures/wrist.mp4) |
+| **손 가림 안내 구간**<br>[![손 가림 안내 구간](docs/media/video_benchmark_002/gestures/occlusion.gif)](docs/media/video_benchmark_002/gestures/occlusion.mp4) | **자유 동작**<br>[![자유 동작](docs/media/video_benchmark_002/gestures/free.gif)](docs/media/video_benchmark_002/gestures/free.mp4) |
 
 **영상에서 손 pose를 다시 추정하지 않는다.** 촬영과 동시에 Quest가 출력한 WebXR 위치·회전이 공통 입력이다. 동작명은 촬영 안내이며 실제 수행을 판정한 성공 라벨은 아니다.
 
@@ -32,7 +47,7 @@ Meta Quest 3의 손 추적을 **공식 Tesollo DG-5F 오른손 URDF, 20개 관�
 | 공통 입력 | 수신 시각 기준 50 Hz 재표본화, 네 방법의 소비 입력 SHA256 일치 |
 | 새 valid 입력 / 제어 | 방법별 4,835개 / 5,400 tick |
 | 상태 | TRACKING 5,398 tick, 시작 구간 HOLD 2 tick |
-| 출력 영상 | 방법별 2,700프레임, 25 FPS |
+| 출력 영상 | 방법별 2,700프레임, 25 FPS; 손바닥 카메라 215° / +20° |
 | 공통 제어 | 물리 timestep 0.002초, 50 Hz 명령, 명령 속도 제한 π rad/s |
 | 모델 | 공식 오른손 DG-5F 범위, 고정 base, 중력 보상, 접촉 비활성 |
 | AnyDex/Wuji | 기존 `configs/tesollo_calibrated/profile.json` 적용 |
@@ -165,9 +180,13 @@ uv pip install --python .venv/bin/python -r requirements/phase6.txt
 .venv/bin/python scripts/export_take_retargeting.py \
   --take recordings/video_benchmark_002 --output results/video_take_reproduction
 
+# 기존 실제 상태를 재사용해 반대편 손바닥 카메라로 렌더링 (재추론·재학습 없음)
+.venv/bin/python scripts/rerender_take_camera.py \
+  --source results/video_take_reproduction --output results/video_take_reproduction_palm
+
 # 원본 영상에서 읽은 anchor가 저장된 alignment.json으로 합성·그래프 생성
 .venv-geort/bin/python scripts/publish_take_media.py \
-  --take recordings/video_benchmark_002 --replay results/video_take_reproduction \
+  --take recordings/video_benchmark_002 --replay results/video_take_reproduction_palm \
   --alignment results/video_benchmark_002/alignment.json \
   --output results/video_take_reproduction_media
 
@@ -179,6 +198,8 @@ uv pip install --python .venv/bin/python -r requirements/phase6.txt
 .venv/bin/python scripts/test_capture_browser.py
 ```
 
+손바닥 영상은 기존 actual qpos와 수치 결과를 byte 단위로 보존하고 카메라만 변경했다. 기존 손등 방향 영상과 원본 로그는 `results/video_benchmark_002/`에 남아 있다.
+
 Export 기본 checkpoint는 이번 개인 full-range 모델이다. 다른 모델은 `--checkpoint`와 그 모델의 `--config`를 함께 지정한다. 제한 모델은 일반 full-range adapter로 불러오지 않는다. 학습 범위와 재학습 명령은 [진단 문서](docs/GEORT_STACK_DIAGNOSIS.md)에 있다.
 
 ## 산출물과 Git 준비
@@ -188,9 +209,10 @@ README.md                             현재 결과·영상·그래프·재현
 README_SIMULATION.md                  초기 시뮬레이터 안내 원본 보존
 README_VIDEO_CAPTURE.md               실제 손 + 추적 촬영 절차
 scripts/export_take_retargeting.py     동일 입력·방법별 MuJoCo 렌더링
-scripts/publish_take_media.py          영상 시간 맞춤·합성·그래프
+scripts/publish_take_media.py          영상 시간 맞춤·동작별 분할·GIF·그래프
+scripts/rerender_take_camera.py        저장된 실제 상태의 손바닥 카메라 렌더링
 scripts/record_comparison_take.py      촬영 수신 진입점
-docs/media/video_benchmark_002/        비교 MP4 9개, GIF, PNG, 요약·hash
+docs/media/video_benchmark_002/        비교 MP4 25개, 동작별 GIF 16개와 전체 GIF, PNG, 요약·hash
 recordings/video_benchmark_002/        원본 데이터, Git 제외
 results/video_benchmark_002/           JSONL·NPZ·console·대조 결과, Git 제외
 ```

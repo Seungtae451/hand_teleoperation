@@ -146,7 +146,8 @@ SYNC START/END는 해당 지점을 찾기 위한 표식이고, 연결 자동 검
 
 ## 촬영 후 결과 구성
 
-`video_benchmark_002`의 실제 촬영을 사용해 비교 MP4 9개와 분석 그래프를 생성했다.
+`video_benchmark_002`의 실제 촬영을 사용해 손바닥 방향 비교 MP4 25개와 분석 그래프를 생성했다.
+16개 동작별 6초 영상에는 각각 움직이는 GIF 미리보기를 제공한다.
 [현재 결과 README](README.md)에서 영상·수치·제한 사항을 확인할 수 있다.
 `export_take_retargeting.py`는 동일 입력·공통 제어·카메라로 네 방법의 실제 MuJoCo 상태를
 렌더링하고, `publish_take_media.py`는 수동 anchor 정합을 사용해 실제 손과 합성한다.

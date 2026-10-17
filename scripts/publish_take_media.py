@@ -210,6 +210,69 @@ def compose(args):
         ],
         args.output / "preview_image.log",
     )
+    # Separate every prompted action; SYNC slates remain in the full video only.
+    gestures = args.output / "gestures"
+    gestures.mkdir(exist_ok=False)
+    take = json.loads((args.take / "take.json").read_text())
+    begin = 0.0
+    clips = []
+    for stage in take["stages"]:
+        duration = stage["seconds"]
+        if not stage["id"].startswith("sync") and begin + duration <= seconds + 1e-6:
+            name = stage["id"]
+            ffmpeg(
+                [
+                    "-ss",
+                    str(begin),
+                    "-i",
+                    str(args.output / "comparison_all.mp4"),
+                    "-an",
+                    "-c:v",
+                    "libx264",
+                    "-preset",
+                    "veryfast",
+                    "-crf",
+                    "23",
+                    "-threads",
+                    "4",
+                    "-pix_fmt",
+                    "yuv420p",
+                    "-movflags",
+                    "+faststart",
+                    "-t",
+                    str(duration),
+                    str(gestures / f"{name}.mp4"),
+                ],
+                gestures / f"{name}.log",
+            )
+            ffmpeg(
+                [
+                    "-i",
+                    str(gestures / f"{name}.mp4"),
+                    "-filter_complex",
+                    "fps=8,scale=640:-1:flags=lanczos,split[a][b];"
+                    "[a]palettegen[p];[b][p]paletteuse",
+                    "-loop",
+                    "0",
+                    str(gestures / f"{name}.gif"),
+                ],
+                gestures / f"{name}_gif.log",
+            )
+            clips.append(
+                {
+                    "id": name,
+                    "label": stage["label"],
+                    "start_s": begin,
+                    "duration_s": duration,
+                    "video": f"gestures/{name}.mp4",
+                    "preview": f"gestures/{name}.gif",
+                }
+            )
+        begin += duration
+    save(
+        gestures / "clips.json",
+        {"selection": "prompt schedule, not verified gesture labels", "clips": clips},
+    )
 
 
 def plots(args):
@@ -372,11 +435,13 @@ def main():
     parser.add_argument("--alignment", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--plots-only", action="store_true")
+    parser.add_argument("--skip-plots", action="store_true", help="Keep existing numerical figures")
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
     if not args.plots_only:
         compose(args)
-    plots(args)
+    if not args.skip_plots:
+        plots(args)
 
 
 if __name__ == "__main__":

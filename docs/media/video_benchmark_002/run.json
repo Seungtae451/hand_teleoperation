@@ -15,5 +15,19 @@
   "state": "completed",
   "video_fps": 25,
   "control_hz": 50,
-  "same_input_digest_verified": true
+  "same_input_digest_verified": true,
+  "camera": {
+    "azimuth": 215,
+    "elevation": 20,
+    "distance": 0.48,
+    "lookat": [
+      0.025,
+      0,
+      0.145
+    ],
+    "view": "palm / opposite original viewing direction"
+  },
+  "render_state": "saved_actual_qpos",
+  "retargeting_rerun": false,
+  "source_replay": "results/video_benchmark_002/replay_full"
 }

@@ -1,0 +1,30 @@
+{
+  "camera": {
+    "azimuth": 215,
+    "elevation": 20,
+    "distance": 0.48,
+    "lookat": [
+      0.025,
+      0,
+      0.145
+    ],
+    "view": "palm / opposite original viewing direction"
+  },
+  "original_camera": {
+    "azimuth": 35,
+    "elevation": -20
+  },
+  "actual_states_and_metrics_byte_identical": true,
+  "source_hashes": {
+    "summaries.json": "68edc91b366b2c575ddd225afb7fd9b0f5249157e99786938bf2f7cc5171ac32",
+    "manus_states.npz": "39fa6744705a971be2f582d7559b433a88f70d6813cb09bc187e2025632330ef",
+    "manus_summary.json": "bd2b1f370fe378b46f16b6eb2b99a136e06630230e63503b2f30acd50a8bf654",
+    "anydex_states.npz": "858d9f420a1ea707748cf310b26919bb5f687ef0816e671246275ca76c25d390",
+    "anydex_summary.json": "c249bcd1fd023ac2b94aa3a441d48ccd2543e99df47a1e99b08d566b2f575f2f",
+    "wuji_states.npz": "f6ce56fd19f2ab5f2bc79f8bb349adc388304414828766f89bf3db9ac1fc6dcb",
+    "wuji_summary.json": "8e97623831f15328e90b66f049201d7c846324c033011cef099e79f603b7d963",
+    "geort_states.npz": "b6bd9306b2721f6dd5fc4242d94b588a22f2b58481fde10877f33cc5fc625684",
+    "geort_summary.json": "6135ab53efbcc435d552e06aff27e3613240d1ec2253b6f13c7934bb207d0ff1"
+  },
+  "no_optimization_no_dynamics_no_output_clipping": true
+}
