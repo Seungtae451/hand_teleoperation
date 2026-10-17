@@ -74,41 +74,55 @@ def compose(args):
     seconds = run["seconds"]
     mapping = clock_mapping(args.take, alignment)
     save(args.output / "synchronization.json", mapping)
-    bg = Image.new("RGB", (960, 1080), "#101827")
+    bg = Image.new("RGB", (640, 1440), "#101827")
     draw = ImageDraw.Draw(bg)
-    title = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 40)
-    normal = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 24)
-    draw.text((42, 86), "REAL HAND / Quest 3 passthrough", fill="white", font=title)
-    draw.text(
-        (42, 150), "Same capture, synchronized WebXR joint input", fill="#9fe5c0", font=normal
-    )
+    title = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 30)
+    normal = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 19)
+    draw.text((24, 24), "REAL HAND / Quest 3", fill="white", font=title)
+    draw.text((24, 68), "Full passthrough view / synchronous WebXR", fill="#9fe5c0", font=normal)
+    draw.text((24, 490), "Hand detail / center crop", fill="white", font=title)
     for y, line in enumerate(
         [
-            "Right-hand WebXR poses; video pixels are not the model input.",
-            "Robot panels show actual simulated state after common control.",
-            "50 Hz control | 25 fps export | pi rad/s command speed limit",
-            "Contact disabled. Prompted gestures are not success labels.",
-            "GeoRT: personal session 002, full official joint ranges.",
-            "Visual clock alignment; video capture interval is about 33 ms.",
+            "WebXR poses are the input, not video pixels.",
+            "Robots: actual state / same common controller.",
+            "50 Hz control | 25 fps | speed limit pi rad/s",
+            "Contact off. Prompts are not success labels.",
+            "GeoRT: personal 002 / full official ranges.",
+            "Visual clock alignment; capture interval ~33 ms.",
         ]
     ):
-        draw.text((42, 820 + y * 36), line, fill="#c5cddd", font=normal)
+        draw.text((24, 1220 + y * 30), line, fill="#c5cddd", font=normal)
     bg.save(args.output / "human_panel.png")
     source = alignment["video"]["path"]
     start, rate = mapping["video_start_pts_s"], mapping["video_rate_per_replay_s"]
+    crop_side = min(alignment["video"]["metadata"]["source_size"])
     hand_filter = (
         f"[0:v]trim=start={start:.9f}:duration={seconds * rate:.9f},"
-        f"setpts=(PTS-STARTPTS)/{rate:.12f},fps=25,scale=960:540[hs];"
-        "[5:v][hs]overlay=0:240:shortest=1[hand];"
+        f"setpts=(PTS-STARTPTS)/{rate:.12f},fps=25,split[h0][h1];"
+        "[h0]scale=640:360[hfull];"
+        f"[h1]crop={crop_side}:{crop_side}:(iw-{crop_side})/2:(ih-{crop_side})/2,"
+        "scale=640:640[hdetail];"
+        "[5:v][hfull]overlay=0:100:shortest=1[hbg];"
+        "[hbg][hdetail]overlay=0:540:shortest=1[hand];"
     )
     inputs = ["-i", source]
     for method in METHODS:
         inputs += ["-i", str(args.replay / f"{method}.mp4")]
     inputs += ["-loop", "1", "-framerate", "25", "-i", str(args.output / "human_panel.png")]
-    robot_filter = "".join(
-        f"[{i + 1}:v]scale=480:360,pad=480:540:0:90:color=0x101827[r{i}];" for i in range(4)
+    robot_filter = "".join(f"[{i + 1}:v]scale=960:720[r{i}];" for i in range(4))
+    grid = "[r0][r1][r2][r3]xstack=inputs=4:layout=0_0|960_0|0_720|960_720[robots];"
+    save(
+        args.output / "layout.json",
+        {
+            "output_size": [2560, 1440],
+            "human_column_width": 640,
+            "robot_panel_size": [960, 720],
+            "individual_robot_panel_size": [1920, 1440],
+            "human_detail": "center square crop alongside the preserved full view",
+            "camera": run.get("camera"),
+            "state_data_changed": False,
+        },
     )
-    grid = "[r0][r1][r2][r3]xstack=inputs=4:layout=0_0|480_0|0_540|480_540[robots];"
     codec = [
         "-an",
         "-c:v",
@@ -139,7 +153,7 @@ def compose(args):
         args.output / "compose_all.log",
     )
     for i, method in enumerate(METHODS):
-        filt = hand_filter + f"[{i + 1}:v]scale=960:720,pad=960:1080:0:180:color=0x101827[robot];"
+        filt = hand_filter + f"[{i + 1}:v]scale=1920:1440[robot];"
         filt += "[hand][robot]hstack=inputs=2[out]"
         ffmpeg(
             [
@@ -191,7 +205,7 @@ def compose(args):
             "-i",
             str(args.output / "comparison_all.mp4"),
             "-filter_complex",
-            "fps=8,scale=768:-1:flags=lanczos,split[a][b];[a]palettegen[p];[b][p]paletteuse",
+            "fps=8,scale=1024:-1:flags=lanczos,split[a][b];[a]palettegen[p];[b][p]paletteuse",
             "-loop",
             "0",
             str(args.output / "preview.gif"),
@@ -250,7 +264,7 @@ def compose(args):
                     "-i",
                     str(gestures / f"{name}.mp4"),
                     "-filter_complex",
-                    "fps=8,scale=640:-1:flags=lanczos,split[a][b];"
+                    "fps=8,scale=1024:-1:flags=lanczos,split[a][b];"
                     "[a]palettegen[p];[b][p]paletteuse",
                     "-loop",
                     "0",

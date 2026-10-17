@@ -1,0 +1,37 @@
+{
+  "output_size": [
+    2560,
+    1440
+  ],
+  "human_column_width": 640,
+  "robot_panel_size": [
+    960,
+    720
+  ],
+  "individual_robot_panel_size": [
+    1920,
+    1440
+  ],
+  "human_detail": "center square crop alongside the preserved full view",
+  "camera": {
+    "azimuth": 215,
+    "elevation": 20,
+    "distance": 0.44,
+    "lookat": [
+      0.025,
+      0,
+      0.145
+    ],
+    "view": "palm / opposite original viewing direction",
+    "render_size": [
+      960,
+      624
+    ],
+    "video_frame_size": [
+      960,
+      720
+    ],
+    "caption_policy": "96-pixel header outside the rendered viewport"
+  },
+  "state_data_changed": false
+}

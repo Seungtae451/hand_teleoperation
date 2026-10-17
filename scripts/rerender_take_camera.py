@@ -20,9 +20,12 @@ from scripts.geort_range_study import save, sha  # noqa: E402
 CAMERA = {
     "azimuth": 215,
     "elevation": 20,
-    "distance": 0.48,
+    "distance": 0.44,
     "lookat": [0.025, 0, 0.145],
     "view": "palm / opposite original viewing direction",
+    "render_size": [960, 624],
+    "video_frame_size": [960, 720],
+    "caption_policy": "96-pixel header outside the rendered viewport",
 }
 
 
@@ -35,13 +38,15 @@ def render_method(source, output, method):
     from benchmark.simulation.visualization import OffscreenRenderer
 
     robot = RobotModel()
+    robot.model.vis.global_.offwidth = 960
+    robot.model.vis.global_.offheight = 720
     data = mujoco.MjData(robot.model)
     states = np.load(source / f"{method}_states.npz")
     assert states["actual"].shape[1] == 20 and np.isfinite(states["actual"]).all()
-    font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 21)
-    small = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 16)
+    font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 32)
+    small = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 24)
     with (
-        OffscreenRenderer(robot.model) as renderer,
+        OffscreenRenderer(robot.model, width=960, height=624) as renderer,
         imageio.get_writer(
             str(output / f"{method}.mp4"), fps=25, codec="libx264", quality=8
         ) as video,
@@ -54,13 +59,14 @@ def render_method(source, output, method):
             # No clipping, optimization or physical stepping: replay the recorded measured state.
             data.qpos[robot.qpos_indices] = states["actual"][tick]
             mujoco.mj_forward(robot.model, data)
-            image = Image.fromarray(renderer.render(data))
+            image = Image.new("RGB", (960, 720), "#101827")
+            image.paste(Image.fromarray(renderer.render(data)), (0, 96))
             draw = ImageDraw.Draw(image)
-            draw.rectangle((0, 0, 640, 68), fill="#101827")
-            draw.text((12, 7), LABELS[method], font=font, fill="white")
+            draw.rectangle((0, 0, 960, 96), fill="#101827")
+            draw.text((18, 10), LABELS[method], font=font, fill="white")
             status = str(states["status"][tick])
             draw.text(
-                (12, 37),
+                (18, 56),
                 f"t={states['time_s'][tick]:06.2f}s  {status} | PALM",
                 font=small,
                 fill="#9fe5c0" if status == "TRACKING" else "#ffd080",

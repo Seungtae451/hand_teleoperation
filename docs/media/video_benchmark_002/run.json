@@ -19,13 +19,22 @@
   "camera": {
     "azimuth": 215,
     "elevation": 20,
-    "distance": 0.48,
+    "distance": 0.44,
     "lookat": [
       0.025,
       0,
       0.145
     ],
-    "view": "palm / opposite original viewing direction"
+    "view": "palm / opposite original viewing direction",
+    "render_size": [
+      960,
+      624
+    ],
+    "video_frame_size": [
+      960,
+      720
+    ],
+    "caption_policy": "96-pixel header outside the rendered viewport"
   },
   "render_state": "saved_actual_qpos",
   "retargeting_rerun": false,
