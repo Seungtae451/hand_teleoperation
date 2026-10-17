@@ -1,0 +1,19 @@
+:root { color-scheme: dark; font-family: system-ui, sans-serif; background: #101824; color: #e8edf4; }
+body { margin: 0; }
+main { max-width: 1100px; margin: auto; padding: 36px 24px; }
+.eyebrow { color: #7edac5; letter-spacing: .12em; font-size: 12px; }
+h1 { font-size: clamp(28px, 5vw, 44px); margin: 10px 0; }
+p { color: #bdc8d7; line-height: 1.6; }
+.actions { display: flex; gap: 12px; margin-top: 24px; }
+button { border: 1px solid #38495d; border-radius: 9px; padding: 13px 20px; color: #edf4fc; background: #23354a; font-size: 16px; cursor: pointer; }
+#start { background: #86e2c6; color: #10251f; }
+button:disabled { opacity: .45; cursor: default; }
+.hands { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 20px; }
+section { background: #172334; border: 1px solid #2b3b50; border-radius: 14px; overflow: hidden; }
+h2 { margin: 18px 22px 0; font-size: 20px; }
+h2 span { float: right; font-size: 14px; color: #a6b5c8; }
+canvas { display: block; width: 100%; height: auto; }
+#error { color: #ffab99; min-height: 1em; }
+.note { font-size: 14px; }
+details { color: #a6b5c8; margin-top: 28px; }
+pre { white-space: pre-wrap; font-size: 12px; }

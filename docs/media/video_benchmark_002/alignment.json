@@ -1,0 +1,111 @@
+{
+  "take_id": "video_benchmark_002",
+  "hashes_pass": true,
+  "hands": {
+    "left": {
+      "valid": 5092,
+      "invalid": 1
+    },
+    "right": {
+      "valid": 5092,
+      "invalid": 1
+    }
+  },
+  "source_sessions": [
+    "1dc9df9fda19427cbd4d2248677a2739"
+  ],
+  "markers": 132,
+  "browser_ids": [
+    "a54573b6-6b93-4eec-859c-e419a7aa962f"
+  ],
+  "stages_observed": [
+    "sync_start",
+    "open",
+    "fist_slow",
+    "fist_hold",
+    "index",
+    "middle",
+    "ring",
+    "pinky",
+    "thumb",
+    "pinch_index",
+    "pinch_middle",
+    "pinch_ring",
+    "pinch_pinky",
+    "spread",
+    "wrist",
+    "occlusion",
+    "free",
+    "sync_end"
+  ],
+  "routine_end_observed": true,
+  "clock_ranges": {
+    "1dc9df9fda19427cbd4d2248677a2739": {
+      "source_min_ms": 17484.199999999255,
+      "source_max_ms": 130656,
+      "receive_span_s": 113.17087022199121
+    }
+  },
+  "multi_session_warning": false,
+  "stage_labels": "Prompted actions, not manually verified gesture ground truth",
+  "video_status": "Decodable file with manually supplied anchors; inspect actual hand visibility",
+  "video": {
+    "path": "com.oculus.vrshell-20261018-050834-0.mp4",
+    "sha256": "08b05e6114bb33e3001e49ccaa51770e8eda634dbfa67777dce61d0eb3f9082c",
+    "metadata": {
+      "ffmpeg_version": "7.0.2-static https://johnvansickle.com/ffmpeg/ built with gcc 8 (Debian 8.3.0-6)",
+      "codec": "hevc",
+      "pix_fmt": "yuv420p(tv, bt470bg/bt470bg/smpte170m)",
+      "audio_codec": "aac",
+      "fps": 30.0,
+      "source_size": [
+        1920,
+        1080
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "rotate": 0,
+      "duration": 124.61
+    }
+  },
+  "sync": {
+    "equation": "source_ms = scale_ms_per_video_s * video_pts_s + offset_ms",
+    "scale_ms_per_video_s": 1000.00300000014,
+    "offset_ms": 9655.571395460143,
+    "anchors_video_s_source_ms": [
+      [
+        10.0111,
+        19666.1
+      ],
+      [
+        20.01108,
+        29667.0
+      ],
+      [
+        40.01104,
+        49667.1
+      ],
+      [
+        60.01102,
+        69666.6
+      ],
+      [
+        80.011,
+        89667.6
+      ],
+      [
+        100.011,
+        109666.2
+      ],
+      [
+        110.011,
+        119666.9
+      ]
+    ],
+    "fit_max_residual_ms": 0.788571528668399,
+    "uncertainty": "Manual visual anchors; fit residual is NOT synchronization accuracy",
+    "hardware_capture_or_passthrough_verified": false
+  }
+}

@@ -1,0 +1,3 @@
+# Reuse the ABI-compatible Phase 5 numerical stack; hardware Wuji SDK not used.
+-r phase5.txt
+scipy==1.15.3

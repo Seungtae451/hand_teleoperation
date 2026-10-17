@@ -1,0 +1,17 @@
+<!doctype html><html lang="ko"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quest 비교 영상 녹화</title><link rel="stylesheet" href="/style.css">
+<main>
+<p class="eyebrow">QUEST + MUJOCO · COMPARISON TAKE</p>
+<h1>실제 손 영상 + 관절 데이터</h1>
+<p>① Quest 카메라 앱에서 영상 녹화 시작 → ② 아래 손 추적 시작 → ③ 오른손으로 화면 안내 수행</p>
+<p>영상과 JSONL은 별도로 저장됩니다. 영상 속 SRC 시간 표시로 촬영 후 동기화합니다.</p>
+<p id="capture-status">녹화 안내 연결 중…</p>
+<div class="actions"><button id="start" disabled>연결 확인 중</button><button id="stop" disabled>추적 종료</button></div>
+<p id="connection"></p><p id="error" role="alert"></p>
+<div class="hands"><section><h2>왼손 <span id="left-status"></span></h2><canvas id="left" width="520" height="360"></canvas></section>
+<section><h2>오른손 <span id="right-status"></span></h2><canvas id="right" width="520" height="360"></canvas></section></div>
+<p id="counts"></p><p id="recording"></p><pre id="diagnostics"></pre>
+<p>완료하면 손 추적 종료 → Quest 영상 녹화 종료 → PC 터미널 Ctrl+C.</p>
+</main><canvas id="xr-canvas" hidden></canvas>
+<script src="/client.js" defer></script><script src="/capture.js" defer></script></html>

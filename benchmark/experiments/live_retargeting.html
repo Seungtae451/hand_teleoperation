@@ -1,0 +1,14 @@
+<!doctype html><html lang="ko"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quest → DG-5F 실시간 리타게팅</title><link rel="stylesheet" href="/style.css">
+<body><main><p class="eyebrow">LIVE RETARGETING</p><h1>Quest → DG-5F</h1>
+<p>오른손을 움직이면 PC의 MuJoCo 창에 각 방법의 결과가 표시됩니다. 창 왼쪽 위에서 알고리즘 이름을 확인하세요.</p>
+<div class="actions"><button id="start" disabled>연결 확인 중…</button><button id="stop" disabled>추적 종료</button></div>
+<p id="connection" role="status"></p><p id="error" role="alert"></p>
+<div class="hands"><section><h2>왼손 <span id="left-status">대기</span></h2><canvas id="left" width="520" height="360"></canvas></section>
+<section><h2>오른손 <span id="right-status">대기</span></h2><canvas id="right" width="520" height="360"></canvas></section></div>
+<p id="counts"></p><p id="recording"></p><pre id="methods"></pre>
+<p class="note">추적이 끊기면 마지막 명령을 유지합니다. MANUS는 Quest 기하 입력 proxy이며 GeoRT는 사용자가 학습한 체크포인트입니다.</p>
+<details><summary>연결 정보</summary><pre id="diagnostics"></pre></details></main>
+<canvas id="xr-canvas" hidden></canvas><script src="/client.js" defer></script>
+<script>setInterval(async()=>{try{const s=await(await fetch('/status')).json();document.getElementById('methods').textContent=Object.entries(s.retargeting).map(([k,v])=>k.toUpperCase()+': '+v.status).join('\n')}catch(e){}},1000);</script></body></html>

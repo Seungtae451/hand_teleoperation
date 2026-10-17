@@ -1,0 +1,129 @@
+{
+  "optimizer": {
+    "type": "AdaptiveOptimizerAnalytical",
+    "hand_side": "right"
+  },
+  "robot": {
+    "type": "tesollo_dg5f",
+    "urdf_path": "/home/cocelo-server01/stkim_ws/Hand_teleoperation/external/tesollo_model/dg5f/dg5f_right.urdf",
+    "origin_link": "rl_dg_palm",
+    "tip_links": [
+      "rl_dg_1_tip",
+      "rl_dg_2_tip",
+      "rl_dg_3_tip",
+      "rl_dg_4_tip",
+      "rl_dg_5_tip"
+    ],
+    "link1_names": [
+      "rl_dg_1_1",
+      "rl_dg_2_2",
+      "rl_dg_3_2",
+      "rl_dg_4_2",
+      "rl_dg_5_2"
+    ],
+    "link3_names": [
+      "rl_dg_1_3",
+      "rl_dg_2_3",
+      "rl_dg_3_3",
+      "rl_dg_4_3",
+      "rl_dg_5_3"
+    ],
+    "link4_names": [
+      "rl_dg_1_4",
+      "rl_dg_2_4",
+      "rl_dg_3_4",
+      "rl_dg_4_4",
+      "rl_dg_5_4"
+    ],
+    "tip_offsets": [
+      [
+        0.0,
+        0,
+        0
+      ],
+      [
+        0.0,
+        0,
+        0
+      ],
+      [
+        0.0,
+        0,
+        0
+      ],
+      [
+        0.0,
+        0,
+        0
+      ],
+      [
+        0.0,
+        0,
+        0
+      ]
+    ],
+    "link3_offsets": [
+      [
+        0.0,
+        0,
+        0
+      ],
+      [
+        0.0,
+        0,
+        0
+      ],
+      [
+        0.0,
+        0,
+        0
+      ],
+      [
+        0.0,
+        0,
+        0
+      ],
+      [
+        0.0,
+        0,
+        0
+      ]
+    ],
+    "link4_offsets": [
+      [
+        0.0,
+        0,
+        0
+      ],
+      [
+        0.0,
+        0,
+        0
+      ],
+      [
+        0.0,
+        0,
+        0
+      ],
+      [
+        0.0,
+        0,
+        0
+      ],
+      [
+        0.0,
+        0,
+        0
+      ]
+    ],
+    "num_fingers": 5,
+    "neutral_qpos": null
+  },
+  "retarget": {
+    "mediapipe_rotation": {
+      "x": 1.6618398659517,
+      "y": 2.723548253544728,
+      "z": -3.181953698014293
+    }
+  }
+}

@@ -1,0 +1,19 @@
+# Install after uv sync --locked and requirements/phase3.txt (see README_PHASE3.md).
+# Preserve the Phase 1–4 NumPy version. ABI-compatible native dependency pins.
+numpy==2.2.6
+pin==3.8.0
+libpinocchio==3.8.0
+coal==3.0.2
+libcoal==3.0.2
+eigenpy==3.12.0
+cmeel==0.61.0
+cmeel-assimp==6.0.5
+cmeel-boost==1.89.0
+cmeel-console-bridge==1.0.2.3
+cmeel-octomap==1.10.0
+cmeel-qhull==8.0.2.1
+cmeel-tinyxml2==10.0.0
+cmeel-urdfdom==4.0.1
+cmeel-zlib==1.3.2
+nlopt==2.9.1
+PyYAML==6.0.3

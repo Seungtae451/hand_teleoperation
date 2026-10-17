@@ -1,0 +1,95 @@
+{
+  "investigated_on": "2026-10-17",
+  "repositories": [
+    {
+      "name": "hand-tracking-streamer",
+      "url": "https://github.com/wengmister/hand-tracking-streamer.git",
+      "revision": "5ff7c1cfea0ead1bb8a0e233bc7770d94d31feb5",
+      "license": "Apache-2.0",
+      "sparse_paths": [
+        "hand_tracking_streamer",
+        "scripts"
+      ],
+      "submodules_initialized": false
+    },
+    {
+      "name": "hand-tracking-sdk",
+      "url": "https://github.com/wengmister/hand-tracking-sdk.git",
+      "revision": "6ca05d1d5b00dfd89535aef74f698d6765bf1229",
+      "license": "Apache-2.0",
+      "sparse_paths": [
+        "src",
+        "docs",
+        "examples",
+        "tests"
+      ],
+      "submodules_initialized": false
+    },
+    {
+      "name": "dg5f_ros2",
+      "url": "https://github.com/tesollodelto/dg5f_ros2.git",
+      "revision": "0cb45ae9474caa92410dfa820346da8ffbae8405",
+      "license": "BSD-3-Clause",
+      "sparse_paths": [
+        "dg5f_description",
+        "dg5f_driver"
+      ],
+      "submodules_initialized": false
+    },
+    {
+      "name": "tesollo_model",
+      "url": "https://github.com/tesollodelto/tesollo_model.git",
+      "revision": "f648627be40f8df2e3df906ccf3c5d62103f3275",
+      "license": "BSD-3-Clause",
+      "sparse_paths": [
+        "dg5f"
+      ],
+      "submodules_initialized": false
+    },
+    {
+      "name": "tesollo_ros2",
+      "url": "https://github.com/tesollodelto/tesollo_ros2.git",
+      "revision": "1307f7d537b41321d3ad67acc75a91249bb47369",
+      "license": "BSD-3-Clause",
+      "sparse_paths": [
+        "dg_common",
+        "dg_sdk_ros2_bridge",
+        "doc"
+      ],
+      "submodules_initialized": false
+    },
+    {
+      "name": "AnyDexRetarget",
+      "url": "https://github.com/qqsq12321/AnyDexRetarget.git",
+      "revision": "ee68a0234ccdf8a23b98527fd1ee2c6258278cd1",
+      "license": "MIT",
+      "sparse_paths": [
+        "anydexretarget",
+        "example"
+      ],
+      "submodules_initialized": false
+    },
+    {
+      "name": "wuji-retargeting",
+      "url": "https://github.com/wuji-technology/wuji-retargeting.git",
+      "revision": "531f6ed4250b475d2e9231f54e988fc9b1c5b4ea",
+      "license": "MIT",
+      "sparse_paths": [
+        "wuji_retargeting",
+        "example",
+        "docs"
+      ],
+      "submodules_initialized": false
+    },
+    {
+      "name": "GeoRT",
+      "url": "https://github.com/facebookresearch/GeoRT.git",
+      "revision": "fb2075e2a3272be372016580c0b6ebd6120228f0",
+      "license": "CC-BY-NC-4.0",
+      "sparse_paths": [
+        "geort"
+      ],
+      "submodules_initialized": false
+    }
+  ]
+}

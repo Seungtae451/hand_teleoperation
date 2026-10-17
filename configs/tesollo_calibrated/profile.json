@@ -1,0 +1,536 @@
+{
+  "schema": "tesollo_robot_calibration_v1",
+  "handedness": "right",
+  "units": "m",
+  "urdf_sha256": "86fc72a59d42bd2b866e340feb03dc864315350be3722a28626b7bd4a5a385ca",
+  "joint_names": [
+    "rj_dg_1_1",
+    "rj_dg_1_2",
+    "rj_dg_1_3",
+    "rj_dg_1_4",
+    "rj_dg_2_1",
+    "rj_dg_2_2",
+    "rj_dg_2_3",
+    "rj_dg_2_4",
+    "rj_dg_3_1",
+    "rj_dg_3_2",
+    "rj_dg_3_3",
+    "rj_dg_3_4",
+    "rj_dg_4_1",
+    "rj_dg_4_2",
+    "rj_dg_4_3",
+    "rj_dg_4_4",
+    "rj_dg_5_1",
+    "rj_dg_5_2",
+    "rj_dg_5_3",
+    "rj_dg_5_4"
+  ],
+  "calibration": {
+    "source": "/home/cocelo-server01/stkim_ws/Hand_teleoperation/recordings/geort_train_session_001.jsonl",
+    "source_sha256": "9d883bfb5bad1095e0f444c57925bb3afb87e85c339ea0606f6ba1ae90516b15",
+    "role": "calibration_only_not_held_out_evaluation",
+    "participant_id": null,
+    "source_overlap_with_geort_training": true,
+    "selection": "longest contiguous open candidate, then first requested seconds; non-thumb abs MCP flex<25deg and all PIP/DIP<25deg; gap<=0.1s; not manual labels",
+    "selected_right_frame_indices": [
+      243,
+      244,
+      245,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252,
+      253,
+      254,
+      255,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      268,
+      269,
+      270,
+      271,
+      272,
+      273,
+      274,
+      275,
+      276,
+      277,
+      278,
+      279,
+      280,
+      281,
+      282,
+      283,
+      284,
+      285,
+      286,
+      287,
+      288,
+      289,
+      290,
+      291,
+      292,
+      293,
+      294,
+      295,
+      296,
+      297,
+      298,
+      299,
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310,
+      311,
+      312,
+      313,
+      314,
+      315,
+      316,
+      317,
+      318,
+      319,
+      320,
+      321,
+      322,
+      323,
+      324,
+      325,
+      326,
+      327,
+      328,
+      329,
+      330,
+      331,
+      332,
+      333,
+      334,
+      335,
+      336,
+      337,
+      338,
+      339,
+      340,
+      341,
+      342,
+      343,
+      344,
+      345,
+      346,
+      347,
+      348,
+      349,
+      350,
+      351,
+      352,
+      353,
+      354,
+      355,
+      356,
+      357,
+      358,
+      359,
+      360,
+      361,
+      362,
+      363,
+      364,
+      365,
+      366,
+      367,
+      368,
+      369,
+      370,
+      371,
+      372,
+      373,
+      374,
+      375,
+      376,
+      377,
+      378,
+      379,
+      380,
+      381,
+      382,
+      383,
+      384,
+      385,
+      386,
+      387,
+      388,
+      389,
+      390,
+      391,
+      392,
+      393,
+      394,
+      395,
+      396,
+      397,
+      398,
+      399,
+      400,
+      401,
+      402,
+      403,
+      404,
+      405,
+      406,
+      407,
+      408,
+      409,
+      410,
+      411,
+      412,
+      413,
+      414,
+      415,
+      416,
+      417,
+      418,
+      419,
+      420,
+      421,
+      422,
+      423,
+      424,
+      425,
+      426,
+      427,
+      428,
+      429,
+      430,
+      431,
+      432,
+      433,
+      434,
+      435,
+      436,
+      437,
+      438,
+      439,
+      440,
+      441,
+      442,
+      443,
+      444,
+      445,
+      446,
+      447,
+      448,
+      449,
+      450,
+      451,
+      452,
+      453,
+      454,
+      455,
+      456,
+      457,
+      458,
+      459,
+      460,
+      461,
+      462,
+      463,
+      464,
+      465,
+      466,
+      467,
+      468
+    ],
+    "frames": 226,
+    "timestamp_start_s": 104321.398837159,
+    "timestamp_end_s": 104326.397858714,
+    "open_pose_manually_verified": false,
+    "root_residual_before_m": [
+      0.031157138893871984,
+      0.012201345942377513,
+      0.010879786372924452,
+      0.004898369496510965,
+      0.027150977634966676
+    ],
+    "root_residual_rotation_only_m": [
+      0.03330244113741784,
+      0.010191807197566695,
+      0.008344488964273346,
+      0.0016627441613885736,
+      0.024507418142142755
+    ],
+    "rotation_procrustes_scale_diagnostic_only": 0.9305553112049719,
+    "merged_fingers": [],
+    "input_tracking": "Quest WebXR estimated skeleton",
+    "upstream_helpers_sha256": {
+      "calibrate_rotation.py": "264592542c706c17ba54ab8b34151a320310134e31383b42ca432c666ceff841",
+      "calibrate_scaling.py": "16fa3683bbe6da5a7eefd806ea892417ea0b492b8f056d7bdb45ee04be46b32b",
+      "calibrate_pinch_scaling.py": "89e4376f29c0de5331e5d7e13f98f20a1179cf17a7023397a5538b3d4e47c627"
+    }
+  },
+  "methods": {
+    "anydex": {
+      "config": {
+        "optimizer": {
+          "type": "AdaptiveOptimizerAnalytical",
+          "hand_side": "right"
+        },
+        "robot": {
+          "type": "tesollo_dg5f",
+          "urdf_path": "/home/cocelo-server01/stkim_ws/Hand_teleoperation/external/tesollo_model/dg5f/dg5f_right.urdf",
+          "origin_link": "rl_dg_palm",
+          "tip_links": [
+            "rl_dg_1_tip",
+            "rl_dg_2_tip",
+            "rl_dg_3_tip",
+            "rl_dg_4_tip",
+            "rl_dg_5_tip"
+          ],
+          "link1_names": [
+            "rl_dg_1_1",
+            "rl_dg_2_2",
+            "rl_dg_3_2",
+            "rl_dg_4_2",
+            "rl_dg_5_2"
+          ],
+          "link3_names": [
+            "rl_dg_1_3",
+            "rl_dg_2_3",
+            "rl_dg_3_3",
+            "rl_dg_4_3",
+            "rl_dg_5_3"
+          ],
+          "link4_names": [
+            "rl_dg_1_4",
+            "rl_dg_2_4",
+            "rl_dg_3_4",
+            "rl_dg_4_4",
+            "rl_dg_5_4"
+          ],
+          "tip_offsets": [
+            [
+              0.0,
+              0,
+              0
+            ],
+            [
+              0.0,
+              0,
+              0
+            ],
+            [
+              0.0,
+              0,
+              0
+            ],
+            [
+              0.0,
+              0,
+              0
+            ],
+            [
+              0.0,
+              0,
+              0
+            ]
+          ],
+          "link3_offsets": [
+            [
+              0.0,
+              0,
+              0
+            ],
+            [
+              0.0,
+              0,
+              0
+            ],
+            [
+              0.0,
+              0,
+              0
+            ],
+            [
+              0.0,
+              0,
+              0
+            ],
+            [
+              0.0,
+              0,
+              0
+            ]
+          ],
+          "link4_offsets": [
+            [
+              0.0,
+              0,
+              0
+            ],
+            [
+              0.0,
+              0,
+              0
+            ],
+            [
+              0.0,
+              0,
+              0
+            ],
+            [
+              0.0,
+              0,
+              0
+            ],
+            [
+              0.0,
+              0,
+              0
+            ]
+          ],
+          "num_fingers": 5,
+          "neutral_qpos": null
+        },
+        "retarget": {
+          "mediapipe_rotation": {
+            "x": 1.6618398659517,
+            "y": 2.723548253544728,
+            "z": -3.181953698014293
+          },
+          "segment_scaling": {
+            "thumb": [
+              0.601,
+              1.605,
+              1.149,
+              1.479
+            ],
+            "index": [
+              0.979,
+              1.023,
+              1.597,
+              1.14
+            ],
+            "middle": [
+              1.016,
+              0.906,
+              1.412,
+              1.024
+            ],
+            "ring": [
+              1.014,
+              0.994,
+              1.461,
+              1.049
+            ],
+            "pinky": [
+              0.86,
+              1.009,
+              1.918,
+              1.656
+            ]
+          },
+          "pinch_scaling": 1.0844
+        }
+      },
+      "procedure": "unchanged official rotation/scaling helpers; official open-index-reach pinch ratio; project recording input adapter"
+    },
+    "wuji": {
+      "config": {
+        "optimizer": {
+          "type": "AdaptiveOptimizerAnalytical",
+          "hand_side": "right",
+          "urdf_path": "/home/cocelo-server01/stkim_ws/Hand_teleoperation/external/tesollo_model/dg5f/dg5f_right.urdf",
+          "link_naming": {
+            "prefix": "",
+            "palm": "rl_dg_palm",
+            "fingers": [
+              "rl_dg_1",
+              "rl_dg_2",
+              "rl_dg_3",
+              "rl_dg_4",
+              "rl_dg_5"
+            ],
+            "tip": "{finger}_tip",
+            "pip": "{finger}_3",
+            "dip": "{finger}_4",
+            "link1": "{finger}_1"
+          }
+        },
+        "retarget": {
+          "mediapipe_rotation": {
+            "x": 1.6618398659517,
+            "y": 2.723548253544728,
+            "z": -3.181953698014293
+          },
+          "segment_scaling": {
+            "thumb": [
+              0.73,
+              0.828,
+              0.949
+            ],
+            "index": [
+              0.987,
+              1.076,
+              1.085
+            ],
+            "middle": [
+              0.986,
+              1.058,
+              1.058
+            ],
+            "ring": [
+              1.007,
+              1.083,
+              1.079
+            ],
+            "pinky": [
+              0.86,
+              0.993,
+              1.076
+            ]
+          },
+          "scaling": 1.0844
+        }
+      },
+      "procedure": "Project robot-geometry adapter: use wrist-to-PIP/DIP/TIP reach ratios, not AnyDex per-bone ratios. Wuji provides these config fields but its bundled glove-only calibrator is not a Quest/DG-5F calibration procedure."
+    },
+    "manus": {
+      "procedure": "existing official DG-5F MANUS mapping retained; no official Quest proxy calibration available; no gains/offsets fitted"
+    },
+    "geort": {
+      "procedure": "existing DG-5F URDF/config/trained checkpoint retained; no post-training scale or input rotation changes"
+    }
+  },
+  "fk_audit": {
+    "anydex": {
+      "poses": 33,
+      "max_coordinate_error_m": 5.551115123125783e-17,
+      "single_joint_axis_and_sign_probes": 20
+    },
+    "wuji": {
+      "poses": 33,
+      "max_coordinate_error_m": 5.551115123125783e-17,
+      "single_joint_axis_and_sign_probes": 20
+    }
+  },
+  "evaluation_policy": "freeze profile before evaluation; reject calibration source as test; preserve baseline; participant-disjointness unverified"
+}

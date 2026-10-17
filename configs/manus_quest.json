@@ -1,0 +1,6 @@
+{
+  "method": "manus_style_quest_geometry",
+  "handedness": "right",
+  "maximum_command_speed_rad_s": 3.141592653589793,
+  "input_note": "Untuned geometric degree proxy, not actual MANUS ergonomics. Upstream gains and offsets are preserved."
+}

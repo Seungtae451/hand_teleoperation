@@ -1,0 +1,42 @@
+{
+  "geort_alex": {
+    "repository": "https://github.com/facebookresearch/GeoRT",
+    "commit": "fb2075e2a3272be372016580c0b6ebd6120228f0",
+    "repository_path": "data/human_alex.npy",
+    "local_path": "data/public/geort/human_alex.npy",
+    "sha256": "449c9c77b2e87bea365b5ce3657e9559516a421d987105540ce6dfdcaf175104",
+    "bytes": 1763120,
+    "license": "CC-BY-NC-4.0 (repository license; no separate sample license found)",
+    "license_path": "external/GeoRT/LICENSE",
+    "tracking_method": "MANUS FK consistent with supplied bone lengths; exact sample acquisition not documented",
+    "tracking_evidence": "geort/mocap/manus_mocap_core.py; all five fixed roots and segment lengths match sample",
+    "native_frame": "canonical RH: Z distal, Y radial, X=Y cross Z; wrist origin",
+    "unit_evidence": "meter interpretation matches all 20 supplied MANUS FK bone lengths; no per-file units metadata",
+    "handedness_evidence": "inferred right from canonical palm geometry and right-hand example usage, not per-frame labels",
+    "native_joint_layout": "wrist0; thumb1-4; index5-8; middle9-12; ring13-16; pinky17-20",
+    "participant_id": null,
+    "sequence_id": "geort_human_alex",
+    "split": "development",
+    "original_usage": "upstream training example; excluded from held-out benchmark claims"
+  },
+  "anydex_avp1": {
+    "repository": "https://github.com/qqsq12321/AnyDexRetarget",
+    "commit": "ee68a0234ccdf8a23b98527fd1ee2c6258278cd1",
+    "repository_path": "example/data/avp1.pkl",
+    "local_path": "data/public/anydex/avp1.pkl",
+    "sha256": "95538edc0119ecf3e82093f6363a6c3376c5d7bb11de9e379efacebeecbb5506",
+    "bytes": 1689467,
+    "license": "MIT (repository license; no separate sample license found)",
+    "license_path": "external/AnyDexRetarget/LICENSE",
+    "tracking_method": "Apple Vision Pro estimated skeleton, inferred from official avp1 replay example",
+    "tracking_evidence": "README replay example; example/input/visionpro.py; mediapipe_replay.py",
+    "native_frame": "right_fingers wrist-relative RH coordinates; global wrist pose absent",
+    "unit_evidence": "official VisionPro translation output, meter scale consistent with 0.18m wrist-tip reach; no per-file unit tag",
+    "handedness_evidence": "explicit right_fingers key in official recording",
+    "native_joint_layout": "already selected 21 points; upstream VP selection 0,1,2,3,4,6,7,8,9,11,12,13,14,16,17,18,19,21,22,23,24",
+    "participant_id": null,
+    "sequence_id": "anydex_avp1",
+    "split": "development",
+    "original_usage": "official demonstration replay; no participant or official train/eval split"
+  }
+}

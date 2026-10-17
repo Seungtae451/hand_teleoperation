@@ -1,0 +1,13 @@
+<!doctype html><html lang="ko"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quest → Tesollo · MANUS-style</title><link rel="stylesheet" href="/style.css">
+<body><main><p class="eyebrow">PHASE 4 · MANUS-STYLE</p><h1>Quest → Tesollo</h1>
+<p>손 추적을 시작하면 오른손 입력으로 PC의 MuJoCo 손을 제어합니다. 기존 MANUS 매핑을 평가하므로 손 모양이 정확히 일치하지 않을 수 있습니다.</p>
+<div class="actions"><button id="start" disabled>연결 확인 중…</button><button id="stop" disabled>추적 종료</button></div>
+<p id="connection" role="status"></p><p id="error" role="alert"></p>
+<div class="hands"><section><h2>왼손 <span id="left-status">대기</span></h2><canvas id="left" width="520" height="360"></canvas></section>
+<section><h2>오른손 <span id="right-status">대기</span></h2><canvas id="right" width="520" height="360"></canvas></section></div>
+<p id="counts"></p><p id="recording"></p>
+<p class="note">오른손 DG-5F 시뮬레이션을 제어합니다. 추적이 끊기면 마지막 적용 명령을 유지합니다. 실제 로봇 하드웨어는 연결하지 않습니다.</p>
+<details><summary>연결 정보</summary><pre id="diagnostics"></pre></details></main>
+<canvas id="xr-canvas" hidden></canvas><script src="/client.js" defer></script></body></html>

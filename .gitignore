@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+/external/
+/assets/tesollo/generated/
+/results/*
+!/results/.gitkeep
+/recordings/*
+!/recordings/.gitkeep

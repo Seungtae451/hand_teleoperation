@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quest-tesollo-benchmark"
+version = "0.1.0"
+description = "URDF-based Tesollo DG-5F MuJoCo simulation and retargeting interfaces"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "mujoco==3.16.0",
+    "numpy==2.2.6",
+    "pillow==12.3.0",
+    "imageio==2.38.0",
+    "imageio-ffmpeg==0.6.0",
+]
+
+[dependency-groups]
+dev = ["pytest==9.1.1", "ruff>=0.11"]
+
+[project.scripts]
+tesollo-sim = "benchmark.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["benchmark*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = ["render: requires EGL or an X display"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]

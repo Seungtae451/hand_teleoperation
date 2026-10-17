@@ -1,0 +1,9 @@
+{
+  "receiver_origin_s": 120872.028609952,
+  "video_start_pts_s": 7.827249448565252,
+  "video_rate_per_replay_s": 1.0000173200837656,
+  "source_receiver_clock_fit_max_residual_ms": 26.295160009962274,
+  "source_receiver_clock_fit_p95_residual_ms": 0.9553556488208403,
+  "video_source_anchor_max_residual_ms": 0.788571528668399,
+  "accuracy_note": "Visual source-clock alignment, not a sub-frame synchronization or latency claim"
+}

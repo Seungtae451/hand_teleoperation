@@ -1,0 +1,3 @@
+# Phase 3 directly uses the version already present in the Phase 2 uv environment.
+# Install after `uv sync --locked --python 3.10`; no upstream or Phase 2 lock edits.
+websockets==16.1.1

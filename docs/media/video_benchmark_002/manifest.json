@@ -1,0 +1,345 @@
+{
+  "take": "video_benchmark_002",
+  "input_policy": "same-time WebXR poses, not inferred from video pixels",
+  "video_source_sha256": "08b05e6114bb33e3001e49ccaa51770e8eda634dbfa67777dce61d0eb3f9082c",
+  "take_data_sha256": {
+    "quest_input.jsonl": "6f7a48b02135ba95e6c347f54cc83831fc4c2ee340f54f53d826decb19849fa7",
+    "markers.jsonl": "e2dd2f0af89f2f749d3569c05f64ff05f129d24e7f45f04daed4d7001f321a89"
+  },
+  "gif": "8-second preview only; full and gesture videos are separate",
+  "audio": "omitted",
+  "joint_state_video": "actual simulation state, not target FK",
+  "file_count_mp4": 9,
+  "files": {
+    "alignment.json": {
+      "bytes": 2429,
+      "sha256": "a73cc33efa44a8b72ea4b6982fce37e0b3b5a2998e62ba24453d43799b4b2d97"
+    },
+    "clip_individual_fingers.mp4": {
+      "bytes": 2797826,
+      "sha256": "e9be21eb5dc1a7d5f7b460fd7330b7c21b31cf29c732d62f1d112ad3abbf7c7e"
+    },
+    "clip_open_fist.mp4": {
+      "bytes": 2012420,
+      "sha256": "709d7e62c694f1e31eb04fdc669f7cb34844a48435cd66273bc5c17d2e20e730"
+    },
+    "clip_pinches.mp4": {
+      "bytes": 2947670,
+      "sha256": "db40f659d5c696fa26c73d12817a82eaf52ce43779cee3d3e2eede875997731d"
+    },
+    "clip_wrist_occlusion.mp4": {
+      "bytes": 1456212,
+      "sha256": "7b37fdc3d609075282685d99c70aac68289d5792d4280ef48e8f209a2f812203"
+    },
+    "clipping.png": {
+      "bytes": 66706,
+      "sha256": "f7b9ac50174342cb828017e6b0ac59e6a90a41b77ef02f5d09981bbbe5100448"
+    },
+    "comparison_all.mp4": {
+      "bytes": 14209053,
+      "sha256": "d4e92b4c4d981675ddf61d4a07db6217da40d1e85ff0b0c79c85412b8fc52349"
+    },
+    "comparison_anydex.mp4": {
+      "bytes": 13090162,
+      "sha256": "fee88cad1c68ee75f7624f2d57c6587e6f44387d6b384ce2a786f52cc5c5a82f"
+    },
+    "comparison_geort.mp4": {
+      "bytes": 13429994,
+      "sha256": "ad8ed342d9221ef7f48fe1d7d40aaf214b0ecdde29d478a568633c0527288b18"
+    },
+    "comparison_manus.mp4": {
+      "bytes": 13186977,
+      "sha256": "fbd1acddc52469650bc2030c04c7b53233b1f17e2194e26f929214344c4c5b81"
+    },
+    "comparison_preview.png": {
+      "bytes": 970408,
+      "sha256": "562ddc02d9beb3bfb0ef6e4adea6db22a939ccc6cdab56949c4b224b32d590d4"
+    },
+    "comparison_wuji.mp4": {
+      "bytes": 13035263,
+      "sha256": "8a5d9955103d8ae47b6e41c67a2019eaf308d4afed62640b8e866043b65ea234"
+    },
+    "geort_range_history.png": {
+      "bytes": 63482,
+      "sha256": "53d1cc9388a43d5cbc26d439b9b07d0358d6b7b5f6f0a9c6af62102f3cccc12e"
+    },
+    "input_audit.json": {
+      "bytes": 1048,
+      "sha256": "3162d77dbc11ca20a3e519b05823812d5dfb55e4bc73c55980cfeabe2e18e219"
+    },
+    "metrics.csv": {
+      "bytes": 567,
+      "sha256": "8cdce78ffd9a4c7dea1e0146c05770adc3744b61f84763f69509b953eddc47d9"
+    },
+    "pinch_distances.png": {
+      "bytes": 732948,
+      "sha256": "345479bda84c668d4a990a9381a08f8a34b922af827562ac463d6a77f9c909af"
+    },
+    "pip_response.png": {
+      "bytes": 552915,
+      "sha256": "8ae72349d1f9155f6e277ca3c1889aca6032e9329b16c59641851b7d22eb34fc"
+    },
+    "preview.gif": {
+      "bytes": 3902064,
+      "sha256": "57486a8ffb52c8ebbdc9d0ec0da313cda2dd3cfd20edf0178bd1409a45d8475b"
+    },
+    "run.json": {
+      "bytes": 717,
+      "sha256": "77642c41fb054dbc7b8523e2a27edebeedcf1d3f96ddd7d725d858f89974bf1b"
+    },
+    "summaries.json": {
+      "bytes": 4618,
+      "sha256": "68edc91b366b2c575ddd225afb7fd9b0f5249157e99786938bf2f7cc5171ac32"
+    },
+    "summary.png": {
+      "bytes": 96564,
+      "sha256": "be4b6028bca0ca3244014335a61c8207726f502d9a271e0f006afea89b645e64"
+    },
+    "synchronization.json": {
+      "bytes": 431,
+      "sha256": "920f0d42bcb6a72367d7ebcea747eaee06238cef835c936f7b554405eb706527"
+    },
+    "timeline.png": {
+      "bytes": 382836,
+      "sha256": "e61dc59aaa904169076a7c58b431b62b778a0caf31533e33a8f4ab8de92727bd"
+    },
+    "geort_range_history_data.json": {
+      "bytes": 642,
+      "sha256": "243ab5960d22f6d2976b8f7ad02accfdf6ddc81bb70e534e0d98abd97d03304d"
+    }
+  },
+  "visual_inspection": {
+    "real_hand_and_source_clock_visible": true,
+    "examples_video_pts_s": [
+      20.01108,
+      60.01102,
+      110.011
+    ],
+    "independent_hardware_measurement": false
+  },
+  "validation": {
+    "videos": [
+      {
+        "file": "clip_individual_fingers.mp4",
+        "frames": 600,
+        "fps": 25.0,
+        "duration_s": 24.0,
+        "sample_decode": [
+          {
+            "time_s": 0,
+            "image_std": 51.64553487555047
+          },
+          {
+            "time_s": 12.0,
+            "image_std": 53.7731087270448
+          },
+          {
+            "time_s": 23.88,
+            "image_std": 53.416638130345525
+          }
+        ]
+      },
+      {
+        "file": "clip_open_fist.mp4",
+        "frames": 450,
+        "fps": 25.0,
+        "duration_s": 18.0,
+        "sample_decode": [
+          {
+            "time_s": 0,
+            "image_std": 53.63123493538094
+          },
+          {
+            "time_s": 9.0,
+            "image_std": 53.745677898803635
+          },
+          {
+            "time_s": 17.88,
+            "image_std": 51.709541370983274
+          }
+        ]
+      },
+      {
+        "file": "clip_pinches.mp4",
+        "frames": 600,
+        "fps": 25.0,
+        "duration_s": 24.0,
+        "sample_decode": [
+          {
+            "time_s": 0,
+            "image_std": 53.847978542889
+          },
+          {
+            "time_s": 12.0,
+            "image_std": 54.00624109223393
+          },
+          {
+            "time_s": 23.88,
+            "image_std": 54.08376004331992
+          }
+        ]
+      },
+      {
+        "file": "clip_wrist_occlusion.mp4",
+        "frames": 300,
+        "fps": 25.0,
+        "duration_s": 12.0,
+        "sample_decode": [
+          {
+            "time_s": 0,
+            "image_std": 53.65089339505364
+          },
+          {
+            "time_s": 6.0,
+            "image_std": 51.9974649482371
+          },
+          {
+            "time_s": 11.88,
+            "image_std": 51.98662978624799
+          }
+        ]
+      },
+      {
+        "file": "comparison_all.mp4",
+        "frames": 2700,
+        "fps": 25.0,
+        "duration_s": 108.0,
+        "sample_decode": [
+          {
+            "time_s": 0,
+            "image_std": 38.87508511689597
+          },
+          {
+            "time_s": 54.0,
+            "image_std": 53.90650468467345
+          },
+          {
+            "time_s": 107.88,
+            "image_std": 53.591452405618405
+          }
+        ]
+      },
+      {
+        "file": "comparison_anydex.mp4",
+        "frames": 2700,
+        "fps": 25.0,
+        "duration_s": 108.0,
+        "sample_decode": [
+          {
+            "time_s": 0,
+            "image_std": 38.90009811235505
+          },
+          {
+            "time_s": 54.0,
+            "image_std": 54.05168691520261
+          },
+          {
+            "time_s": 107.88,
+            "image_std": 54.011190203155834
+          }
+        ]
+      },
+      {
+        "file": "comparison_geort.mp4",
+        "frames": 2700,
+        "fps": 25.0,
+        "duration_s": 108.0,
+        "sample_decode": [
+          {
+            "time_s": 0,
+            "image_std": 39.18263944944188
+          },
+          {
+            "time_s": 54.0,
+            "image_std": 53.49059990338771
+          },
+          {
+            "time_s": 107.88,
+            "image_std": 53.076084907958325
+          }
+        ]
+      },
+      {
+        "file": "comparison_manus.mp4",
+        "frames": 2700,
+        "fps": 25.0,
+        "duration_s": 108.0,
+        "sample_decode": [
+          {
+            "time_s": 0,
+            "image_std": 39.04499289011783
+          },
+          {
+            "time_s": 54.0,
+            "image_std": 54.11196539699693
+          },
+          {
+            "time_s": 107.88,
+            "image_std": 53.629467542473776
+          }
+        ]
+      },
+      {
+        "file": "comparison_wuji.mp4",
+        "frames": 2700,
+        "fps": 25.0,
+        "duration_s": 108.0,
+        "sample_decode": [
+          {
+            "time_s": 0,
+            "image_std": 38.80858530216992
+          },
+          {
+            "time_s": 54.0,
+            "image_std": 54.218967722826406
+          },
+          {
+            "time_s": 107.88,
+            "image_std": 53.920341274676595
+          }
+        ]
+      }
+    ],
+    "readme_local_links_checked": 32,
+    "missing_links": [],
+    "original_readme_archive_matches_phase7": true
+  },
+  "upstream_integrity": {
+    "repositories": {
+      "hand-tracking-streamer": {
+        "revision": "5ff7c1cfea0ead1bb8a0e233bc7770d94d31feb5",
+        "clean": true
+      },
+      "hand-tracking-sdk": {
+        "revision": "6ca05d1d5b00dfd89535aef74f698d6765bf1229",
+        "clean": true
+      },
+      "dg5f_ros2": {
+        "revision": "0cb45ae9474caa92410dfa820346da8ffbae8405",
+        "clean": true
+      },
+      "tesollo_model": {
+        "revision": "f648627be40f8df2e3df906ccf3c5d62103f3275",
+        "clean": true
+      },
+      "tesollo_ros2": {
+        "revision": "1307f7d537b41321d3ad67acc75a91249bb47369",
+        "clean": true
+      },
+      "AnyDexRetarget": {
+        "revision": "ee68a0234ccdf8a23b98527fd1ee2c6258278cd1",
+        "clean": true
+      },
+      "wuji-retargeting": {
+        "revision": "531f6ed4250b475d2e9231f54e988fc9b1c5b4ea",
+        "clean": true
+      },
+      "GeoRT": {
+        "revision": "fb2075e2a3272be372016580c0b6ebd6120228f0",
+        "clean": true
+      }
+    },
+    "original_files_checked": 0,
+    "problems": []
+  }
+}

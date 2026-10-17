@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quest 손 추적 · Tesollo Benchmark</title>
+<link rel="stylesheet" href="/style.css">
+<body>
+<main>
+  <p class="eyebrow">PHASE 3 · HAND INPUT</p>
+  <h1>Quest 손 추적</h1>
+  <p>Quest에서는 손 추적을 시작하고, PC에서는 수신되는 양손 골격을 확인하세요.</p>
+  <div class="actions">
+    <button id="start" disabled>연결 확인 중…</button>
+    <button id="stop" disabled>추적 종료</button>
+  </div>
+  <p id="connection" role="status">서버 연결 중</p>
+  <p id="error" role="alert"></p>
+  <div class="hands">
+    <section><h2>왼손 <span id="left-status">대기</span></h2><canvas id="left" width="520" height="360"></canvas></section>
+    <section><h2>오른손 <span id="right-status">대기</span></h2><canvas id="right" width="520" height="360"></canvas></section>
+  </div>
+  <p id="counts">수신 데이터 대기</p>
+  <p id="recording"></p>
+  <p class="note">손가락을 움직여 점과 선의 변화를 확인하세요. 로봇 제어 연결은 다음 단계입니다.</p>
+  <details><summary>연결 문제 확인</summary><pre id="diagnostics"></pre></details>
+</main>
+<canvas id="xr-canvas" hidden></canvas>
+<script src="/client.js" defer></script>
+</body>
+</html>

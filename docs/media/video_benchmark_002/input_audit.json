@@ -1,0 +1,52 @@
+{
+  "take_id": "video_benchmark_002",
+  "hashes_pass": true,
+  "hands": {
+    "left": {
+      "valid": 5092,
+      "invalid": 1
+    },
+    "right": {
+      "valid": 5092,
+      "invalid": 1
+    }
+  },
+  "source_sessions": [
+    "1dc9df9fda19427cbd4d2248677a2739"
+  ],
+  "markers": 132,
+  "browser_ids": [
+    "a54573b6-6b93-4eec-859c-e419a7aa962f"
+  ],
+  "stages_observed": [
+    "sync_start",
+    "open",
+    "fist_slow",
+    "fist_hold",
+    "index",
+    "middle",
+    "ring",
+    "pinky",
+    "thumb",
+    "pinch_index",
+    "pinch_middle",
+    "pinch_ring",
+    "pinch_pinky",
+    "spread",
+    "wrist",
+    "occlusion",
+    "free",
+    "sync_end"
+  ],
+  "routine_end_observed": true,
+  "clock_ranges": {
+    "1dc9df9fda19427cbd4d2248677a2739": {
+      "source_min_ms": 17484.199999999255,
+      "source_max_ms": 130656,
+      "receive_span_s": 113.17087022199121
+    }
+  },
+  "multi_session_warning": false,
+  "stage_labels": "Prompted actions, not manually verified gesture ground truth",
+  "video_status": "No video checked by this audit"
+}

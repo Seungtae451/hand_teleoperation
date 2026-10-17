@@ -1,0 +1,16 @@
+<!doctype html><html lang="ko"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GeoRT 학습 데이터별 실시간 비교</title><link rel="stylesheet" href="/style.css">
+<body><main><p class="eyebrow">GEORT · DATA SIZE COMPARISON</p><h1>GeoRT 네 모델 비교</h1>
+<p>오른손을 움직이면 PC의 MuJoCo 창 네 개에 각 모델의 반응이 표시됩니다.</p>
+<p>OFFICIAL_3498: 공식 데이터 3,498프레임<br>QUEST_1000: 공개 Quest 1,000프레임<br>
+QUEST_3498: 공개 Quest 3,498프레임<br>QUEST_10000: 공개 Quest 10,000프레임</p>
+<div class="actions"><button id="start" disabled>연결 확인 중…</button><button id="stop" disabled>추적 종료</button></div>
+<p id="connection" role="status"></p><p id="error" role="alert"></p>
+<div class="hands"><section><h2>왼손 <span id="left-status">대기</span></h2><canvas id="left" width="520" height="360"></canvas></section>
+<section><h2>오른손 <span id="right-status">대기</span></h2><canvas id="right" width="520" height="360"></canvas></section></div>
+<p id="counts"></p><p id="recording"></p><pre id="models"></pre>
+<p class="note">같은 Quest 입력과 공통 제어 정책을 사용합니다. 추적이 끊기면 마지막 명령을 유지합니다. 실시간 관찰은 정량 성능 평가와 구분합니다.</p>
+<details><summary>연결 정보</summary><pre id="diagnostics"></pre></details></main>
+<canvas id="xr-canvas" hidden></canvas><script src="/client.js" defer></script>
+<script>setInterval(async()=>{try{const s=await(await fetch('/status')).json();document.getElementById('models').textContent=Object.entries(s.retargeting).map(([k,v])=>k.toUpperCase()+': '+v.status).join('\n')}catch(e){}},1000);</script></body></html>
