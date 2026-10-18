@@ -8,7 +8,7 @@
 
 최초 v1 검사에서 프로젝트의 엄지 기하 특징은 다음과 같다. $u$는 사람 엄지의 1→2 뼈 방향이고, X는 손바닥 방향으로 정의한 축, Y는 새끼→검지, Z는 손목→중지 MCP 방향이다.
 
-$$A=\operatorname{atan2}(u_Z,u_Y),\qquad E=\operatorname{atan2}(u_X,\sqrt{u_Y^2+u_Z^2}).$$
+$$A=\mathrm{atan2}(u_Z,u_Y),\qquad E=\mathrm{atan2}(u_X,\sqrt{u_Y^2+u_Z^2}).$$
 
 프로젝트 이름은 각각 `thumb_opposition`, `thumb_palmar_elevation`이다. 이 이름은 실제 MANUS 센서각과의 검증된 대응이 아니라 기하 proxy 규약이다.
 
@@ -71,7 +71,7 @@ q3·q4를 각각 +20°로 움직이는 FK 검사에서는 해당 지골 사이 �
 
 기하 특징 A·E·B·C 자체는 그대로 기록한다. 제조사 입력 슬롯에 넣을 때만 다음과 같이 변환한다.
 
-$$\mathrm{Spread}=E,\qquad\mathrm{Stretch}=\operatorname{atan2}(u_Y,u_Z).$$
+$$\mathrm{Spread}=E,\qquad\mathrm{Stretch}=\mathrm{atan2}(u_Y,u_Z).$$
 
 관측 범위에서는 Stretch=$90^\circ-A$다. 90°는 +Y에서 재던 각도를 +Z에서 재도록 바꾸는 좌표 기준의 차이다. 제조사 offset 58.5°, 20°를 상쇄하거나 gain 1.6을 역산해 맞춘 값이 아니다. 기존 B·C와 다른 16개 입력은 그대로다. 현 방식도 실제 MANUS 센서의 해부학적 보정이라고 주장하지 않는다.
 

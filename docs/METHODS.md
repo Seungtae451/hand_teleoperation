@@ -17,7 +17,7 @@
 
 연속한 두 지골 벡터 $a,b$의 굽힘 proxy는 다음과 같다.
 
-$$\theta=\cos^{-1}\!\left(\operatorname{clip}\left(\frac{a\cdot b}{\|a\|\|b\|},-1,1\right)\right).$$
+$$\theta=\cos^{-1}\!\left(\mathrm{clip}\left(\frac{a\cdot b}{\|a\|\|b\|},-1,1\right)\right).$$
 
 이 각도는 부호 없는 기하 각도다. 신전 방향을 포함한 실제 관절 encoder 값이 아니다. MCP는 손바닥 기준 축에서 방향의 `atan2`로 계산한다. 이 proxy를 도 단위로 변환한 다음 제조사의 `_compute_mqd_from_q` 함수 본문을 그대로 실행한다.
 
@@ -35,7 +35,7 @@ $$q_{\mathrm{index,PIP}}=\max(0,1.3(\theta_{\mathrm{index,PIP}}-40^\circ)),\qqua
 
 손끝이 멀리 떨어져 있으면 손 전체 모양을, 엄지와 손끝이 가까워지면 핀치 위치와 손끝 방향을 더 강조한다. 엄지–각 손끝 거리 $d_i$를 cm로 표시하면 현재 기본 가중치는 다음과 같다.
 
-$$\alpha_i=\operatorname{clip}\!\left(\frac{4-d_i}{4-2+\epsilon},0,0.7\right),\qquad \alpha_{\mathrm{thumb}}=\max_i\alpha_i.$$
+$$\alpha_i=\mathrm{clip}\!\left(\frac{4-d_i}{4-2+\epsilon},0,0.7\right),\qquad \alpha_{\mathrm{thumb}}=\max_i\alpha_i.$$
 
 따라서 가까워져도 손 전체 항이 완전히 사라지지는 않는다. $r_{ij}(q)$는 로봇 손목에서 마디 $j$로 가는 벡터, $\hat r_{ij}$는 회전·길이 변환을 거친 사람 목표 벡터다. $v_i$는 손목에서 각 손끝으로 가는 벡터, $u_i$는 DIP→TIP 단위 방향이다. 목적함수 구조는 다음과 같다.
 
@@ -62,7 +62,7 @@ $$z_i=N_{\theta_i}(h_{\mathrm{tip},i})\in[-1,1]^4,\qquad q_i=q_{\min,i}+\frac{z_
 
 입력은 원본 GeoRT canonical 좌표계다. wrist를 원점으로 하고 0→9 방향을 Z축으로, 13→5 방향을 보조축으로 사용한다. 이 정의는 다른 benchmark palm 정렬과 구분한다. 학습·추론에 동일한 변환을 적용한다. 추론 때는 학습된 네트워크를 실행하며 매 프레임 역기구학 최적화를 풀지 않는다.
 
-학습에서는 먼저 로봇의 정확 FK 표본으로 미분 가능한 neural FK $F_\psi$를 학습한다. 그다음 $g(H)=F_\psi(N_\theta(\operatorname{tips}(H)))$를 이용해 아래 손실로 IK 네트워크를 학습한다. 이번 기본 학습은 로봇 FK 표본 100k, 원본 FK/IK 각 200 epoch, AdamW·학습률 $10^{-4}$·batch 2048 조건을 사용했다.
+학습에서는 먼저 로봇의 정확 FK 표본으로 미분 가능한 neural FK $F_\psi$를 학습한다. 그다음 $g(H)=F_\psi(N_\theta(\mathrm{tips}(H)))$를 이용해 아래 손실로 IK 네트워크를 학습한다. 이번 기본 학습은 로봇 FK 표본 100k, 원본 FK/IK 각 200 epoch, AdamW·학습률 $10^{-4}$·batch 2048 조건을 사용했다.
 
 ![GeoRT 손실의 개념도: 측정 그래프가 아닌 설명 그림](figures/geort_losses.png)
 
@@ -77,15 +77,15 @@ $$L=L_{\mathrm{direction}}+80L_{\mathrm{chamfer}}+0.1L_{\mathrm{curvature}}+L_{\
 
 방향 항은 작은 변화 $\Delta h$와 대응 출력 변화의 cosine을 크게 만든다.
 
-$$L_{\mathrm{direction}}=-\operatorname{mean}\cos\big(\Delta h,g(H+\Delta h)-g(H)\big).$$
+$$L_{\mathrm{direction}}=-\mathrm{mean}\cos\big(\Delta h,g(H+\Delta h)-g(H)\big).$$
 
 Chamfer는 같은 손가락의 두 점 집합 $A,B$ 사이 최근접 **제곱거리**의 양방향 평균이다. 프레임별 정답 대응 없이 분포를 맞춘다.
 
-$$\operatorname{CD}(A,B)=\frac1{|A|}\sum_{a\in A}\min_{b\in B}\|a-b\|^2+\frac1{|B|}\sum_{b\in B}\min_{a\in A}\|b-a\|^2.$$
+$$\mathrm{CD}(A,B)=\frac1{|A|}\sum_{a\in A}\min_{b\in B}\|a-b\|^2+\frac1{|B|}\sum_{b\in B}\min_{a\in A}\|b-a\|^2.$$
 
 곡률 항은 중앙 차분이다.
 
-$$L_{\mathrm{curvature}}=\operatorname{mean}\|g(H+\Delta h)+g(H-\Delta h)-2g(H)\|^2.$$
+$$L_{\mathrm{curvature}}=\mathrm{mean}\|g(H+\Delta h)+g(H-\Delta h)-2g(H)\|^2.$$
 
 핀치 항은 사람 손끝 거리 15 mm 미만인 표본에서 대응 로봇 손끝 쌍의 제곱거리를 줄인다. 원본 코드의 반복문은 엄지 쌍만이 아니라 **모든 손끝 쌍 $i<j$**을 순회한다. collision 가중치는 현재 0이다. 따라서 이 네 손실은 전체 사람 관절 자세를 supervised 정답으로 삼는 손실과 다르다.
 
@@ -102,7 +102,7 @@ flowchart LR
  C --> M[MuJoCo: q_actual]
 ```
 
-$$q_t^{\mathrm{cmd}}=q_{t-1}^{\mathrm{cmd}}+\operatorname{clip}(q_t^{\mathrm{target}}-q_{t-1}^{\mathrm{cmd}},-\pi\Delta t,\pi\Delta t),\quad\Delta t=0.02\ \mathrm{s}.$$
+$$q_t^{\mathrm{cmd}}=q_{t-1}^{\mathrm{cmd}}+\mathrm{clip}(q_t^{\mathrm{target}}-q_{t-1}^{\mathrm{cmd}},-\pi\Delta t,\pi\Delta t),\quad\Delta t=0.02\ \mathrm{s}.$$
 
 50 Hz마다 최대 약 3.6°씩 명령이 변한다. 실제 물리는 0.002초 간격이다. 무효 입력이나 0.25초 timeout이면 마지막 명령을 유지한다. 속도 제한으로 생기는 목표–명령 차이와 알고리즘이 잘못된 목표를 출력하는 문제를 구분해야 한다. 모든 단계의 값을 별도로 저장한다.
 
