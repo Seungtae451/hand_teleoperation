@@ -20,6 +20,11 @@ sys.path.insert(0, str(ROOT))
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=ROOT / "docs/figures")
+    parser.add_argument(
+        "--manus-revision",
+        type=Path,
+        default=ROOT / "docs/media/video_benchmark_002/manus_thumb_revision.npz",
+    )
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
     plt.rcParams.update({"font.size": 11, "axes.spines.top": False, "axes.spines.right": False})
@@ -35,7 +40,7 @@ def main():
     rows = [
         (
             "MANUS-style",
-            ["21 keypoints", "20 geometric angles", "Vendor mapping", "20 robot angles"],
+            ["21 keypoints", "Angles / thumb axes v2", "Vendor mapping", "20 robot angles"],
         ),
         (
             "AnyDex",
@@ -215,6 +220,29 @@ def main():
     )
     axes[1].legend(fontsize=9)
     finish(fig, "collection_timeline.png")
+
+    if args.manus_revision.exists():
+        revision = np.load(args.manus_revision)
+        time = revision["time_s"]
+        fig, axes = plt.subplots(3, 1, figsize=(14, 8), sharex=True)
+        for i, ax in enumerate(axes[:2]):
+            for version, color in [("v1", "#8b8b8b"), ("v2", "#7c5cff")]:
+                ax.plot(
+                    time,
+                    np.degrees(revision[f"{version}_target"][:, i]),
+                    label=f"MANUS {version}",
+                    color=color,
+                    lw=0.9,
+                )
+            ax.set(ylabel=f"Thumb joint {i + 1} (deg)")
+        for version, color in [("v1", "#8b8b8b"), ("v2", "#7c5cff")]:
+            axes[2].plot(
+                time, revision[f"{version}_shape_error"], label=version, color=color, lw=0.9
+            )
+        axes[0].legend(ncol=2)
+        axes[2].set(xlabel="Same replay time (s)", ylabel="Normalized target discrepancy")
+        fig.suptitle("MANUS thumb input axes v1 vs v2 / same 108 s input; not pose ground truth")
+        finish(fig, "manus_thumb_revision.png")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,251 @@
+{
+  "mp4_count": 25,
+  "gif_count": 17,
+  "videos": [
+    {
+      "file": "clip_individual_fingers.mp4",
+      "frames": 600,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "clip_open_fist.mp4",
+      "frames": 450,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "clip_pinches.mp4",
+      "frames": 600,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "clip_wrist_occlusion.mp4",
+      "frames": 300,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "comparison_all.mp4",
+      "frames": 2700,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "comparison_anydex.mp4",
+      "frames": 2700,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "comparison_geort.mp4",
+      "frames": 2700,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "comparison_manus.mp4",
+      "frames": 2700,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "comparison_wuji.mp4",
+      "frames": 2700,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "gestures/fist_hold.mp4",
+      "frames": 150,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "gestures/fist_slow.mp4",
+      "frames": 150,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "gestures/free.mp4",
+      "frames": 150,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "gestures/index.mp4",
+      "frames": 150,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "gestures/middle.mp4",
+      "frames": 150,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "gestures/occlusion.mp4",
+      "frames": 150,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "gestures/open.mp4",
+      "frames": 150,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "gestures/pinch_index.mp4",
+      "frames": 150,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "gestures/pinch_middle.mp4",
+      "frames": 150,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "gestures/pinch_pinky.mp4",
+      "frames": 150,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "gestures/pinch_ring.mp4",
+      "frames": 150,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "gestures/pinky.mp4",
+      "frames": 150,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "gestures/ring.mp4",
+      "frames": 150,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "gestures/spread.mp4",
+      "frames": 150,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "gestures/thumb.mp4",
+      "frames": 150,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "gestures/wrist.mp4",
+      "frames": 150,
+      "fps": 25.0,
+      "size": [
+        2560,
+        1440
+      ]
+    }
+  ],
+  "gifs": [
+    "preview.gif",
+    "gestures/ring.gif",
+    "gestures/pinch_middle.gif",
+    "gestures/pinch_ring.gif",
+    "gestures/wrist.gif",
+    "gestures/open.gif",
+    "gestures/spread.gif",
+    "gestures/index.gif",
+    "gestures/thumb.gif",
+    "gestures/fist_hold.gif",
+    "gestures/occlusion.gif",
+    "gestures/pinky.gif",
+    "gestures/pinch_pinky.gif",
+    "gestures/pinch_index.gif",
+    "gestures/middle.gif",
+    "gestures/fist_slow.gif",
+    "gestures/free.gif"
+  ],
+  "midpoint_decoding_all_passed": true
+}

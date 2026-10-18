@@ -9,7 +9,11 @@ import numpy as np
 from benchmark.paths import ROOT
 from benchmark.retargeting.base import BaseRetargeter, RetargetingResult
 from benchmark.retargeting.manus_vendor import OfficialManusMapping
-from benchmark.retargeting.quest_ergonomics import FEATURE_NAMES, geometric_features
+from benchmark.retargeting.quest_ergonomics import (
+    FEATURE_NAMES,
+    geometric_features,
+    manus_ergonomics_proxy,
+)
 
 DEFAULT_MANUS_CONFIG = ROOT / "configs/manus_quest.json"
 
@@ -29,7 +33,14 @@ class ManusRetargeter(BaseRetargeter):
             raise ValueError("MANUS adapter hand side must match the simulated robot")
         if robot.config["handedness"] != "right":
             raise NotImplementedError("Only the validated right DG-5F model is supported")
+        self.thumb_convention = self.config.get("thumb_input_convention", "thumb_axes_v2")
+        manus_ergonomics_proxy(np.zeros(20), self.thumb_convention)
         self.vendor = OfficialManusMapping()
+        self.provenance = {
+            **self.vendor.provenance,
+            "quest_thumb_input_convention": self.thumb_convention,
+            "quest_proxy_note": "geometric input adapter, not calibrated MANUS sensor values",
+        }
         self.reset()
 
     def reset(self):
@@ -48,7 +59,7 @@ class ManusRetargeter(BaseRetargeter):
         ):
             raise ValueError("Retargeting timestamps regressed; reset before replay")
         features = geometric_features(hand_frame)
-        ergonomics = features.copy()
+        ergonomics = manus_ergonomics_proxy(features, self.thumb_convention)
         preprocess_s = perf_counter() - start
         mapping_start = perf_counter()
         raw = np.array(self.vendor(ergonomics, hand_frame.handedness))
@@ -62,6 +73,8 @@ class ManusRetargeter(BaseRetargeter):
                 "feature_names": FEATURE_NAMES,
                 "features_deg": features.tolist(),
                 "ergonomics_proxy_deg": ergonomics.tolist(),
+                "thumb_input_convention": self.thumb_convention,
+                "thumb_input_slots": ["ThumbMCPSpread", "ThumbMCPStretch"],
                 "q_vendor_raw": raw.tolist(),
                 "joint_limit_clipped": (raw != target).tolist(),
                 "preprocess_s": preprocess_s,

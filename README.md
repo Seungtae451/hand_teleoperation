@@ -27,7 +27,9 @@ Meta Quest 3의 손 추적을 **공식 Tesollo DG-5F 오른손 URDF, 20개 관�
 | Wuji | 유사한 벡터·핀치 정보 | 공유 adaptive 최적화 구조, 다른 scaling 규약 |
 | GeoRT | canonical 좌표의 다섯 손끝 | 미리 학습한 손가락별 신경망, 3D 위치→4관절 |
 
-MANUS 오른손 검지 PIP의 예는 $q=\max(0,1.3(\theta-40^\circ))$다. 여기서 $\theta$는 Quest 기하 proxy이며 실제 MANUS 센서각이 아니다. AnyDex/Wuji는 다음 구조의 오차를 줄이는 $q$를 매 프레임 찾는다.
+MANUS 오른손 검지 PIP의 예는 $q=\max(0,1.3(\theta-40^\circ))$다. 여기서 $\theta$는 Quest 기하 proxy이며 실제 MANUS 센서각이 아니다. 현재 영상은 **MANUS 엄지 입력 축 v2**를 적용했다. spread는 손바닥 밖 방향 각도, stretch는 +Z 기준 각도로 전달한다. 제조사 gain·offset은 유지했고 실제 MANUS 장갑 보정과는 구분한다. [변경 전후 검사와 남은 한계](docs/MANUS_THUMB_CHECK.md)에 수식·원자료를 기록했다.
+
+AnyDex/Wuji는 다음 구조의 오차를 줄이는 $q$를 매 프레임 찾는다.
 
 $$q^*=\arg\min_{q_{\min}\le q\le q_{\max}}\sum_i\left[\alpha_i L_{\mathrm{pinch},i}+(1-\alpha_i)L_{\mathrm{shape},i}\right]+\lambda\|q-q_{\mathrm{prev}}\|^2.$$
 
@@ -82,6 +84,12 @@ Direction은 작은 움직임 방향, Chamfer는 손끝 점 분포, Curvature는
 
 **영상에서 손 pose를 다시 추정하지 않는다.** 촬영과 동시에 Quest가 출력한 WebXR 위치·회전이 공통 입력이다. 동작명은 촬영 안내이며 실제 수행을 판정한 성공 라벨은 아니다.
 
+### MANUS 엄지 수정 전후
+
+![동일 입력의 MANUS 엄지 v1·v2 비교](docs/figures/manus_thumb_revision.png)
+
+정규화 목표 손끝 차이는 0.4283→0.3494로 변했다. 무차원 기하 지표이며 정답 자세 정확도나 핀치 성공률이 아니다. 엄지의 남은 offset·dead zone·큰 각도의 방향 접힘은 [검사 문서](docs/MANUS_THUMB_CHECK.md)에 명시했다. 다른 세 방법의 상태·수치는 기존 결과를 유지했다. 이전 영상은 외부 보관했다.
+
 ## 촬영·재생 조건
 
 | 항목 | 실제 사용 값 |
@@ -96,6 +104,7 @@ Direction은 작은 움직임 방향, Chamfer는 손끝 점 분포, Curvature는
 | 출력 영상 | 방법별 2,700프레임, 25 FPS, 2560×1440; 손바닥 카메라 215° / +20° |
 | 공통 제어 | 물리 timestep 0.002초, 50 Hz 명령, 명령 속도 제한 π rad/s |
 | 모델 | 공식 오른손 DG-5F 범위, 고정 base, 중력 보상, 접촉 비활성 |
+| MANUS-style | Quest 엄지 축 `thumb_axes_v2`; 원본 매핑 유지 |
 | AnyDex/Wuji | 기존 `configs/tesollo_calibrated/profile.json` 적용 |
 | GeoRT | 개인 Quest session 002의 12,998 train frame으로 학습한 기존 full-range 모델 |
 
@@ -111,20 +120,20 @@ GeoRT checkpoint SHA256: `7a0324c7d3ae7351d9852a83b9ea509b22c8f6d6549bdf8529781e
 
 | 방법 | 정규화 목표 손끝 차이 ↓ | 명령–실제 관절 RMSE ↓ | adapter 중앙 시간 |
 |---|---:|---:|---:|
-| MANUS-style | 0.4283 | 0.223° | 0.185 ms |
+| MANUS-style · 엄지 v2 | 0.3494 | 0.222° | 0.172 ms |
 | AnyDex | 0.2169 | 0.205° | 4.137 ms |
 | Wuji | 0.2028 | 0.209° | 2.482 ms |
 | GeoRT | 0.6756 | 0.389° | 1.029 ms |
 
 목표 차이는 사람 wrist/로봇 palm을 각각 원점으로 하고 각 손의 중지 MCP까지 기준 길이로 정규화한 **무차원 기하 지표**다. 독립적으로 측정한 정답 로봇 pose 오차나 성공률은 아니다. 표는 50 Hz 유효 제어 tick 평균이다. 손의 길이 차이·중립 기준·정렬 가정이 남는다.
 
-시간은 새 valid 입력 4,835개에 대해 전처리·원본 solve/추론·기본 필터를 포함하고 시뮬레이션·렌더링·로그는 제외한다. Worker를 동시에 실행했으므로 **독립적인 속도 순위나 실시간 FPS**로 해석하지 않는다. AnyDex와 Wuji는 공유 구조가 있어 완전히 독립적인 네 알고리즘으로 취급하지 않는다.
+시간은 새 valid 입력 4,835개에 대해 전처리·원본 solve/추론·기본 필터를 포함하고 시뮬레이션·렌더링·로그는 제외한다. MANUS v2는 단독 재실행했고 다른 세 방법은 이전 동시 worker 실행 수치를 유지했다. 따라서 **독립적인 속도 순위나 실시간 FPS**로 해석하지 않는다. AnyDex와 Wuji는 공유 구조가 있어 완전히 독립적인 네 알고리즘으로 취급하지 않는다.
 
 ### 시간 변화와 공통 제어
 
 ![시간에 따른 목표 차이와 명령 지연](docs/media/video_benchmark_002/timeline.png)
 
-목표–명령 관절 RMS 차이는 MANUS 2.35°, AnyDex 1.31°, Wuji 1.68°, GeoRT 10.24°다. 이 값을 시간 지연 초 단위로 바꿀 수 없다. **잘못된 목표 자세와 속도 제한으로 목표를 따라가는 과정은 별개**다. MuJoCo가 명령을 잘 따라도 모델의 자세 대응은 틀릴 수 있다.
+목표–명령 관절 RMS 차이는 MANUS 1.98°, AnyDex 1.31°, Wuji 1.68°, GeoRT 10.24°다. 이 값을 시간 지연 초 단위로 바꿀 수 없다. **잘못된 목표 자세와 속도 제한으로 목표를 따라가는 과정은 별개**다. MuJoCo가 명령을 잘 따라도 모델의 자세 대응은 틀릴 수 있다.
 
 ### 사람의 굽힘과 로봇 목표
 
@@ -246,7 +255,7 @@ uv pip install --python .venv/bin/python -r requirements/phase6.txt
 .venv-geort/bin/python scripts/build_explanation_figures.py
 ```
 
-손바닥 영상은 기존 actual qpos와 수치 결과를 byte 단위로 보존하고 카메라·렌더링 해상도·배치만 변경했다. 카메라 거리는 0.48 m에서 0.44 m로 줄였고, 실제 손 확대 화면은 중앙 정사각형 crop임을 표시했다. 전체 원본 화면도 함께 보여준다. 원본 실제 상태는 `results/video_benchmark_002/replay_full/`에 유지하고 이전 영상 배치와 중복 렌더는 외부 보관했다.
+현재 MANUS 영상은 v2 입력으로 actual qpos와 수치를 다시 생성했다. AnyDex·Wuji·GeoRT 상태는 byte 단위로 유지했다. 카메라·해상도·배치는 네 방법에 동일하다. 카메라 거리는 0.48 m에서 0.44 m로 줄였고, 실제 손 확대 화면은 중앙 정사각형 crop임을 표시했다. 전체 원본 화면도 함께 보여준다. v1 실제 상태는 `results/video_benchmark_002/replay_full/`, 현재 v2는 `results/video_benchmark_002/manus_thumb_v2/replay/`에 있다. 이전 공개 영상은 외부 보관했다.
 
 Export 기본 checkpoint는 이번 개인 full-range 모델이다. 다른 모델은 `--checkpoint`와 그 모델의 `--config`를 함께 지정한다. 제한 모델은 일반 full-range adapter로 불러오지 않는다. 실패한 범위 실험은 [GeoRT 실패 기록](docs/GEORT_FAILURES.md)에 설명하고 원자료를 외부 보관했다.
 

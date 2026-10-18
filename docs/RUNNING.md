@@ -84,6 +84,8 @@ results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/
 
 ## 현재 영상 재현
 
+기본 MANUS 입력은 `thumb_axes_v2`다. 현재 공개 영상의 재생 상태는 `results/video_benchmark_002/manus_thumb_v2/replay/`, 이전 v1은 `results/video_benchmark_002/replay_full/`에 보존한다. MANUS 엄지 방향 수정만 비교한 현재 출판에서는 다른 세 방법의 기존 상태를 재사용했다. 아래 전체 재현 명령은 네 방법을 새로 실행하므로 timing은 다를 수 있다.
+
 현재 원본은 `recordings/video_benchmark_002/human.mp4`다. 동영상 내용·hash는 그대로 유지하고 루트에서 take 폴더로 정리했다. 아래 출력 경로는 새 폴더여야 한다.
 
 ```bash
@@ -99,7 +101,7 @@ MUJOCO_GL=egl .venv/bin/python scripts/rerender_take_camera.py \
   --output results/reproduction_media
 ```
 
-이미 저장된 실제 상태를 쓰려면 두 번째 명령의 source를 `results/video_benchmark_002/replay_full`로 지정한다. 재추론·재학습 없이 손바닥 카메라로 다시 그릴 수 있다.
+이미 저장된 실제 상태를 쓰려면 두 번째 명령의 source를 `results/video_benchmark_002/manus_thumb_v2/replay`로 지정한다. 재추론·재학습 없이 손바닥 카메라로 다시 그릴 수 있다.
 
 카메라 215°/+20°, 로봇 화면 960×720, 합성 2560×1440, 25 FPS다. 16동작×6초와 그룹 clip 4개, 개별 방법·전체 영상을 생성한다. 공개 사본은 `docs/media/video_benchmark_002/`다. 재실행한 계산 시간이 과거와 완전히 일치한다고 보장하지 않는다.
 

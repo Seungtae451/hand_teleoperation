@@ -1,0 +1,296 @@
+{
+  "purpose": "check current Quest geometry proxy, pinned vendor mapping and exact DG-5F FK",
+  "vendor": {
+    "repository": "https://github.com/tesollodelto/dg5f_ros2",
+    "commit": "0cb45ae9474caa92410dfa820346da8ffbae8405",
+    "file": "external/dg5f_ros2/dg5f_driver/script/manus_retarget/manus_retarget.py",
+    "sha256": "730f2b4e1c89669f2249c0e8476ded58333c019bbaf501523075abb2a57a3ca4",
+    "function": "ManusBimanualRetarget._compute_mqd_from_q",
+    "reuse": "unmodified calculation AST; staticmethod binding removed"
+  },
+  "thumb_limits_deg": [
+    [
+      -22.0,
+      77.0
+    ],
+    [
+      -155.0,
+      0.0
+    ],
+    [
+      -90.0,
+      90.0
+    ],
+    [
+      -90.0,
+      90.0
+    ]
+  ],
+  "synthetic_cases": [
+    {
+      "synthetic_input_A_E_deg": [
+        10,
+        20
+      ],
+      "computed_proxy_deg": [
+        9.999999999999996,
+        19.999999999999996,
+        0.0,
+        0.0
+      ],
+      "raw_thumb_q_deg": [
+        38.5,
+        -48.0,
+        0.0,
+        0.0
+      ],
+      "clipped_thumb_q_deg": [
+        38.5,
+        -48.0,
+        0.0,
+        0.0
+      ],
+      "human_thumb_metacarpal_direction_palm": [
+        0.3420201433256687,
+        0.9254165783983235,
+        0.1631759111665348
+      ],
+      "robot_link2_to_link3_direction_palm": [
+        0.7431448254773942,
+        0.5236670705360441,
+        0.4165435962805948
+      ],
+      "robot_direction_A_E_deg": [
+        38.50000000000001,
+        48.00000000000001
+      ]
+    },
+    {
+      "synthetic_input_A_E_deg": [
+        20,
+        20
+      ],
+      "computed_proxy_deg": [
+        20.0,
+        19.999999999999996,
+        0.0,
+        0.0
+      ],
+      "raw_thumb_q_deg": [
+        38.5,
+        -64.0,
+        0.0,
+        0.0
+      ],
+      "clipped_thumb_q_deg": [
+        38.5,
+        -64.0,
+        0.0,
+        0.0
+      ],
+      "human_thumb_metacarpal_direction_palm": [
+        0.3420201433256687,
+        0.8830222215594892,
+        0.32139380484326974
+      ],
+      "robot_link2_to_link3_direction_palm": [
+        0.8987940462991668,
+        0.34307283520587906,
+        0.27289245515581934
+      ],
+      "robot_direction_A_E_deg": [
+        38.50000000000001,
+        63.999999999999986
+      ]
+    },
+    {
+      "synthetic_input_A_E_deg": [
+        10,
+        30
+      ],
+      "computed_proxy_deg": [
+        9.999999999999998,
+        29.999999999999993,
+        0.0,
+        0.0
+      ],
+      "raw_thumb_q_deg": [
+        28.500000000000007,
+        -48.0,
+        0.0,
+        0.0
+      ],
+      "clipped_thumb_q_deg": [
+        28.500000000000007,
+        -48.0,
+        0.0,
+        0.0
+      ],
+      "human_thumb_metacarpal_direction_palm": [
+        0.4999999999999999,
+        0.8528685319524433,
+        0.15038373318043527
+      ],
+      "robot_link2_to_link3_direction_palm": [
+        0.7431448254773941,
+        0.5880434274740419,
+        0.319281530581953
+      ],
+      "robot_direction_A_E_deg": [
+        28.500000000000014,
+        47.99999999999999
+      ]
+    },
+    {
+      "synthetic_input_A_E_deg": [
+        40,
+        20
+      ],
+      "computed_proxy_deg": [
+        40.0,
+        20.000000000000004,
+        0.0,
+        1.2074182697257333e-06
+      ],
+      "raw_thumb_q_deg": [
+        38.5,
+        -96.0,
+        0.0,
+        7.848218753217267e-07
+      ],
+      "clipped_thumb_q_deg": [
+        38.5,
+        -96.0,
+        0.0,
+        7.848218753217267e-07
+      ],
+      "human_thumb_metacarpal_direction_palm": [
+        0.3420201433256687,
+        0.7198463103929542,
+        0.6040227735550536
+      ],
+      "robot_link2_to_link3_direction_palm": [
+        0.9945218953682734,
+        -0.08180482797651337,
+        -0.06507049832935176
+      ],
+      "robot_direction_A_E_deg": [
+        -141.50000000000009,
+        84.00000000000001
+      ]
+    },
+    {
+      "synthetic_input_A_E_deg": [
+        50,
+        20
+      ],
+      "computed_proxy_deg": [
+        49.99999999999999,
+        20.000000000000004,
+        0.0,
+        1.2074182697257333e-06
+      ],
+      "raw_thumb_q_deg": [
+        38.5,
+        -112.0,
+        0.0,
+        7.848218753217267e-07
+      ],
+      "clipped_thumb_q_deg": [
+        38.5,
+        -112.0,
+        0.0,
+        7.848218753217267e-07
+      ],
+      "human_thumb_metacarpal_direction_palm": [
+        0.3420201433256687,
+        0.6040227735550536,
+        0.7198463103929541
+      ],
+      "robot_link2_to_link3_direction_palm": [
+        0.9271838545667874,
+        -0.2931701756179887,
+        -0.2331980873823629
+      ],
+      "robot_direction_A_E_deg": [
+        -141.50000000000003,
+        68.0
+      ]
+    }
+  ],
+  "distal_fk_checks": [
+    {
+      "robot_q3_q4_deg": [
+        0,
+        0
+      ],
+      "unsigned_interbone_bends_deg": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "robot_q3_q4_deg": [
+        20,
+        0
+      ],
+      "unsigned_interbone_bends_deg": [
+        20.00000000000001,
+        0.0
+      ]
+    },
+    {
+      "robot_q3_q4_deg": [
+        0,
+        20
+      ],
+      "unsigned_interbone_bends_deg": [
+        0.0,
+        19.999999999999993
+      ]
+    }
+  ],
+  "recorded": {
+    "log": "results/video_benchmark_002/replay_full/manus.jsonl",
+    "sha256": "ecb29b76b556eaf167e1c6abfc701fd3421b97f3da39203c4455f746afcbf313",
+    "unique_tracking_inputs": 4835,
+    "vendor_recomputed_all_equal": true,
+    "proxy_median_deg": [
+      45.3533337743875,
+      23.4084283763466,
+      13.860723272294505,
+      19.28785290083852
+    ],
+    "proxy_min_deg": [
+      35.42075146291385,
+      5.697182172541124,
+      8.055217348449725,
+      5.328923581509033
+    ],
+    "proxy_max_deg": [
+      95.05779056742998,
+      56.09020701556163,
+      60.57692510674822,
+      52.35366195136402
+    ],
+    "raw_thumb_median_deg": [
+      35.0915716236534,
+      -104.56533403901999,
+      18.018940253982855,
+      21.568419622827037
+    ],
+    "raw_q2_below_minus_90_count": 4664,
+    "q2_common_limit_clip_count": 572
+  },
+  "source_files_sha256": {
+    "benchmark/retargeting/quest_ergonomics.py": "78f546c37bbe581579fe6c374bdd7e95dd87fe733258731489346ead7bf8f829",
+    "benchmark/retargeting/manus.py": "8a281222ec4c931c0468c8afe211c91461de655e77ae5560f3d1cb186f45df4f",
+    "external/tesollo_model/dg5f/dg5f_right.urdf": "86fc72a59d42bd2b866e340feb03dc864315350be3722a28626b7bd4a5a385ca"
+  },
+  "limitations": [
+    "Synthetic straight-thumb cases are coordinate probes, not recorded human data.",
+    "Robot link2->link3 is a kinematic direction probe, not certified anatomical correspondence.",
+    "MANUS ergonomics sign/zero cannot be validated from Quest keypoints alone.",
+    "No upstream, adapter, joint ranges or existing result files were changed."
+  ]
+}

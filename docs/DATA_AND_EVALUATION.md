@@ -31,7 +31,7 @@ $$t_{\mathrm{source,ms}}=1000.00300000014\,t_{\mathrm{video,s}}+9655.57139546014
 
 Anchor 최대 잔차는 0.789 ms지만 촬영 간격은 약 33 ms다. source–receiver clock 직선 적합의 최대 잔차는 26.30 ms다. 따라서 anchor residual을 실제 동기화 정확도나 통신 지연으로 해석하지 않는다. [원래 anchor와 fit](media/video_benchmark_002/alignment.json)을 남겼다.
 
-동일한 타임라인으로 네 방법을 offline 재생하고 소비 입력 digest가 같은지 검사했다. 물리·명령 주기와 접촉 비활성 조건도 공유한다. 실시간 창 네 개는 부하에 따라 서로 다른 최신 프레임을 소비할 수 있으므로 그 화면만으로 정량 비교하지 않는다.
+동일한 타임라인으로 네 방법을 offline 재생하고 소비 입력 digest가 같은지 검사했다. 현재 MANUS는 엄지 입력 축 v2로 다시 계산했고 다른 세 방법은 이전 상태를 byte 단위로 유지했다. 기하 proxy를 실제 MANUS 센서 보정으로 표시하지 않는다. 물리·명령 주기와 접촉 비활성 조건도 공유한다. 실시간 창 네 개는 부하에 따라 서로 다른 최신 프레임을 소비할 수 있으므로 그 화면만으로 정량 비교하지 않는다.
 
 ## 데이터 용도와 분리의 한계
 
@@ -66,7 +66,7 @@ $$\mathrm{RMSE}_{\mathrm{cmd,actual}}=\sqrt{\frac1{20T}\sum_{t,j}(q^{\mathrm{cmd
 
 핀치 그래프는 엄지와 각 손끝의 실제 상태 거리를 손 기준 길이로 정규화한다. 접촉·물체·힘 센서가 없어 파지 성공률이 아니다. 손끝 위치도 접촉 패드 표면이 아닌 링크 원점이다.
 
-시간은 새 valid 입력 4,835개에 대한 adapter 전처리·원본 solve/추론·기본 필터를 포함한다. 시뮬레이션과 렌더링·로그는 제외한다. 네 worker를 동시에 실행했으므로 독립적인 속도 순위를 정하지 않는다. 평균·P95 등 원자료는 [summaries](media/video_benchmark_002/summaries.json)에 있다.
+시간은 새 valid 입력 4,835개에 대한 adapter 전처리·원본 solve/추론·기본 필터를 포함한다. 시뮬레이션과 렌더링·로그는 제외한다. 현재 MANUS v2 시간은 단독 재실행이고 다른 세 방법은 이전 동시 worker 실행 값이다. 독립적인 속도 순위를 정하지 않는다. 평균·P95 등 원자료는 [summaries](media/video_benchmark_002/summaries.json)에 있다.
 
 ## 재현성 자료
 

@@ -27,6 +27,8 @@ $$q_{\mathrm{index,PIP}}=\max(0,1.3(\theta_{\mathrm{index,PIP}}-40^\circ)),\qqua
 
 각 관절에는 서로 다른 gain·offset·clamp·coupling이 있어 전체를 하나의 선형식으로 설명할 수 없다. 예를 들어 Quest proxy가 20°여도 제조사 PIP 출력은 0°일 수 있다. 이것은 proxy와 실제 MANUS ergonomics의 차이가 결과에 영향을 줄 수 있는 이유다. 이를 없애려고 원본 offset을 취소하지 않았다.
 
+현재 공개 영상은 엄지 입력 축을 `thumb_axes_v2`로 명시한다. 기하 opposition A·palmar elevation E를 그대로 MANUS 슬롯 0·1에 넣던 v1 대신, spread=E, stretch=atan2(uY,uZ)를 전달한다. 관측 범위에서 stretch=90°−A다. 제조사 offset·gain은 유지했고, 다른 관절 입력은 바꾸지 않았다. 실제 MANUS 장갑 보정이 아닌 Quest adapter의 좌표 규약 수정이다. [변경 전후 검사·남은 한계](MANUS_THUMB_CHECK.md)를 함께 읽는다.
+
 ## 2. AnyDex와 Wuji: 손 모양의 기하 오차를 줄이는 각도를 찾는다
 
 ![실제 제조사 매핑과 adaptive 가중치, Huber 함수 예시](figures/mapping_and_optimizer.png)

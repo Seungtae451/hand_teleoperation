@@ -1,0 +1,29 @@
+{
+  "same_input_digest_verified": true,
+  "raw_target_command_joints_3_to_20_unchanged": true,
+  "manus_other_finger_actual_max_roundoff_rad": 4.440892098500626e-16,
+  "other_methods_states_byte_identical": true,
+  "other_methods": {
+    "anydex": {
+      "states_sha256": "858d9f420a1ea707748cf310b26919bb5f687ef0816e671246275ca76c25d390",
+      "summary_sha256": "c249bcd1fd023ac2b94aa3a441d48ccd2543e99df47a1e99b08d566b2f575f2f"
+    },
+    "wuji": {
+      "states_sha256": "f6ce56fd19f2ab5f2bc79f8bb349adc388304414828766f89bf3db9ac1fc6dcb",
+      "summary_sha256": "8e97623831f15328e90b66f049201d7c846324c033011cef099e79f603b7d963"
+    },
+    "geort": {
+      "states_sha256": "b6bd9306b2721f6dd5fc4242d94b588a22f2b58481fde10877f33cc5fc625684",
+      "summary_sha256": "6135ab53efbcc435d552e06aff27e3613240d1ec2253b6f13c7934bb207d0ff1"
+    }
+  },
+  "previous_publication_archive": "../Hand_teleoperation_other/archive_20261018/manus_thumb_v1_publication",
+  "presentation_only": false,
+  "regression_tests": {
+    "passed": 96,
+    "skipped": 1,
+    "skip_reason": "isolated GeoRT runtime check; unchanged upstream FK"
+  },
+  "upstream_clean_checkouts": 8,
+  "direction_tests": "4 passed; coordinate axes, unchanged vendor gains/offsets, unchanged other joints, legacy reproduction"
+}

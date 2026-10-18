@@ -23,7 +23,7 @@ PERSONAL = (
 )
 METHODS = ["manus", "anydex", "wuji", "geort"]
 LABELS = {
-    "manus": "MANUS-style / Quest proxy",
+    "manus": "MANUS-style / thumb axes v2",
     "anydex": "AnyDex / robot profile",
     "wuji": "Wuji / robot profile",
     "geort": "GeoRT / personal 002, full range",
@@ -183,6 +183,7 @@ def worker(args):
         "timing_note": "Concurrent replay workers: diagnostic timing, not isolated speed ranking",
         "metric_note": "Normalized geometric target discrepancy, not independent pose ground truth",
         "contact_enabled": False,
+        "input_adapter": provenance,
     }
     save(args.output / f"{method}_summary.json", summary)
     print(f"DONE {method}", flush=True)

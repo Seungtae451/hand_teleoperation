@@ -2,5 +2,6 @@
   "method": "manus_style_quest_geometry",
   "handedness": "right",
   "maximum_command_speed_rad_s": 3.141592653589793,
-  "input_note": "Untuned geometric degree proxy, not actual MANUS ergonomics. Upstream gains and offsets are preserved."
+  "input_note": "Quest geometry proxy; thumb spread=palmar elevation, stretch=YZ angle from distal +Z; not actual MANUS ergonomics. Upstream gains and offsets preserved.",
+  "thumb_input_convention": "thumb_axes_v2"
 }

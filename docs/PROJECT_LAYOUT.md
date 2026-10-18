@@ -16,7 +16,8 @@
 | `recordings/geort_train_session_001.jsonl` | 고정 보정 프로파일의 원본 입력 |
 | `data/geort/quest_train_session_002/` | 학습에 사용한 canonical export와 provenance manifest |
 | `results/geort_dg5f_workspace/` | 실제 로봇 asset·학습 run manifest·로봇 표본·FK·선택한 최종 checkpoint |
-| `results/video_benchmark_002/replay_full/` | 원본 실제 상태·목표·명령·동일 입력 digest; 카메라 재렌더 가능 |
+| `results/video_benchmark_002/replay_full/` | 이전 MANUS v1 원본 상태·목표·명령·동일 입력 digest |
+| `results/video_benchmark_002/manus_thumb_v2/` | 현재 엄지 입력 수정 재생·손바닥 렌더·출판·대조 결과 |
 | `results/video_benchmark_002/alignment.json` | 현재 실제 손 영상의 SRC anchor |
 | `results/phase3_tls/` | 현재 연결 인증서와 개인 키, Git 제외 |
 | `.venv/`, `.venv-geort/` | 실행 환경. 절대경로가 포함되므로 옮기지 않음 |

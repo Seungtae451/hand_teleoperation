@@ -1,5 +1,5 @@
 {
-  "take": "recordings/video_benchmark_002",
+  "take": "/home/cocelo-server01/stkim_ws/Hand_teleoperation/recordings/video_benchmark_002",
   "seconds": 108,
   "methods": [
     "manus",
@@ -7,15 +7,27 @@
     "wuji",
     "geort"
   ],
-  "profile": "configs/tesollo_calibrated/profile.json",
+  "profile": "/home/cocelo-server01/stkim_ws/Hand_teleoperation/configs/tesollo_calibrated/profile.json",
   "profile_sha256": "6ecd6f3edda0d9e0bb028636d26c58eac4eedc43e91bec02165233d3fe6936a9",
-  "checkpoint": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/last.pth",
+  "checkpoint": "/home/cocelo-server01/stkim_ws/Hand_teleoperation/results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/last.pth",
   "checkpoint_sha256": "7a0324c7d3ae7351d9852a83b9ea509b22c8f6d6549bdf8529781e859d63816e",
-  "config": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/config.json",
+  "config": "/home/cocelo-server01/stkim_ws/Hand_teleoperation/results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/config.json",
   "state": "completed",
   "video_fps": 25,
   "control_hz": 50,
   "same_input_digest_verified": true,
+  "revision": "manus_thumb_axes_v2",
+  "manus_input_adapter": "thumb_axes_v2",
+  "source_replay": "/home/cocelo-server01/stkim_ws/Hand_teleoperation/results/video_benchmark_002/manus_thumb_v2/replay",
+  "recomputed_methods": [
+    "manus"
+  ],
+  "reused_methods": [
+    "anydex",
+    "wuji",
+    "geort"
+  ],
+  "timing_note": "MANUS v2 rerun alone; others retain previous concurrent timings. Not a speed ranking.",
   "camera": {
     "azimuth": 215,
     "elevation": 20,
@@ -37,6 +49,5 @@
     "caption_policy": "96-pixel header outside the rendered viewport"
   },
   "render_state": "saved_actual_qpos",
-  "retargeting_rerun": false,
-  "source_replay": "results/video_benchmark_002/replay_full"
+  "retargeting_rerun": false
 }

@@ -6,697 +6,21 @@
     "quest_input.jsonl": "6f7a48b02135ba95e6c347f54cc83831fc4c2ee340f54f53d826decb19849fa7",
     "markers.jsonl": "e2dd2f0af89f2f749d3569c05f64ff05f129d24e7f45f04daed4d7001f321a89"
   },
-  "gif": "8-second preview only; full and gesture videos are separate",
   "audio": "omitted",
   "joint_state_video": "actual simulation state, not target FK",
+  "revision": "manus_thumb_axes_v2",
   "file_count_mp4": 25,
-  "files": {
-    "alignment.json": {
-      "bytes": 2429,
-      "sha256": "0886db55f865b1bdddd6c2c7b83ed7dd330c8a909bb748c248652123eafb2a06"
-    },
-    "camera_verification.json": {
-      "bytes": 1410,
-      "sha256": "1a254508c56a12c3f3943565850fa2f656c5b813b161f6677f3b26b438c3e9ae"
-    },
-    "clip_individual_fingers.mp4": {
-      "bytes": 4797038,
-      "sha256": "d2a78396a3b9bd25f50eae437c8951ea0b1c282d4a668a63c36e7d13eef1ad4e"
-    },
-    "clip_open_fist.mp4": {
-      "bytes": 3293284,
-      "sha256": "4be31670166ce33d88fbe3ca64618798f19fd8980e2dd310e43394cba506365c"
-    },
-    "clip_pinches.mp4": {
-      "bytes": 5620708,
-      "sha256": "c784c21cd23fba1e4240b3ef429c60d98d38aae35778d1c123c746f08935dc77"
-    },
-    "clip_wrist_occlusion.mp4": {
-      "bytes": 2369443,
-      "sha256": "5136a0bf5776c3bdce794a4183569e5476d6f51d611218e9e8cee79946a61cb2"
-    },
-    "clipping.png": {
-      "bytes": 66706,
-      "sha256": "f7b9ac50174342cb828017e6b0ac59e6a90a41b77ef02f5d09981bbbe5100448"
-    },
-    "comparison_all.mp4": {
-      "bytes": 25210909,
-      "sha256": "a499311dd7d6db54d625d2ea7e3e091ff74d591477afc3fbab1486f3d5a25d4b"
-    },
-    "comparison_anydex.mp4": {
-      "bytes": 19331473,
-      "sha256": "46debdb7f964887cd37bc4d97d3d37a86d6fa20bd904c1fcac213d6c080496fd"
-    },
-    "comparison_geort.mp4": {
-      "bytes": 20164600,
-      "sha256": "09ab55485b3251937ead0ce1412748adce4aec0c88871a8c063087086bc2d7ad"
-    },
-    "comparison_manus.mp4": {
-      "bytes": 19301255,
-      "sha256": "ef07ef5fbf89700e64cfa2b1d0c5f84ed87b78a8d3a2ed3f4b459442665bc008"
-    },
-    "comparison_preview.png": {
-      "bytes": 1419188,
-      "sha256": "540eb6f9f938aacb55885c56f49e73e426bd2d01dd303d87fe200950524ffcd3"
-    },
-    "comparison_wuji.mp4": {
-      "bytes": 19022951,
-      "sha256": "4bb7d420c445408bcd4f4c55026dcd8d24f038f3913399b08272e02d4a48afb4"
-    },
-    "geort_range_history.png": {
-      "bytes": 63482,
-      "sha256": "53d1cc9388a43d5cbc26d439b9b07d0358d6b7b5f6f0a9c6af62102f3cccc12e"
-    },
-    "geort_range_history_data.json": {
-      "bytes": 642,
-      "sha256": "243ab5960d22f6d2976b8f7ad02accfdf6ddc81bb70e534e0d98abd97d03304d"
-    },
-    "gestures/clips.json": {
-      "bytes": 3590,
-      "sha256": "1691961880160120ec8ffceaec9162b877c594c488217b5d4495a8c3b0f34307"
-    },
-    "gestures/fist_hold.gif": {
-      "bytes": 3972562,
-      "sha256": "253299108b7b4b9503e524c1609d4735b2300265b575b75ed895252a15d49c6c"
-    },
-    "gestures/fist_hold.mp4": {
-      "bytes": 1274393,
-      "sha256": "c8c3b0ed8d6d12879152a5bac3cf37eaf910ff62221bb7ecf7693e5c69fcfba1"
-    },
-    "gestures/fist_slow.gif": {
-      "bytes": 3891446,
-      "sha256": "dcbe38fdf4b2de0233ea1fddd8175c3ebb00fc260cd9d89926b4b151ef9f60dd"
-    },
-    "gestures/fist_slow.mp4": {
-      "bytes": 1119459,
-      "sha256": "a15d0adee431da0a042883b87ebe2ebaec6d483fe0c39b9a12ae9dd1541008b0"
-    },
-    "gestures/free.gif": {
-      "bytes": 4113377,
-      "sha256": "63906886b9fbe16f3a86281e1a5381f0935a5501c0d86f1477ee47fdf4870bb6"
-    },
-    "gestures/free.mp4": {
-      "bytes": 1093554,
-      "sha256": "a65f530d9b78207d5cf2774fb489a06d598674f291d420973bd2760c8cd8ed2b"
-    },
-    "gestures/index.gif": {
-      "bytes": 4053913,
-      "sha256": "07370490fd6331349f81fc4a5406260b921b1165c5f29b09b861eff58d1ced44"
-    },
-    "gestures/index.mp4": {
-      "bytes": 1285461,
-      "sha256": "fc4d9302e092002b83be71aeb37497cd11245f015648804af4eb2ea727836d09"
-    },
-    "gestures/middle.gif": {
-      "bytes": 4232427,
-      "sha256": "9873893f2ea3aa6b156a654c68ff5acc5ee2353f33ea48773f6076419b506a5c"
-    },
-    "gestures/middle.mp4": {
-      "bytes": 1206135,
-      "sha256": "b64110d460af73b17deeda002ac786a78dc7c329a354d9a2128190c5bdf6ee6f"
-    },
-    "gestures/occlusion.gif": {
-      "bytes": 4252855,
-      "sha256": "264faca96681377ff2def5ac7ac2167e5f09b4b5302b170c50f741852ebb26fa"
-    },
-    "gestures/occlusion.mp4": {
-      "bytes": 1171370,
-      "sha256": "2788596197e90dce205ca8133fc4f9f1a1fecc849fe51f2779712ce3933515c2"
-    },
-    "gestures/open.gif": {
-      "bytes": 4241215,
-      "sha256": "d8544269ca2e959f5ac274ca73b616f698ddfe39fb7189cea780c1cf0a592dba"
-    },
-    "gestures/open.mp4": {
-      "bytes": 970460,
-      "sha256": "ba723431939493929e2449213f859d418f94073eec95b6bdf120a65f04134156"
-    },
-    "gestures/pinch_index.gif": {
-      "bytes": 4154737,
-      "sha256": "cf252e9dd5b7c8b893eb2fae94cd53289b819286345f5f27826eb5fb6f12959f"
-    },
-    "gestures/pinch_index.mp4": {
-      "bytes": 1245492,
-      "sha256": "c437f440572fb939d60c4b38f02cb2bc740fbe8f9248f25f672a58ea2461151a"
-    },
-    "gestures/pinch_middle.gif": {
-      "bytes": 4217129,
-      "sha256": "0a349f349ede5d57f1f4079db2cc55a3cc803f567302af10fa053aa5cd4ded6c"
-    },
-    "gestures/pinch_middle.mp4": {
-      "bytes": 1450156,
-      "sha256": "592c698d26ea5ea54ffc9a4d38bab85e00312b9adf321071f91f7c08fc6417c3"
-    },
-    "gestures/pinch_pinky.gif": {
-      "bytes": 4383582,
-      "sha256": "0ea6af9b204188839dc4fef45d9bbbe75a5921cd92b9055480d26451c2a3d3f5"
-    },
-    "gestures/pinch_pinky.mp4": {
-      "bytes": 1501069,
-      "sha256": "c237bb7b1e4f4253dc0a1c79fc7f9642c22a00b27e7eaee3c7194d1a19de868d"
-    },
-    "gestures/pinch_ring.gif": {
-      "bytes": 4401662,
-      "sha256": "a78f8b33d08f3f529fa2b7d0e59c9e765f0d85f89fe33caacebf37547a808b7b"
-    },
-    "gestures/pinch_ring.mp4": {
-      "bytes": 1453142,
-      "sha256": "63bc43e47b597a3152a147c2f64f6fee4b290cb31714737895be1d24c87ab721"
-    },
-    "gestures/pinky.gif": {
-      "bytes": 4175473,
-      "sha256": "a6928248dd4cad24464394b8551842e5e780f7130395f9888366aac73135968e"
-    },
-    "gestures/pinky.mp4": {
-      "bytes": 1168796,
-      "sha256": "955d46ab10e44b5e4f82bed39beda5a0bcda8016f7d4df2920351dec655cda98"
-    },
-    "gestures/ring.gif": {
-      "bytes": 4184646,
-      "sha256": "41d6a5b0a7c533982fe03b7cb9565b34e438f0d0601474936cf340d729acedc1"
-    },
-    "gestures/ring.mp4": {
-      "bytes": 1157093,
-      "sha256": "2e7515fa2fb1860aa74d0dee4ac6dae7e7ac5f5d56b04a4a9b28d09f41aad54b"
-    },
-    "gestures/spread.gif": {
-      "bytes": 4281370,
-      "sha256": "f76f180b66c83c34434a5a5d9ed40f4a33eccf83610e9cf31669c6ebaf3cd330"
-    },
-    "gestures/spread.mp4": {
-      "bytes": 1368274,
-      "sha256": "073f10f9d3c976f66659fc72b2e79a240d1b67323e35c3f6cb2bc33d6b77d1a5"
-    },
-    "gestures/thumb.gif": {
-      "bytes": 4088542,
-      "sha256": "c45565e77e8e2ae43efb352ebb719978dba41e2141aee78a4bba6162a12e4989"
-    },
-    "gestures/thumb.mp4": {
-      "bytes": 1128494,
-      "sha256": "c4907a7f2f5d6db8000fad13733670f7fb748b129596ba41f4fed0c7dc2c98af"
-    },
-    "gestures/wrist.gif": {
-      "bytes": 4233006,
-      "sha256": "d770cd311a7153f620ef1483d3dbdf7dad23258877867318e0a4af26e22449fb"
-    },
-    "gestures/wrist.mp4": {
-      "bytes": 1139224,
-      "sha256": "48c6e27d71e168d43a75c857b6025808c0b45c97e66820a859770393741ded02"
-    },
-    "input_audit.json": {
-      "bytes": 1048,
-      "sha256": "3162d77dbc11ca20a3e519b05823812d5dfb55e4bc73c55980cfeabe2e18e219"
-    },
-    "layout.json": {
-      "bytes": 655,
-      "sha256": "a8ce40cabd27d481d23c7fe3a44cef8f880f5d4a83dbd9f1072f5adb3f9203fe"
-    },
-    "metrics.csv": {
-      "bytes": 567,
-      "sha256": "8cdce78ffd9a4c7dea1e0146c05770adc3744b61f84763f69509b953eddc47d9"
-    },
-    "pinch_distances.png": {
-      "bytes": 732948,
-      "sha256": "345479bda84c668d4a990a9381a08f8a34b922af827562ac463d6a77f9c909af"
-    },
-    "pip_response.png": {
-      "bytes": 552915,
-      "sha256": "8ae72349d1f9155f6e277ca3c1889aca6032e9329b16c59641851b7d22eb34fc"
-    },
-    "preview.gif": {
-      "bytes": 5627719,
-      "sha256": "a034ee165dd69dd4ff1fe1e99027c5f46ba7488190db7813d89ab050b379aff2"
-    },
-    "run.json": {
-      "bytes": 1218,
-      "sha256": "68a18eec52e20969273608becd74a7fdc491dfdbb493c66dd5431b9e192f9b56"
-    },
-    "summaries.json": {
-      "bytes": 4618,
-      "sha256": "68edc91b366b2c575ddd225afb7fd9b0f5249157e99786938bf2f7cc5171ac32"
-    },
-    "summary.png": {
-      "bytes": 96564,
-      "sha256": "be4b6028bca0ca3244014335a61c8207726f502d9a271e0f006afea89b645e64"
-    },
-    "synchronization.json": {
-      "bytes": 431,
-      "sha256": "920f0d42bcb6a72367d7ebcea747eaee06238cef835c936f7b554405eb706527"
-    },
-    "timeline.png": {
-      "bytes": 382836,
-      "sha256": "e61dc59aaa904169076a7c58b431b62b778a0caf31533e33a8f4ab8de92727bd"
-    },
-    "ik_ambiguity.json": {
-      "bytes": 763,
-      "sha256": "eca9b31269ed69a52e68b1a844c90e3aa53f67ba061d93c68148f419903cb6e5"
-    }
-  },
-  "visual_inspection": {
-    "real_hand_and_source_clock_visible": true,
-    "examples_video_pts_s": [
-      20.01108,
-      60.01102,
-      110.011
-    ],
-    "independent_hardware_measurement": false
-  },
-  "validation": {
-    "videos": [
-      {
-        "file": "clip_individual_fingers.mp4",
-        "duration_s": 24.0,
-        "frames": 600,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "clip_open_fist.mp4",
-        "duration_s": 18.0,
-        "frames": 450,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "clip_pinches.mp4",
-        "duration_s": 24.0,
-        "frames": 600,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "clip_wrist_occlusion.mp4",
-        "duration_s": 12.0,
-        "frames": 300,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "comparison_all.mp4",
-        "duration_s": 108.0,
-        "frames": 2700,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "comparison_anydex.mp4",
-        "duration_s": 108.0,
-        "frames": 2700,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "comparison_geort.mp4",
-        "duration_s": 108.0,
-        "frames": 2700,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "comparison_manus.mp4",
-        "duration_s": 108.0,
-        "frames": 2700,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "comparison_wuji.mp4",
-        "duration_s": 108.0,
-        "frames": 2700,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "gestures/fist_hold.mp4",
-        "duration_s": 6.0,
-        "frames": 150,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "gestures/fist_slow.mp4",
-        "duration_s": 6.0,
-        "frames": 150,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "gestures/free.mp4",
-        "duration_s": 6.0,
-        "frames": 150,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "gestures/index.mp4",
-        "duration_s": 6.0,
-        "frames": 150,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "gestures/middle.mp4",
-        "duration_s": 6.0,
-        "frames": 150,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "gestures/occlusion.mp4",
-        "duration_s": 6.0,
-        "frames": 150,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "gestures/open.mp4",
-        "duration_s": 6.0,
-        "frames": 150,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "gestures/pinch_index.mp4",
-        "duration_s": 6.0,
-        "frames": 150,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "gestures/pinch_middle.mp4",
-        "duration_s": 6.0,
-        "frames": 150,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "gestures/pinch_pinky.mp4",
-        "duration_s": 6.0,
-        "frames": 150,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "gestures/pinch_ring.mp4",
-        "duration_s": 6.0,
-        "frames": 150,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "gestures/pinky.mp4",
-        "duration_s": 6.0,
-        "frames": 150,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "gestures/ring.mp4",
-        "duration_s": 6.0,
-        "frames": 150,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "gestures/spread.mp4",
-        "duration_s": 6.0,
-        "frames": 150,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "gestures/thumb.mp4",
-        "duration_s": 6.0,
-        "frames": 150,
-        "size": [
-          2560,
-          1440
-        ]
-      },
-      {
-        "file": "gestures/wrist.mp4",
-        "duration_s": 6.0,
-        "frames": 150,
-        "size": [
-          2560,
-          1440
-        ]
-      }
-    ],
-    "gesture_gifs": [
-      {
-        "file": "gestures/fist_hold.gif",
-        "duration_ms": 6010,
-        "size": [
-          1024,
-          576
-        ]
-      },
-      {
-        "file": "gestures/fist_slow.gif",
-        "duration_ms": 6010,
-        "size": [
-          1024,
-          576
-        ]
-      },
-      {
-        "file": "gestures/free.gif",
-        "duration_ms": 6010,
-        "size": [
-          1024,
-          576
-        ]
-      },
-      {
-        "file": "gestures/index.gif",
-        "duration_ms": 6010,
-        "size": [
-          1024,
-          576
-        ]
-      },
-      {
-        "file": "gestures/middle.gif",
-        "duration_ms": 6010,
-        "size": [
-          1024,
-          576
-        ]
-      },
-      {
-        "file": "gestures/occlusion.gif",
-        "duration_ms": 6010,
-        "size": [
-          1024,
-          576
-        ]
-      },
-      {
-        "file": "gestures/open.gif",
-        "duration_ms": 6010,
-        "size": [
-          1024,
-          576
-        ]
-      },
-      {
-        "file": "gestures/pinch_index.gif",
-        "duration_ms": 6010,
-        "size": [
-          1024,
-          576
-        ]
-      },
-      {
-        "file": "gestures/pinch_middle.gif",
-        "duration_ms": 6010,
-        "size": [
-          1024,
-          576
-        ]
-      },
-      {
-        "file": "gestures/pinch_pinky.gif",
-        "duration_ms": 6010,
-        "size": [
-          1024,
-          576
-        ]
-      },
-      {
-        "file": "gestures/pinch_ring.gif",
-        "duration_ms": 6010,
-        "size": [
-          1024,
-          576
-        ]
-      },
-      {
-        "file": "gestures/pinky.gif",
-        "duration_ms": 6010,
-        "size": [
-          1024,
-          576
-        ]
-      },
-      {
-        "file": "gestures/ring.gif",
-        "duration_ms": 6010,
-        "size": [
-          1024,
-          576
-        ]
-      },
-      {
-        "file": "gestures/spread.gif",
-        "duration_ms": 6010,
-        "size": [
-          1024,
-          576
-        ]
-      },
-      {
-        "file": "gestures/thumb.gif",
-        "duration_ms": 6010,
-        "size": [
-          1024,
-          576
-        ]
-      },
-      {
-        "file": "gestures/wrist.gif",
-        "duration_ms": 6010,
-        "size": [
-          1024,
-          576
-        ]
-      }
-    ],
-    "missing_readme_links": [],
-    "actual_states_and_metrics_byte_identical": true,
-    "layout": {
-      "output_size": [
-        2560,
-        1440
-      ],
-      "human_column_width": 640,
-      "robot_panel_size": [
-        960,
-        720
-      ],
-      "individual_robot_panel_size": [
-        1920,
-        1440
-      ],
-      "human_detail": "center square crop alongside the preserved full view",
-      "camera": {
-        "azimuth": 215,
-        "elevation": 20,
-        "distance": 0.44,
-        "lookat": [
-          0.025,
-          0,
-          0.145
-        ],
-        "view": "palm / opposite original viewing direction",
-        "render_size": [
-          960,
-          624
-        ],
-        "video_frame_size": [
-          960,
-          720
-        ],
-        "caption_policy": "96-pixel header outside the rendered viewport"
-      },
-      "state_data_changed": false
-    }
-  },
-  "upstream_integrity": {
-    "repositories": {
-      "hand-tracking-streamer": {
-        "revision": "5ff7c1cfea0ead1bb8a0e233bc7770d94d31feb5",
-        "clean": true
-      },
-      "hand-tracking-sdk": {
-        "revision": "6ca05d1d5b00dfd89535aef74f698d6765bf1229",
-        "clean": true
-      },
-      "dg5f_ros2": {
-        "revision": "0cb45ae9474caa92410dfa820346da8ffbae8405",
-        "clean": true
-      },
-      "tesollo_model": {
-        "revision": "f648627be40f8df2e3df906ccf3c5d62103f3275",
-        "clean": true
-      },
-      "tesollo_ros2": {
-        "revision": "1307f7d537b41321d3ad67acc75a91249bb47369",
-        "clean": true
-      },
-      "AnyDexRetarget": {
-        "revision": "ee68a0234ccdf8a23b98527fd1ee2c6258278cd1",
-        "clean": true
-      },
-      "wuji-retargeting": {
-        "revision": "531f6ed4250b475d2e9231f54e988fc9b1c5b4ea",
-        "clean": true
-      },
-      "GeoRT": {
-        "revision": "fb2075e2a3272be372016580c0b6ebd6120228f0",
-        "clean": true
-      }
-    },
-    "original_files_checked": 0,
-    "problems": []
-  },
+  "file_count_gif": 17,
+  "presentation_only": false,
+  "camera_change_only": false,
+  "changed_methods": [
+    "manus"
+  ],
+  "changed_stage": "Quest-to-MANUS thumb input axes only; original vendor gains/offsets retained",
+  "upstream_modified": false,
+  "common_control_unchanged": true,
+  "other_methods_states_and_metrics_byte_identical": true,
+  "camera_states_and_metrics_identical_to": "results/video_benchmark_002/manus_thumb_v2/replay",
   "camera": {
     "azimuth": 215,
     "elevation": 20,
@@ -717,12 +41,6 @@
     ],
     "caption_policy": "96-pixel header outside the rendered viewport"
   },
-  "camera_change_only": false,
-  "actual_states_and_metrics_byte_identical": true,
-  "previous_dorsal_videos_preserved": "results/video_benchmark_002/published",
-  "file_count_gif": 17,
-  "gesture_segmentation": "16 prompted action segments, nominal 6 s each; no relabeling of observed success",
-  "presentation_only": true,
   "layout": {
     "output_size": [
       2560,
@@ -738,27 +56,285 @@
       1440
     ],
     "human_detail": "center square crop alongside the preserved full view",
-    "camera": {
-      "azimuth": 215,
-      "elevation": 20,
-      "distance": 0.44,
-      "lookat": [
-        0.025,
-        0,
-        0.145
-      ],
-      "view": "palm / opposite original viewing direction",
-      "render_size": [
-        960,
-        624
-      ],
-      "video_frame_size": [
-        960,
-        720
-      ],
-      "caption_policy": "96-pixel header outside the rendered viewport"
-    },
-    "state_data_changed": false
+    "camera": null,
+    "state_data_changed": true,
+    "revision": "manus_thumb_axes_v2"
   },
-  "previous_palm_layout_preserved": "results/video_benchmark_002/published_palm"
+  "previous_baseline_preserved": "../Hand_teleoperation_other/archive_20261018/manus_thumb_v1_publication",
+  "previous_state_replay": "results/video_benchmark_002/replay_full",
+  "current_state_replay": "results/video_benchmark_002/manus_thumb_v2/replay",
+  "timing_note": "MANUS v2 rerun alone; others retain previous concurrent timings. Not a speed ranking.",
+  "gesture_segmentation": "16 prompted action segments, nominal 6 s each; no verified success relabeling",
+  "gif": "8-second overview, sixteen independent 6-second gesture previews",
+  "audits": {
+    "legacy_v1": "manus_thumb_check.json",
+    "current_v2": "manus_thumb_check_v2.json"
+  },
+  "source_files_sha256": {
+    "configs/manus_quest.json": "a0fc44eb1a80af5ab7d6e31729ee90e180d79d9c30eddf84bc1a40b891bf24d8",
+    "benchmark/retargeting/manus.py": "93254e4075062dc47b8f58546f5b06d1980b512d35056a8ea1fb54376c4982ee",
+    "benchmark/retargeting/quest_ergonomics.py": "0e1a8d243e054f7ad4957b9ce653171b4534884759189b2539142bd9d3ec9057"
+  },
+  "files": {
+    "alignment.json": {
+      "bytes": 2429,
+      "sha256": "0886db55f865b1bdddd6c2c7b83ed7dd330c8a909bb748c248652123eafb2a06"
+    },
+    "camera_verification.json": {
+      "bytes": 1487,
+      "sha256": "ae2cdb447c5c5edcbe90645c2dbe17f967b1c9768bf596c9840eaa135c7c6622"
+    },
+    "clip_individual_fingers.mp4": {
+      "bytes": 4811185,
+      "sha256": "d9c114d56206706126e4972dece67c52af5dcd0897c3cb60e97104f3fc83792f"
+    },
+    "clip_open_fist.mp4": {
+      "bytes": 3303396,
+      "sha256": "ae499bec44d1cf2506fa63372a838d7508d5ab33aff1de76f373666675901e61"
+    },
+    "clip_pinches.mp4": {
+      "bytes": 5651638,
+      "sha256": "12d70e6eb331414d4493e244c1d4891ee006721b5c7de01d5a1e1abbfef15434"
+    },
+    "clip_wrist_occlusion.mp4": {
+      "bytes": 2393356,
+      "sha256": "876a3c2335ed3c1789930e4f0b654e17da0ab95edc9f8fac6e382819561b8ed8"
+    },
+    "clipping.png": {
+      "bytes": 66692,
+      "sha256": "0bf597085266d0bc4ca8a308d3f7379da3be52d4b6e8efc4e521d9af3edbdc13"
+    },
+    "comparison_all.mp4": {
+      "bytes": 25352210,
+      "sha256": "9a7deb58da94ef1d3ad052fff6615f1847a1497ce373a4366706494c2d59ccf3"
+    },
+    "comparison_anydex.mp4": {
+      "bytes": 19331473,
+      "sha256": "46debdb7f964887cd37bc4d97d3d37a86d6fa20bd904c1fcac213d6c080496fd"
+    },
+    "comparison_geort.mp4": {
+      "bytes": 20164600,
+      "sha256": "09ab55485b3251937ead0ce1412748adce4aec0c88871a8c063087086bc2d7ad"
+    },
+    "comparison_manus.mp4": {
+      "bytes": 19478519,
+      "sha256": "2db206cf6bcf3336c2edb6011b8409833f3b7ce0225476e44bd427617a13c1e2"
+    },
+    "comparison_preview.png": {
+      "bytes": 1417219,
+      "sha256": "34550e67f4efb13970f9bafe7ec970f4c7a768d4e4d0f4966c69affb09e12e40"
+    },
+    "comparison_wuji.mp4": {
+      "bytes": 19022951,
+      "sha256": "4bb7d420c445408bcd4f4c55026dcd8d24f038f3913399b08272e02d4a48afb4"
+    },
+    "geort_range_history.png": {
+      "bytes": 63482,
+      "sha256": "53d1cc9388a43d5cbc26d439b9b07d0358d6b7b5f6f0a9c6af62102f3cccc12e"
+    },
+    "geort_range_history_data.json": {
+      "bytes": 642,
+      "sha256": "243ab5960d22f6d2976b8f7ad02accfdf6ddc81bb70e534e0d98abd97d03304d"
+    },
+    "gestures/clips.json": {
+      "bytes": 3590,
+      "sha256": "1691961880160120ec8ffceaec9162b877c594c488217b5d4495a8c3b0f34307"
+    },
+    "gestures/fist_hold.gif": {
+      "bytes": 3974704,
+      "sha256": "87d6d84accc74436237fe961535c17c7e256e0839a19a0cd8ed9e1217a574425"
+    },
+    "gestures/fist_hold.mp4": {
+      "bytes": 1277307,
+      "sha256": "b0ed5f44f58c63f5db2f7c516e91465f51acae3f337fa236deb91d34e0b0cb36"
+    },
+    "gestures/fist_slow.gif": {
+      "bytes": 3919790,
+      "sha256": "d5dba6f74e07226f1b071c3933ee1d29a678cc330c5c4a7f7a11486acd415226"
+    },
+    "gestures/fist_slow.mp4": {
+      "bytes": 1128954,
+      "sha256": "14771061e86a01793dc4c3234926e1f7d8665db45e1975dcc0211677922ebb3f"
+    },
+    "gestures/free.gif": {
+      "bytes": 4171939,
+      "sha256": "8bb2c152494aa51b7f63accbd28e676d945cf1f4932e3ede6593874a3e8d1acc"
+    },
+    "gestures/free.mp4": {
+      "bytes": 1098964,
+      "sha256": "61a139dc358d21dd61e58241723a109f31f1e8b019dd9d31946cacb203b1a7f0"
+    },
+    "gestures/index.gif": {
+      "bytes": 4048862,
+      "sha256": "1fecfb10c5fe91341e22d262848d87c18efed2a4fe81abddab054b3643893dd1"
+    },
+    "gestures/index.mp4": {
+      "bytes": 1288017,
+      "sha256": "9046c4f961b412326b8cc7ff13ee09cab4b7a81d77ba56ac64c0dc2747013195"
+    },
+    "gestures/middle.gif": {
+      "bytes": 4202090,
+      "sha256": "cd9abb73b254e07ad69e8baac1e2d8ece585b275886eb854fd29e23bb56b8a99"
+    },
+    "gestures/middle.mp4": {
+      "bytes": 1201753,
+      "sha256": "7bc1e3a487c3e0d61b93b1044a94a545a7e9d2e871d18f6b650539e097d68aa0"
+    },
+    "gestures/occlusion.gif": {
+      "bytes": 4266416,
+      "sha256": "412502d53df6d04d6ecbe94aae2fdf672867122e6304d956ac30f3f9ccce0036"
+    },
+    "gestures/occlusion.mp4": {
+      "bytes": 1182244,
+      "sha256": "e0db13d0b30c883c85a31fab8623119608ae8974a8c965b80357fb14ded1b69d"
+    },
+    "gestures/open.gif": {
+      "bytes": 4260004,
+      "sha256": "b229ec6727e07068d6f1bb0ff3e22aae6e2a57f2073f16ca0c0932b69a477104"
+    },
+    "gestures/open.mp4": {
+      "bytes": 970395,
+      "sha256": "f5210f15f6cd7b707bfa83fa1f9493d092623fbac2fed1a4f37425b929649c28"
+    },
+    "gestures/pinch_index.gif": {
+      "bytes": 4128161,
+      "sha256": "df9b33b4f3a2d592bb88ee6479c02f7c9a3c2ca57624d1939fa0341976de3b96"
+    },
+    "gestures/pinch_index.mp4": {
+      "bytes": 1243493,
+      "sha256": "a8d370bc06dc5732164fc6d4bfcb95a6759a3455a7409e8ecceaf471301429cd"
+    },
+    "gestures/pinch_middle.gif": {
+      "bytes": 4248141,
+      "sha256": "55f6e564c41be1ff7b4850c4df923779af2a3b39ac09490d2ccfd7ad15d1d9e9"
+    },
+    "gestures/pinch_middle.mp4": {
+      "bytes": 1455723,
+      "sha256": "01d7fed23b1a788b65580584de48d3119602fd14650931e92515fcc66f161494"
+    },
+    "gestures/pinch_pinky.gif": {
+      "bytes": 4380494,
+      "sha256": "8aa7cc16256d1d064cd16221ad54c5c9922cc65b4e16a124f2db252fddf62fa8"
+    },
+    "gestures/pinch_pinky.mp4": {
+      "bytes": 1509316,
+      "sha256": "13c8f6b0af99ead0f066ccf5c7818d8b2bd6eb928e4e30b2c970e65ed2e105ac"
+    },
+    "gestures/pinch_ring.gif": {
+      "bytes": 4383429,
+      "sha256": "70ec9e50150a59d0ffa8c61467ca302dbada769e25026e51ccb4edc625ac36d4"
+    },
+    "gestures/pinch_ring.mp4": {
+      "bytes": 1458615,
+      "sha256": "3aa5b7e99201cfe5d03307c2792718f83312d680739ca499b085eba5df6bc9ce"
+    },
+    "gestures/pinky.gif": {
+      "bytes": 4213186,
+      "sha256": "ce378b05b57346a346f159e536e718cdf8b4255e0c98fe3832c9576ef46490ce"
+    },
+    "gestures/pinky.mp4": {
+      "bytes": 1174723,
+      "sha256": "37d1b167ce4799bd8b607a57f05382a075b9d6c47bdeef4a1e9d8485fdcdd1bd"
+    },
+    "gestures/ring.gif": {
+      "bytes": 4259053,
+      "sha256": "b87b0591ce820860f42b7dfae28ce1cbae4387671b0f03ae7dfcdf5b709b3a36"
+    },
+    "gestures/ring.mp4": {
+      "bytes": 1167054,
+      "sha256": "3dbb00af959c48588a4c68e23f67a771a048eca7cb22626fe76d51a5f6eec60f"
+    },
+    "gestures/spread.gif": {
+      "bytes": 4314601,
+      "sha256": "ad0d13a43592f681bd0fdff5dfaf0f3a918b0c07ae286f85d842a622424e96e7"
+    },
+    "gestures/spread.mp4": {
+      "bytes": 1365843,
+      "sha256": "fed70a909e17c35c8c7286263ec10f6bf18df8686661d2a5b42655576adfc9aa"
+    },
+    "gestures/thumb.gif": {
+      "bytes": 4090120,
+      "sha256": "3e4c38e63af7b8e2bf6f9fd8edb5581a7d73c004c05f937aed65f53df4e2c7b0"
+    },
+    "gestures/thumb.mp4": {
+      "bytes": 1149174,
+      "sha256": "716aa16627df3438f1ab3cba1935800a2f60cebc4eaf6006b2d48a913ea3e088"
+    },
+    "gestures/wrist.gif": {
+      "bytes": 4270526,
+      "sha256": "f765de60fa3b5e6ba5b16cd763d7b5e7fc964ed23e1e3baf1347281c8a1a56b3"
+    },
+    "gestures/wrist.mp4": {
+      "bytes": 1151269,
+      "sha256": "4dc189dc702ae3ea80105d168103f709cc430bb19f3e00d819b695e825ebda08"
+    },
+    "ik_ambiguity.json": {
+      "bytes": 763,
+      "sha256": "eca9b31269ed69a52e68b1a844c90e3aa53f67ba061d93c68148f419903cb6e5"
+    },
+    "input_audit.json": {
+      "bytes": 1048,
+      "sha256": "3162d77dbc11ca20a3e519b05823812d5dfb55e4bc73c55980cfeabe2e18e219"
+    },
+    "layout.json": {
+      "bytes": 339,
+      "sha256": "cbb41f20dec905418445ae709ab76a9311b4c0a111995417020bcdd0d34d9a13"
+    },
+    "manus_thumb_check.json": {
+      "bytes": 6736,
+      "sha256": "3c1276970877a029150e2bcb3f257c3dd6f99cb72dad5bb8c6152abf5dae8bb9"
+    },
+    "manus_thumb_check_v2.json": {
+      "bytes": 8313,
+      "sha256": "cf7adc1eb6eee9e8ae8ac66ccae591c340b23fb82453bc9be83e5120afcd91d5"
+    },
+    "manus_thumb_revision.npz": {
+      "bytes": 224420,
+      "sha256": "2bcb1325d3a72dc8d4d5b6df786281a6d8578f8418465ecbfe30f9d41ab32c67"
+    },
+    "media_validation.json": {
+      "bytes": 4146,
+      "sha256": "d85a7e1fbce44fb7fda0ce2e2964dcb2d30c862709312b1d3a447d97f488a26e"
+    },
+    "metrics.csv": {
+      "bytes": 563,
+      "sha256": "de13025bee873c3d0c354835891f11311f2bcdef25994bd717bda1189696fc87"
+    },
+    "pinch_distances.png": {
+      "bytes": 733199,
+      "sha256": "bc5b7c283b029007621ea9ef88396dc40e94e9e8ecb3e7bbf697e46f4660afb8"
+    },
+    "pip_response.png": {
+      "bytes": 552915,
+      "sha256": "8ae72349d1f9155f6e277ca3c1889aca6032e9329b16c59641851b7d22eb34fc"
+    },
+    "preview.gif": {
+      "bytes": 5631920,
+      "sha256": "4473c30a64ad63bd641fc1a47324bc3c30c8b14a534facda7cbb1ae4e129347d"
+    },
+    "revision_verification.json": {
+      "bytes": 1288,
+      "sha256": "0560170fbf4610a59b9faf97ab4cbd29c2234cd1a13e02c6fd46833be005b0fe"
+    },
+    "run.json": {
+      "bytes": 1771,
+      "sha256": "c612ebee97875b21a0fd0a186a35466e6193ca1ab80819d087c8f41fdb16b7b4"
+    },
+    "summaries.json": {
+      "bytes": 5477,
+      "sha256": "f35373cf8099f38f2fb09697041cd9051d766be56473d4f6c26afb06a98628f2"
+    },
+    "summary.png": {
+      "bytes": 100791,
+      "sha256": "61fbcb4cac6e768d7ee3592e122caa7ea09e959162729092604d87dbcb929f22"
+    },
+    "synchronization.json": {
+      "bytes": 431,
+      "sha256": "920f0d42bcb6a72367d7ebcea747eaee06238cef835c936f7b554405eb706527"
+    },
+    "timeline.png": {
+      "bytes": 376626,
+      "sha256": "83e71913c34dd34a002f96293fa8eb29bf7b3c43cb427267040dd8db22e7e95e"
+    }
+  }
 }

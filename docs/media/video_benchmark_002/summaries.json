@@ -1,18 +1,18 @@
 {
   "manus": {
     "method": "manus",
-    "label": "MANUS-style / Quest proxy",
+    "label": "MANUS-style / thumb axes v2",
     "ticks": 5400,
     "tracking_ticks": 5398,
     "input_stream_sha256": "f2d7393ee7e6be99cd43520ce1fcbcd690d01088ddc615b36ad9910b31fec441",
     "video_seconds": 108.0,
     "video_frames": 2700,
-    "shape_error_mean": 0.4283411206280786,
-    "inference_median_ms": 0.18508800712879747,
-    "inference_p95_ms": 0.24236190511146563,
+    "shape_error_mean": 0.3494198071641117,
+    "inference_median_ms": 0.1722330052871257,
+    "inference_p95_ms": 0.22911260457476604,
     "clip_fraction": [
       0.0,
-      0.11830403309203723,
+      0.0,
       0.0,
       0.0,
       0.0,
@@ -32,13 +32,25 @@
       0.002895553257497415,
       0.07776628748707343
     ],
-    "command_actual_rmse_rad": 0.003890208909664395,
-    "target_command_rmse_rad": 0.04106523545773202,
+    "command_actual_rmse_rad": 0.0038780072179530663,
+    "target_command_rmse_rad": 0.034503738274399856,
     "checkpoint_sha256": null,
     "profile_sha256": "6ecd6f3edda0d9e0bb028636d26c58eac4eedc43e91bec02165233d3fe6936a9",
-    "timing_note": "Concurrent replay workers: diagnostic timing, not isolated speed ranking",
+    "timing_note": "MANUS v2 rerun alone; others retain previous concurrent timings. Not a speed ranking.",
     "metric_note": "Normalized geometric target discrepancy, not independent pose ground truth",
-    "contact_enabled": false
+    "contact_enabled": false,
+    "input_adapter": {
+      "repository": "https://github.com/tesollodelto/dg5f_ros2",
+      "commit": "0cb45ae9474caa92410dfa820346da8ffbae8405",
+      "file": "external/dg5f_ros2/dg5f_driver/script/manus_retarget/manus_retarget.py",
+      "sha256": "730f2b4e1c89669f2249c0e8476ded58333c019bbaf501523075abb2a57a3ca4",
+      "function": "ManusBimanualRetarget._compute_mqd_from_q",
+      "reuse": "unmodified calculation AST; staticmethod binding removed",
+      "quest_thumb_input_convention": "thumb_axes_v2",
+      "quest_proxy_note": "geometric input adapter, not calibrated MANUS sensor values",
+      "robot_profile_sha256": "6ecd6f3edda0d9e0bb028636d26c58eac4eedc43e91bec02165233d3fe6936a9",
+      "calibration_procedure": "existing official DG-5F MANUS mapping retained; no official Quest proxy calibration available; no gains/offsets fitted"
+    }
   },
   "anydex": {
     "method": "anydex",

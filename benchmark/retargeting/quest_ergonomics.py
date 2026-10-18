@@ -67,3 +67,24 @@ def geometric_features(frame):
         raise ValueError("Nonfinite Quest geometric features")
     return result
 
+
+def manus_ergonomics_proxy(features, convention="thumb_axes_v2"):
+    """Convert geometric angles to MANUS input slots, without fitting vendor parameters.
+
+    v2: spread is out-of-palm elevation E; stretch is the YZ angle from +Z
+    toward +Y (atan2(uY, uZ)), rather than opposition A measured from +Y.
+    The quarter-turn is a geometric basis change, not vendor offset cancellation.
+    This remains a Quest proxy, not calibrated MANUS sensor output.
+    """
+    result = np.asarray(features, dtype=float).copy()
+    if result.shape != (20,) or not np.isfinite(result).all():
+        raise ValueError("Expected twenty finite geometric degree features")
+    if convention == "legacy_v1":
+        return result
+    if convention != "thumb_axes_v2":
+        raise ValueError(f"Unknown Quest-to-MANUS input convention: {convention}")
+    opposition, elevation = result[:2]
+    angle = np.radians(opposition)
+    result[0] = elevation
+    result[1] = np.degrees(np.arctan2(np.cos(angle), np.sin(angle)))
+    return result

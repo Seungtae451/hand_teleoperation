@@ -336,10 +336,12 @@ def plots(args):
     axes[2].bar(
         x, [summary[m]["inference_median_ms"] for m in METHODS], color=list(colors.values())
     )
-    axes[2].set(title="Diagnostic adapter time", ylabel="Median ms (concurrent workers)")
+    axes[2].set(title="Diagnostic adapter time", ylabel="Median ms (mixed-run diagnostic)")
     for ax in axes:
         ax.set_xticks(x, [m.upper() for m in METHODS], rotation=15)
-    fig.suptitle("One 108 s demonstration; no isolated speed ranking or contact-success claim")
+    fig.suptitle(
+        "One 108 s demonstration / MANUS thumb axes v2; no speed ranking or contact-success claim"
+    )
     finish(fig, "summary.png")
 
     fig, axes = plt.subplots(3, 1, figsize=(14, 9), sharex=True)
