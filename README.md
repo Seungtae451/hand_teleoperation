@@ -34,7 +34,7 @@
 
 MANUS-style에는 실제 장갑 대신 Quest 기하 각도를 넣었고, 엄지 입력 축을 수정한 v2를 사용했다. 따라서 실제 MANUS 시스템의 성능을 대신하는 결과로 해석하지 않는다. GeoRT는 공개·개인 데이터 학습, FK 대조, 범위 제한을 거쳤지만 이 DG-5F 조건에서 안정적인 손 펴기·주먹 대응을 확보하지 못했다. 실패 과정 자체를 기술 도입 판단의 근거로 남긴다.
 
-**읽기 안내:** 설명·수식·도표와 대표 영상을 함께 확인하는 약 **20~30분 분량**을 목표로 구성했다. 본문은 쉬운 설명 뒤에 기술 내용을 배치하며, 실행 명령과 상세 출처도 이 파일 안에 포함한다. 모든 GIF를 반복 감상하거나 외부 논문까지 읽는 시간은 포함하지 않는다. 조사·실험 기준일은 **2026-10-18**이다.
+**읽기 안내:** 설명·수식·도표와 대표 영상을 함께 확인하는 약 **20–30분 분량**을 목표로 구성했다. 본문은 쉬운 설명 뒤에 기술 내용을 배치하며, 실행 명령과 상세 출처도 이 파일 안에 포함한다. 모든 GIF를 반복 감상하거나 외부 논문까지 읽는 시간은 포함하지 않는다. 조사·실험 기준일은 **2026-10-18**이다.
 
 <a id="sec02"></a>
 ## 2. 조사 배경과 알고리즘 선정 이유
@@ -132,7 +132,7 @@ MCP는 사람 손가락 뿌리, PIP는 가운데 마디, DIP는 끝 마디를 �
 
 ### 4.3 공통 입력 형식과 좌표계
 
-WebXR 원본의 관절 이름을 공통 21개 점에 대응시킨다. wrist는 0, 엄지는 1~4, 검지는 5~8, 중지는 9~12, 약지는 13~16, 새끼는 17~20이다. 손끝 인덱스는 `[4, 8, 12, 16, 20]`이다. 원본 packet과 변환된 HandFrame을 함께 보존해 변환 전후를 추적할 수 있게 했다.
+WebXR 원본의 관절 이름을 공통 21개 점에 대응시킨다. wrist는 0, 엄지는 1–4, 검지는 5–8, 중지는 9–12, 약지는 13–16, 새끼는 17–20이다. 손끝 인덱스는 `[4, 8, 12, 16, 20]`이다. 원본 packet과 변환된 HandFrame을 함께 보존해 변환 전후를 추적할 수 있게 했다.
 
 HandFrame에는 handedness, 좌표계, timestamp의 clock domain, 유효 여부와 provenance를 기록한다. 회전 정보가 없는 공개 데이터에 임의 회전을 생성하지 않고, 21개 점으로 변환할 수 없는 입력을 정상 관측처럼 채워 넣지 않는다. 오른손을 우선 지원하며, 오른손 결과를 왼손 검증으로 확대하지 않는다.
 
@@ -188,17 +188,17 @@ MANUS-style은 **사람의 굽힘 각도를 로봇 각도로 바꾸는 변환표
 
 두 지골 벡터 $a,b$ 사이 기하 굽힘은 다음처럼 계산한다.
 
-$$
-\theta=\cos^{-1}\left(\mathrm{clip}\left(\frac{a\cdot b}{\|a\|\|b\|},-1,1\right)\right).
-$$
+```math
+\theta=\cos^{-1}\left(\mathrm{clip}\left(\frac{a\cdot b}{\lVert a \rVert\lVert b \rVert},-1,1\right)\right).
+```
 
 이 값은 부호 없는 각도라 굽힘과 과신전을 완전히 구분하지 못한다. MCP 방향은 palm 기준의 `atan2`로 계산한다. 이렇게 얻은 20개 degree proxy를 제조사 `_compute_mqd_from_q` 함수에 전달하고 rad 출력을 받는다. 함수 본문은 AST로 읽어 그대로 실행하며 ROS node 전체를 임포트하지 않는다. [제조사 원본 계산](https://github.com/tesollodelto/dg5f_ros2/blob/0cb45ae9474caa92410dfa820346da8ffbae8405/dg5f_driver/script/manus_retarget/manus_retarget.py#L229-L329)
 
 오른손 검지·중지 PIP 출력 예시는 다음과 같다. 공통 URDF 제한 전 값이다.
 
-$$
+```math
 q_{\mathrm{index,PIP}}=\max(0,1.3(\theta_{\mathrm{index,PIP}}-40^\circ)),\qquad q_{\mathrm{middle,PIP}}=\max(0,1.3(\theta_{\mathrm{middle,PIP}}-30^\circ)).
-$$
+```
 
 모든 관절이 같은 선형식은 아니다. 관절별 방향 부호, clamp와 결합식이 있고, 엄지 끝 관절은 두 입력을 함께 사용한다. 이 때문에 관절마다 동작 응답이 달라진다. 아래 왼쪽 그래프의 평평한 구간이 해당 PIP 매핑의 dead zone을 보여준다.
 
@@ -208,13 +208,19 @@ $$
 
 엄지 1→2 단위 방향을 $u$라 하자. 기존 기하 특징은 $A=\mathrm{atan2}(u_Z,u_Y)$와 $E=\mathrm{atan2}(u_X,\sqrt{u_Y^2+u_Z^2})$였다. v1은 이를 그대로 MANUS spread·stretch 슬롯에 넣었고, 통제한 FK 검사에서 교차축·반대 방향 반응을 확인했다.
 
-현재 v2는 **spread=E**, **stretch=$\mathrm{atan2}(u_Y,u_Z)$**로 전달한다. 현재 관측 범위에서는 stretch=90°−A다. 90°는 각도를 재는 기준축을 Y에서 Z로 바꾸는 좌표 차이이며, 제조사 58.5° offset이나 1.6 gain을 역산해 상쇄한 보정이 아니다. 기하 특징 A·E는 원래 값으로도 로그에 남긴다.
+현재 v2는 **spread**와 **stretch**를 다음과 같이 전달한다.
+
+```math
+s=E,\qquad t=\mathrm{atan2}(u_Y,u_Z).
+```
+
+여기서 $s$는 spread, $t$는 stretch다. 현재 관측 범위에서는 stretch=90°−A다. 90°는 각도를 재는 기준축을 Y에서 Z로 바꾸는 좌표 차이이며, 제조사 58.5° offset이나 1.6 gain을 역산해 상쇄한 보정이 아니다. 기하 특징 A·E는 원래 값으로도 로그에 남긴다.
 
 제조사의 오른손 엄지 식은 입력 spread $s$, stretch $t$, 나머지 굽힘 $B,C$에 대해 다음과 같다. 후처리 전 degree 표현이다.
 
-$$
+```math
 q_1=58.5^\circ-t,\quad q_2=-1.6(s+20^\circ),\quad q_3=1.3B,\quad q_4=0.65(B+C).
-$$
+```
 
 따라서 v2에서도 작은 A의 q1 dead zone과 큰 E의 방향 투영 접힘이 남을 수 있다. 실제 손 펴기 구간의 엄지 목표 중앙값은 MANUS `[4.7, −59.8, 11.6, 22.1]°`, AnyDex `[41.3, 0.0, −0.6, −8.2]°`, Wuji `[47.2, 0.0, −3.1, −14.8]°`였다. 같은 로봇의 같은 순서 관절이지만, MANUS는 offset·결합식을 거치고 나머지는 위치·방향을 최적화하므로 다른 자세를 선택한다.
 
@@ -235,9 +241,9 @@ HandFrame의 21개 점을 원본이 기대하는 좌표로 변환한다. 손목�
 
 엄지–손끝 거리 $d_i$를 cm로 두면 기본 pinch 가중치는 다음과 같다.
 
-$$
+```math
 \alpha_i=\mathrm{clip}\left(\frac{4-d_i}{4-2+\epsilon},0,0.7\right),\qquad\alpha_{\mathrm{thumb}}=\max_i\alpha_i.
-$$
+```
 
 가까울수록 가중치가 커지지만 최대 0.7이므로 전체 모양 항이 사라지지는 않는다. **엄지–손끝 거리는 가중치 선택에 쓰인다.** 아래 위치 항 자체는 손목→각 손끝 목표를 맞추는 것이며, 모든 손끝 쌍의 거리만 직접 줄이는 식으로 설명하면 부정확하다.
 
@@ -245,19 +251,19 @@ $$
 
 $r_{ij}$는 손목→마디 벡터, $v_i$는 손목→손끝 벡터, $u_i$는 끝마디 단위 방향이다. 모자 기호는 사람 입력에 보정을 적용한 목표다. 원본 구조를 요약하면 다음과 같다.
 
-$$
-q^*=\arg\min_{q_{\min}\le q\le q_{\max}}\left\{\sum_i\left[\alpha_i L_{\mathrm{tip},i}(q)+(1-\alpha_i)L_{\mathrm{shape},i}(q)\right]+\lambda\|q-q_{\mathrm{prev}}\|^2\right\}.
-$$
+```math
+q^{\ast}=\arg\min_{q_{\min}\le q\le q_{\max}}\left(\sum_i\left[\alpha_i L_{\mathrm{tip},i}(q)+(1-\alpha_i)L_{\mathrm{shape},i}(q)\right]+\lambda\lVert q-q_{\mathrm{prev}} \rVert^2\right).
+```
 
 손끝 항과 전체 모양 항을 각각 풀어 쓰면 다음과 같다.
 
-$$
-L_{\mathrm{tip},i}(q)=w_p\rho(\|v_i(q)-\hat v_i\|)+w_d\rho_d(\|u_i(q)-\hat u_i\|).
-$$
+```math
+L_{\mathrm{tip},i}(q)=w_p\rho(\lVert v_i(q)-\hat v_i \rVert)+w_d\rho_d(\lVert u_i(q)-\hat u_i \rVert).
+```
 
-$$
-L_{\mathrm{shape},i}(q)=\frac{w_f}{3}\sum_{j\in\{\mathrm{PIP,DIP,TIP}\}}\rho(\|r_{ij}(q)-\hat r_{ij}\|).
-$$
+```math
+L_{\mathrm{shape},i}(q)=\frac{w_f}{3}\sum_{j\in\{\mathrm{PIP,DIP,TIP}\}}\rho(\lVert r_{ij}(q)-\hat r_{ij} \rVert).
+```
 
 수식의 첫 부분은 pinch 관련 손끝 위치·방향, 두 번째는 손 전체 벡터, 마지막은 이전 해와의 차이다. 이전 해가 있을 때 정규화 항을 적용한다. Huber 손실 $\rho$는 작은 오차에는 제곱, 큰 오차에는 선형으로 증가한다. 최적화를 돕는 완만한 오차 함수이지 충돌 검사나 성공 판정이 아니다.
 
@@ -302,9 +308,9 @@ Wuji도 **사람과 로봇의 위치·방향 차이를 줄이는 자세를 찾�
 
 개념적으로 추가 제약은 다음과 같이 쓸 수 있다. $r$은 coupling 비율, $q_{\mathrm{soft}}$는 soft minimum이다.
 
-$$
+```math
 L_{\mathrm{extra}}=w_h\sum_j\max(0,q_{\mathrm{soft}}-q_j)^2+w_c\sum_i(q_{\mathrm{DIP},i}-r q_{\mathrm{PIP},i})^2.
-$$
+```
 
 이는 지원 기능을 설명하는 식이다. 현재 두 가중치가 0이므로 이번 결과를 설명하는 활성 손실은 아니다. **‘Wuji가 더 낮은 숫자를 보인 것은 과신전 penalty 덕분’이라는 결론은 성립하지 않는다.** 기능 추가의 효과를 확인하려면 원본 기본 재현과 구분한 별도 조건 실험이 필요하다. [선택 항의 원본 정의](https://github.com/wuji-technology/wuji-retargeting/blob/531f6ed4250b475d2e9231f54e988fc9b1c5b4ea/wuji_retargeting/opt/adaptive_analytical.py)
 
@@ -327,9 +333,9 @@ GeoRT는 **‘사람 손끝이 이 위치에 오면 로봇 관절은 이렇게 �
 
 정규화 출력 $z_i$에서 실제 관절 범위로 변환한다.
 
-$$
+```math
 z_i=N_{\theta_i}(h_{\mathrm{tip},i})\in[-1,1]^4,\qquad q_i=q_{\min,i}+\frac{z_i+1}{2}(q_{\max,i}-q_{\min,i}).
-$$
+```
 
 DG-5F 관절 순서·범위와 다섯 tip을 별도 설정으로 제공했다. 원래 지원 로봇의 checkpoint를 그대로 사용한 것이 아니다. 학습 입력은 원본 canonical 좌표로 변환하며, 학습 후에 추론 입력만 회전·스케일을 조정해 결과를 맞추지 않았다.
 
@@ -345,27 +351,27 @@ DG-5F 관절 순서·범위와 다섯 tip을 별도 설정으로 제공했다. �
 
 이 그림은 원리 설명용이며 수집 데이터의 성능 그래프가 아니다. Neural FK를 포함한 출력 손끝 함수를 $g(H)$라고 두면, 현재 원본 코드의 활성 손실은 다음과 같다.
 
-$$
+```math
 L=L_{\mathrm{direction}}+80L_{\mathrm{chamfer}}+0.1L_{\mathrm{curvature}}+L_{\mathrm{pinch}}.
-$$
+```
 
 **Direction:** 사람 손끝을 조금 움직였을 때 로봇 손끝도 비슷한 방향으로 움직이도록 한다. 작은 입력 변화 $\Delta h$와 출력 변화의 cosine을 크게 만든다. 절대 위치를 사람 손끝과 정확히 같게 만드는 정답 loss는 아니다.
 
-$$
+```math
 L_{\mathrm{direction}}=-\mathrm{mean}\left[\cos\left(\Delta h,g(H+\Delta h)-g(H)\right)\right].
-$$
+```
 
 **Chamfer:** 변환된 사람 손끝 점 집합과 로봇의 도달 가능한 손끝 점 집합이 가까워지게 한다. 같은 손가락별로 두 분포를 비교하며, 각 점에 가장 가까운 상대 집합의 점까지의 제곱거리를 양방향 평균한다. 사람 frame마다 정답 robot pose를 지정하는 방식이 아니다. [원본 거리 계산](https://github.com/facebookresearch/GeoRT/blob/fb2075e2a3272be372016580c0b6ebd6120228f0/geort/loss.py)
 
-$$
-\mathrm{CD}(A,B)=\frac1{|A|}\sum_{a\in A}\min_{b\in B}\|a-b\|^2+\frac1{|B|}\sum_{b\in B}\min_{a\in A}\|b-a\|^2.
-$$
+```math
+\mathrm{CD}(A,B)=\frac1{|A|}\sum_{a\in A}\min_{b\in B}\lVert a-b \rVert^2+\frac1{|B|}\sum_{b\in B}\min_{a\in A}\lVert b-a \rVert^2.
+```
 
 **Curvature:** 작은 변화 주변에서 함수가 급격히 휘지 않게 한다. 입력을 양쪽으로 조금 이동한 출력의 중앙 차분을 작게 만드는 항이다. 움직임을 균일하게 만드는 방향의 조건이지만 특정 중간 마디가 해부학적으로 자연스럽다는 보증은 아니다.
 
-$$
-L_{\mathrm{curvature}}=\mathrm{mean}\left[\|g(H+\Delta h)+g(H-\Delta h)-2g(H)\|^2\right].
-$$
+```math
+L_{\mathrm{curvature}}=\mathrm{mean}\left[\lVert g(H+\Delta h)+g(H-\Delta h)-2g(H) \rVert^2\right].
+```
 
 **Pinch:** 사람 손끝 쌍의 거리가 15 mm보다 작은 표본에서 대응 로봇 손끝 쌍의 제곱거리를 줄인다. 확인한 trainer 반복문은 엄지 쌍만이 아니라 모든 손끝 쌍 $i<j$를 순회한다. 손끝의 접근을 유도하지만 접촉력·패드 방향·물체 파지 성공을 직접 학습한 것은 아니다.
 
@@ -422,9 +428,9 @@ AnyDex·Wuji의 회전 XYZ는 공통이지만 길이 비율 배열의 의미는 
 
 속도 제한은 50 Hz에서 관절마다 최대 약 3.6°씩 명령이 변하도록 한다. 이전 명령을 $q_{t-1}^{\mathrm{cmd}}$라 하면 다음과 같다.
 
-$$
+```math
 q_t^{\mathrm{cmd}}=q_{t-1}^{\mathrm{cmd}}+\mathrm{clip}\left(q_t^{\mathrm{target}}-q_{t-1}^{\mathrm{cmd}},-\pi\Delta t,\pi\Delta t\right),\qquad\Delta t=0.02\ \mathrm{s}.
-$$
+```
 
 무효 입력 또는 0.25초 timeout이면 마지막 적용 명령을 유지한다. 이 공통 제어는 특정 retargeter의 성능 개선 항이 아니다. 목표–명령 차이를 관절 오차로 기록하되 그 크기를 곧바로 지연 시간 몇 초로 환산하지 않는다.
 
@@ -432,9 +438,9 @@ $$
 
 사람 wrist와 로봇 palm을 각각 원점으로 하고 중지 MCP 방향·좌우 palm 방향으로 정렬한다. 사람은 wrist→중지 MCP 길이, 로봇은 중립 palm→중지 MCP 링크 길이로 나눈다. 정렬·정규화된 손끝을 각각 $\tilde h_i,\tilde x_i$라 하면:
 
-$$
-E_{\mathrm{tip}}=\frac15\sum_{i=1}^{5}\|\tilde x_i(q^{\mathrm{target}})-\tilde h_i\|_2.
-$$
+```math
+E_{\mathrm{tip}}=\frac15\sum_{i=1}^{5}\lVert \tilde x_i(q^{\mathrm{target}})-\tilde h_i \rVert_2.
+```
 
 같은 기하 기준으로 비교하기 위한 지표다. mm 단위 정확도나 정답 robot pose와의 차이가 아니며, 형상·원점·정렬 가정의 영향을 포함한다. 유효 50 Hz 제어 tick에서 평균하므로 새 관측만 균등 가중한 평균과 다를 수 있다. 이 지표 하나로 엄지 자세의 자연스러움이나 작업 성공을 모두 설명할 수 없다.
 
@@ -442,9 +448,9 @@ $$
 
 명령–실제 관절 RMSE는 전체 제어 tick과 20개 관절을 대상으로 계산한다.
 
-$$
+```math
 \mathrm{RMSE}_{\mathrm{cmd,actual}}=\sqrt{\frac1{20T}\sum_{t,j}(q_{tj}^{\mathrm{cmd}}-q_{tj}^{\mathrm{actual}})^2}.
-$$
+```
 
 값이 작으면 로봇이 적용 명령을 잘 따라간다는 의미다. 목표가 사람에게 적절하다는 의미는 아니다. 핀치 그래프는 actual의 엄지–손끝 거리이며 각 손의 기준 길이로 정규화한다. 가까워지는 경향을 볼 수 있지만 패드 접촉·힘·물체 유지 성공을 판정하지 않는다.
 
@@ -660,7 +666,7 @@ flowchart TD
 
 | 제한 조건 | Open 후보 PIP: 검지 / 중지 / 약지 | Fist 후보 PIP: 검지 / 중지 / 약지 |
 |---|---|---|
-| 비엄지 distal 8개, 0~90° | 66.75° / 79.87° / 4.70° | 41.21° / 80.66° / 86.59° |
+| 비엄지 distal 8개, 0–90° | 66.75° / 79.87° / 4.70° | 41.21° / 80.66° / 86.59° |
 | 검증된 6개 PIP/DIP, 관측 상한 | 70.36° / 86.56° / 7.29° | 48.90° / 81.19° / 84.71° |
 
 후자의 DIP 상한은 검지·중지·약지 각각 71.29°·68.46°·74.63°, PIP 상한은 90°였다. **하한 0°는 실험 제약이며 측정한 해부학적 하한이 아니다.** 엄지·MCP·새끼까지 사람 각도를 정확히 대응시켰다고 주장하지 않는다.
