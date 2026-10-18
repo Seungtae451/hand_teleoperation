@@ -17,6 +17,82 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 
+def draw_pipeline(output):
+    """Rasterize Korean labels with measured margins; no browser font-size dependency."""
+    from PIL import Image, ImageDraw, ImageFont
+
+    canvas = Image.new("RGB", (1440, 1290), "white")
+    draw = ImageDraw.Draw(canvas)
+    font = ImageFont.truetype("/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc", 32)
+    nodes = {
+        "Q": ((385, 30, 745, 125), "Quest 3\n오른손 추적", "#e7f0ff"),
+        "R": ((225, 190, 905, 285), "HTTPS / WSS\n원본 관절 기록", "#edf3fc"),
+        "V": ((1040, 190, 1370, 300), "Quest 시스템\n실제 손 영상", "#fff2d9"),
+        "H": ((225, 350, 905, 445), "HandFrame · 21개 관절\n단위와 좌표계 명시", "#edf3fc"),
+        "A": ((80, 510, 300, 600), "MANUS-style", "#e9e4ff"),
+        "B": ((330, 510, 550, 600), "AnyDex", "#d8f0ee"),
+        "C": ((580, 510, 800, 600), "Wuji", "#fff0d5"),
+        "D": ((830, 510, 1050, 600), "GeoRT", "#fce1e7"),
+        "O": ((225, 660, 905, 755), "원본 출력 기록\n공통 URDF 관절 제한", "#edf3fc"),
+        "S": ((225, 815, 905, 910), "공통 속도 제한\n추적 상실 시 HOLD", "#edf3fc"),
+        "M": ((225, 970, 905, 1065), "MuJoCo DG-5F\n실제 관절각과 손끝", "#e7f0ff"),
+        "E": ((80, 1150, 560, 1250), "기하 지표\n명령 추종 오차", "#e5f4e9"),
+        "P": ((690, 1150, 1310, 1250), "시간 맞춤과 영상 합성\n실제 손 + MuJoCo 비교", "#e5f4e9"),
+    }
+
+    def line(points, arrow=True):
+        draw.line(points, fill="#526276", width=4, joint="curve")
+        if arrow:
+            end, before = np.array(points[-1]), np.array(points[-2])
+            direction = (end - before) / np.linalg.norm(end - before)
+            normal = np.array([-direction[1], direction[0]])
+            draw.polygon(
+                [
+                    tuple(end),
+                    tuple(end - 15 * direction + 7 * normal),
+                    tuple(end - 15 * direction - 7 * normal),
+                ],
+                fill="#526276",
+            )
+
+    for start, end in [(125, 190), (285, 350), (755, 815), (910, 970)]:
+        line([(565, start), (565, end)])
+    line([(745, 78), (1205, 78), (1205, 190)])
+    line([(565, 445), (565, 475)], False)
+    line([(190, 475), (940, 475)], False)
+    line([(190, 630), (940, 630)], False)
+    for x in [190, 440, 690, 940]:
+        line([(x, 475), (x, 510)])
+        line([(x, 600), (x, 630)], False)
+    line([(565, 630), (565, 660)])
+    line([(565, 1065), (565, 1105)], False)
+    line([(320, 1105), (1000, 1105)], False)
+    for x in [320, 1000]:
+        line([(x, 1105), (x, 1150)])
+    line([(1205, 300), (1205, 345), (1395, 345), (1395, 1200), (1310, 1200)])
+    for bounds, label, fill in nodes.values():
+        node_font = (
+            font.font_variant(size=28)
+            if label in {"MANUS-style", "AnyDex", "Wuji", "GeoRT"}
+            else font
+        )
+        x0, y0, x1, y1 = bounds
+        draw.rounded_rectangle(bounds, radius=16, fill=fill, outline="#708198", width=2)
+        left, top, right, bottom = draw.multiline_textbbox(
+            (0, 0), label, font=node_font, spacing=5, align="center"
+        )
+        assert right - left <= x1 - x0 - 32 and bottom - top <= y1 - y0 - 20, label
+        draw.multiline_text(
+            ((x0 + x1 - right + left) / 2 - left, (y0 + y1 - bottom + top) / 2 - top),
+            label,
+            font=node_font,
+            fill="#17283c",
+            spacing=5,
+            align="center",
+        )
+    canvas.save(output / "system_pipeline.png")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=ROOT / "docs/figures")
@@ -25,8 +101,14 @@ def main():
         type=Path,
         default=ROOT / "docs/media/video_benchmark_002/manus_thumb_revision.npz",
     )
+    parser.add_argument(
+        "--pipeline-only", action="store_true", help="Render only the system diagram"
+    )
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
+    draw_pipeline(args.output)
+    if args.pipeline_only:
+        return
     plt.rcParams.update({"font.size": 11, "axes.spines.top": False, "axes.spines.right": False})
 
     def finish(fig, name):

@@ -120,25 +120,7 @@ MCP는 사람 손가락 뿌리, PIP는 가운데 마디, DIP는 끝 마디를 �
 
 ### 4.1 전체 파이프라인
 
-```mermaid
-flowchart TD
- Q[Quest 3 오른손 추적] --> R[HTTPS와 WSS 원본 기록]
- Q --> V[Quest 시스템 실제 손 영상]
- R --> H[공통 HandFrame 21개 점]
- H --> A[MANUS-style]
- H --> B[AnyDex]
- H --> C[Wuji]
- H --> D[GeoRT]
- A --> O[원본 출력과 공통 목표 기록]
- B --> O
- C --> O
- D --> O
- O --> S[공통 속도 제한과 추적 상실 HOLD]
- S --> M[MuJoCo DG-5F 실제 상태]
- V --> P[시간 맞춤과 영상 합성]
- M --> P
- M --> E[기하 지표와 추종 오차]
-```
+![Quest 입력부터 MuJoCo와 비교 영상까지의 전체 파이프라인](docs/figures/system_pipeline.png)
 
 **영상의 픽셀에서 손 pose를 다시 추정하는 파이프라인은 아니다.** Quest 시스템 MP4는 사람이 실제로 어떤 동작을 했는지 확인하는 자료다. 알고리즘 입력은 촬영과 동시에 Quest Browser의 WebXR에서 받은 추정 관절 위치·회전이다. 이를 네이티브 Quest SDK 직접 출력이나 해부학적 정답으로 표기하지 않는다.
 
@@ -787,6 +769,8 @@ uv pip install --python .venv-geort/bin/python -r requirements/phase7.txt
 uv pip install --python .venv-geort/bin/python -r requirements/figures.txt
 uv pip check --python .venv-geort/bin/python
 ```
+
+파이프라인 도식 재생성에는 Noto Sans CJK 한글 글꼴이 필요하다. Ubuntu 패키지 이름은 `fonts-noto-cjk`이며, 해당 도식만 만들려면 `.venv-geort/bin/python scripts/build_explanation_figures.py --pipeline-only`를 실행한다.
 
 ### A.2 실시간 연결과 새 촬영
 
