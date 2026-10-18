@@ -13,7 +13,7 @@
   "files": {
     "alignment.json": {
       "bytes": 2429,
-      "sha256": "a73cc33efa44a8b72ea4b6982fce37e0b3b5a2998e62ba24453d43799b4b2d97"
+      "sha256": "0886db55f865b1bdddd6c2c7b83ed7dd330c8a909bb748c248652123eafb2a06"
     },
     "camera_verification.json": {
       "bytes": 1410,
@@ -246,6 +246,10 @@
     "timeline.png": {
       "bytes": 382836,
       "sha256": "e61dc59aaa904169076a7c58b431b62b778a0caf31533e33a8f4ab8de92727bd"
+    },
+    "ik_ambiguity.json": {
+      "bytes": 763,
+      "sha256": "eca9b31269ed69a52e68b1a844c90e3aa53f67ba061d93c68148f419903cb6e5"
     }
   },
   "visual_inspection": {

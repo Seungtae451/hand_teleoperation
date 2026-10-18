@@ -1,0 +1,4005 @@
+{
+  "archive_root": "/home/cocelo-server01/stkim_ws/Hand_teleoperation_other/archive_20261018",
+  "method": "same-filesystem rename, no files deleted",
+  "git_index_sha256_before": "acea2d84935b62c238ab3c879b8eb7a4478c80689ff261e8080d76a121bfc2d3",
+  "git_index_sha256_after": "acea2d84935b62c238ab3c879b8eb7a4478c80689ff261e8080d76a121bfc2d3",
+  "total_bytes": 8274626711,
+  "total_files": 9447,
+  "moves": [
+    {
+      "source": "README_TESOLLO_CALIBRATION.md",
+      "destination": "README_TESOLLO_CALIBRATION.md",
+      "reason": "superseded phase/experiment documentation; current guides are in docs",
+      "bytes": 7060,
+      "file_count": 1,
+      "tracked_files": [
+        "README_TESOLLO_CALIBRATION.md"
+      ]
+    },
+    {
+      "source": "README_GEORT_DATA_SIZE_STUDY.md",
+      "destination": "README_GEORT_DATA_SIZE_STUDY.md",
+      "reason": "superseded phase/experiment documentation; current guides are in docs",
+      "bytes": 7139,
+      "file_count": 1,
+      "tracked_files": [
+        "README_GEORT_DATA_SIZE_STUDY.md"
+      ]
+    },
+    {
+      "source": "README_PHASE6.md",
+      "destination": "README_PHASE6.md",
+      "reason": "superseded phase/experiment documentation; current guides are in docs",
+      "bytes": 6040,
+      "file_count": 1,
+      "tracked_files": [
+        "README_PHASE6.md"
+      ]
+    },
+    {
+      "source": "README_PHASE3.md",
+      "destination": "README_PHASE3.md",
+      "reason": "superseded phase/experiment documentation; current guides are in docs",
+      "bytes": 8663,
+      "file_count": 1,
+      "tracked_files": [
+        "README_PHASE3.md"
+      ]
+    },
+    {
+      "source": "README_VIDEO_CAPTURE.md",
+      "destination": "README_VIDEO_CAPTURE.md",
+      "reason": "superseded phase/experiment documentation; current guides are in docs",
+      "bytes": 10429,
+      "file_count": 1,
+      "tracked_files": [
+        "README_VIDEO_CAPTURE.md"
+      ]
+    },
+    {
+      "source": "README_HAND_VALIDATION.md",
+      "destination": "README_HAND_VALIDATION.md",
+      "reason": "superseded phase/experiment documentation; current guides are in docs",
+      "bytes": 4078,
+      "file_count": 1,
+      "tracked_files": [
+        "README_HAND_VALIDATION.md"
+      ]
+    },
+    {
+      "source": "README_PHASE4.md",
+      "destination": "README_PHASE4.md",
+      "reason": "superseded phase/experiment documentation; current guides are in docs",
+      "bytes": 5162,
+      "file_count": 1,
+      "tracked_files": [
+        "README_PHASE4.md"
+      ]
+    },
+    {
+      "source": "README_PHASE7.md",
+      "destination": "README_PHASE7.md",
+      "reason": "superseded phase/experiment documentation; current guides are in docs",
+      "bytes": 8195,
+      "file_count": 1,
+      "tracked_files": [
+        "README_PHASE7.md"
+      ]
+    },
+    {
+      "source": "README_GEORT_MODELS_LIVE.md",
+      "destination": "README_GEORT_MODELS_LIVE.md",
+      "reason": "superseded phase/experiment documentation; current guides are in docs",
+      "bytes": 3005,
+      "file_count": 1,
+      "tracked_files": [
+        "README_GEORT_MODELS_LIVE.md"
+      ]
+    },
+    {
+      "source": "README_PHASE5.md",
+      "destination": "README_PHASE5.md",
+      "reason": "superseded phase/experiment documentation; current guides are in docs",
+      "bytes": 6466,
+      "file_count": 1,
+      "tracked_files": [
+        "README_PHASE5.md"
+      ]
+    },
+    {
+      "source": "README_SIMULATION.md",
+      "destination": "README_SIMULATION.md",
+      "reason": "superseded phase/experiment documentation; current guides are in docs",
+      "bytes": 7617,
+      "file_count": 1,
+      "tracked_files": [
+        "README_SIMULATION.md"
+      ]
+    },
+    {
+      "source": "README_LIVE_RETARGETING.md",
+      "destination": "README_LIVE_RETARGETING.md",
+      "reason": "superseded phase/experiment documentation; current guides are in docs",
+      "bytes": 3946,
+      "file_count": 1,
+      "tracked_files": [
+        "README_LIVE_RETARGETING.md"
+      ]
+    },
+    {
+      "source": "README_GEORT_PARITY.md",
+      "destination": "README_GEORT_PARITY.md",
+      "reason": "superseded phase/experiment documentation; current guides are in docs",
+      "bytes": 5873,
+      "file_count": 1,
+      "tracked_files": [
+        "README_GEORT_PARITY.md"
+      ]
+    },
+    {
+      "source": "scripts/run_geort_models_live.py",
+      "destination": "scripts/run_geort_models_live.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 605,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/run_geort_models_live.py"
+      ]
+    },
+    {
+      "source": "scripts/verify_phase6_sources.py",
+      "destination": "scripts/verify_phase6_sources.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 791,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/verify_phase6_sources.py"
+      ]
+    },
+    {
+      "source": "scripts/validate_phase2.py",
+      "destination": "scripts/validate_phase2.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 4155,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/validate_phase2.py"
+      ]
+    },
+    {
+      "source": "scripts/evaluate_trained_geort.py",
+      "destination": "scripts/evaluate_trained_geort.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 337,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/evaluate_trained_geort.py"
+      ]
+    },
+    {
+      "source": "scripts/run_geort_range_live.py",
+      "destination": "scripts/run_geort_range_live.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 5735,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/run_geort_range_live.py"
+      ]
+    },
+    {
+      "source": "scripts/measure_quest_joint_ranges.py",
+      "destination": "scripts/measure_quest_joint_ranges.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 10165,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/measure_quest_joint_ranges.py"
+      ]
+    },
+    {
+      "source": "scripts/run_phase6.py",
+      "destination": "scripts/run_phase6.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 196,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/run_phase6.py"
+      ]
+    },
+    {
+      "source": "scripts/verify_quest_tesollo_correspondence.py",
+      "destination": "scripts/verify_quest_tesollo_correspondence.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 6971,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/verify_quest_tesollo_correspondence.py"
+      ]
+    },
+    {
+      "source": "scripts/geort_reference_ranges.py",
+      "destination": "scripts/geort_reference_ranges.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 9822,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/geort_reference_ranges.py"
+      ]
+    },
+    {
+      "source": "scripts/test_webxr_client.cjs",
+      "destination": "scripts/test_webxr_client.cjs",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 5354,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/test_webxr_client.cjs"
+      ]
+    },
+    {
+      "source": "scripts/geort_quest_observed_study.py",
+      "destination": "scripts/geort_quest_observed_study.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 10679,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/geort_quest_observed_study.py"
+      ]
+    },
+    {
+      "source": "scripts/audit_geort_stack.py",
+      "destination": "scripts/audit_geort_stack.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 10658,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/audit_geort_stack.py"
+      ]
+    },
+    {
+      "source": "scripts/validate_phase5.py",
+      "destination": "scripts/validate_phase5.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 4605,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/validate_phase5.py"
+      ]
+    },
+    {
+      "source": "scripts/prepare_hand_validation.py",
+      "destination": "scripts/prepare_hand_validation.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 4282,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/prepare_hand_validation.py"
+      ]
+    },
+    {
+      "source": "scripts/compare_allegro_control.py",
+      "destination": "scripts/compare_allegro_control.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 11275,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/compare_allegro_control.py"
+      ]
+    },
+    {
+      "source": "scripts/probe_geort_reachability.py",
+      "destination": "scripts/probe_geort_reachability.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 3843,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/probe_geort_reachability.py"
+      ]
+    },
+    {
+      "source": "scripts/__pycache__",
+      "destination": "scripts/__pycache__",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 68218,
+      "file_count": 9,
+      "tracked_files": []
+    },
+    {
+      "source": "scripts/audit_public_quest.py",
+      "destination": "scripts/audit_public_quest.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 7636,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/audit_public_quest.py"
+      ]
+    },
+    {
+      "source": "scripts/diagnose_personal_fist.py",
+      "destination": "scripts/diagnose_personal_fist.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 6393,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/diagnose_personal_fist.py"
+      ]
+    },
+    {
+      "source": "scripts/diagnose_geort_models.py",
+      "destination": "scripts/diagnose_geort_models.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 8687,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/diagnose_geort_models.py"
+      ]
+    },
+    {
+      "source": "scripts/validate_phase4.py",
+      "destination": "scripts/validate_phase4.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 4900,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/validate_phase4.py"
+      ]
+    },
+    {
+      "source": "scripts/render_geort_ranges.py",
+      "destination": "scripts/render_geort_ranges.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 2065,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/render_geort_ranges.py"
+      ]
+    },
+    {
+      "source": "scripts/run_hand_validation.py",
+      "destination": "scripts/run_hand_validation.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 217,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/run_hand_validation.py"
+      ]
+    },
+    {
+      "source": "scripts/geort_allegro_control.py",
+      "destination": "scripts/geort_allegro_control.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 6830,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/geort_allegro_control.py"
+      ]
+    },
+    {
+      "source": "scripts/validate_phase3.py",
+      "destination": "scripts/validate_phase3.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 5110,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/validate_phase3.py"
+      ]
+    },
+    {
+      "source": "scripts/render_allegro_control.py",
+      "destination": "scripts/render_allegro_control.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 2714,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/render_allegro_control.py"
+      ]
+    },
+    {
+      "source": "scripts/investigate_geort_mapping.py",
+      "destination": "scripts/investigate_geort_mapping.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 12052,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/investigate_geort_mapping.py"
+      ]
+    },
+    {
+      "source": "scripts/prepare_parity_validation.py",
+      "destination": "scripts/prepare_parity_validation.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 1838,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/prepare_parity_validation.py"
+      ]
+    },
+    {
+      "source": "scripts/verify_phase7_sources.py",
+      "destination": "scripts/verify_phase7_sources.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 774,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/verify_phase7_sources.py"
+      ]
+    },
+    {
+      "source": "scripts/verify_geort_ranges.py",
+      "destination": "scripts/verify_geort_ranges.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 3685,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/verify_geort_ranges.py"
+      ]
+    },
+    {
+      "source": "scripts/plot_geort_stack.py",
+      "destination": "scripts/plot_geort_stack.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 2792,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/plot_geort_stack.py"
+      ]
+    },
+    {
+      "source": "scripts/geort_range_study.py",
+      "destination": "scripts/geort_range_study.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 9973,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/geort_range_study.py"
+      ]
+    },
+    {
+      "source": "scripts/compare_geort_parity.py",
+      "destination": "scripts/compare_geort_parity.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 5238,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/compare_geort_parity.py"
+      ]
+    },
+    {
+      "source": "scripts/compare_geort_ranges.py",
+      "destination": "scripts/compare_geort_ranges.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 7565,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/compare_geort_ranges.py"
+      ]
+    },
+    {
+      "source": "scripts/validate_phase6.py",
+      "destination": "scripts/validate_phase6.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 6850,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/validate_phase6.py"
+      ]
+    },
+    {
+      "source": "scripts/check_quest_export_history.py",
+      "destination": "scripts/check_quest_export_history.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 2593,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/check_quest_export_history.py"
+      ]
+    },
+    {
+      "source": "scripts/geort_parity_study.py",
+      "destination": "scripts/geort_parity_study.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 7979,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/geort_parity_study.py"
+      ]
+    },
+    {
+      "source": "scripts/run_manus.py",
+      "destination": "scripts/run_manus.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 202,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/run_manus.py"
+      ]
+    },
+    {
+      "source": "scripts/test_capture_browser.py",
+      "destination": "scripts/test_capture_browser.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 4120,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/test_capture_browser.py"
+      ]
+    },
+    {
+      "source": "scripts/geort_data_size_study.py",
+      "destination": "scripts/geort_data_size_study.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 19796,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/geort_data_size_study.py"
+      ]
+    },
+    {
+      "source": "scripts/validate_live_retargeting.py",
+      "destination": "scripts/validate_live_retargeting.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 5586,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/validate_live_retargeting.py"
+      ]
+    },
+    {
+      "source": "scripts/verify_phase5_sources.py",
+      "destination": "scripts/verify_phase5_sources.py",
+      "reason": "historical diagnostic, study, or validation entry point",
+      "bytes": 2089,
+      "file_count": 1,
+      "tracked_files": [
+        "scripts/verify_phase5_sources.py"
+      ]
+    },
+    {
+      "source": "docs/phase7_existing_files.sha256.json",
+      "destination": "docs/phase7_existing_files.sha256.json",
+      "reason": "historical detailed report or frozen phase snapshot",
+      "bytes": 9713,
+      "file_count": 1,
+      "tracked_files": [
+        "docs/phase7_existing_files.sha256.json"
+      ]
+    },
+    {
+      "source": "docs/original_files.sha256.json",
+      "destination": "docs/original_files.sha256.json",
+      "reason": "historical detailed report or frozen phase snapshot",
+      "bytes": 34921,
+      "file_count": 1,
+      "tracked_files": [
+        "docs/original_files.sha256.json"
+      ]
+    },
+    {
+      "source": "docs/IMPLEMENTATION_PLAN.md",
+      "destination": "docs/IMPLEMENTATION_PLAN.md",
+      "reason": "historical detailed report or frozen phase snapshot",
+      "bytes": 3576,
+      "file_count": 1,
+      "tracked_files": [
+        "docs/IMPLEMENTATION_PLAN.md"
+      ]
+    },
+    {
+      "source": "docs/GEORT_PARITY_RESULT.md",
+      "destination": "docs/GEORT_PARITY_RESULT.md",
+      "reason": "historical detailed report or frozen phase snapshot",
+      "bytes": 4983,
+      "file_count": 1,
+      "tracked_files": [
+        "docs/GEORT_PARITY_RESULT.md"
+      ]
+    },
+    {
+      "source": "docs/PHASE5_REPORT.md",
+      "destination": "docs/PHASE5_REPORT.md",
+      "reason": "historical detailed report or frozen phase snapshot",
+      "bytes": 11222,
+      "file_count": 1,
+      "tracked_files": [
+        "docs/PHASE5_REPORT.md"
+      ]
+    },
+    {
+      "source": "docs/GEORT_FAILURE_DIAGNOSIS.md",
+      "destination": "docs/GEORT_FAILURE_DIAGNOSIS.md",
+      "reason": "historical detailed report or frozen phase snapshot",
+      "bytes": 8029,
+      "file_count": 1,
+      "tracked_files": [
+        "docs/GEORT_FAILURE_DIAGNOSIS.md"
+      ]
+    },
+    {
+      "source": "docs/PHASE4_REPRODUCTION.md",
+      "destination": "docs/PHASE4_REPRODUCTION.md",
+      "reason": "historical detailed report or frozen phase snapshot",
+      "bytes": 6139,
+      "file_count": 1,
+      "tracked_files": [
+        "docs/PHASE4_REPRODUCTION.md"
+      ]
+    },
+    {
+      "source": "docs/PHASE6_REPORT.md",
+      "destination": "docs/PHASE6_REPORT.md",
+      "reason": "historical detailed report or frozen phase snapshot",
+      "bytes": 11190,
+      "file_count": 1,
+      "tracked_files": [
+        "docs/PHASE6_REPORT.md"
+      ]
+    },
+    {
+      "source": "docs/phase6_existing_files.sha256.json",
+      "destination": "docs/phase6_existing_files.sha256.json",
+      "reason": "historical detailed report or frozen phase snapshot",
+      "bytes": 8533,
+      "file_count": 1,
+      "tracked_files": [
+        "docs/phase6_existing_files.sha256.json"
+      ]
+    },
+    {
+      "source": "docs/GEORT_STACK_DIAGNOSIS.md",
+      "destination": "docs/GEORT_STACK_DIAGNOSIS.md",
+      "reason": "historical detailed report or frozen phase snapshot",
+      "bytes": 47800,
+      "file_count": 1,
+      "tracked_files": [
+        "docs/GEORT_STACK_DIAGNOSIS.md"
+      ]
+    },
+    {
+      "source": "docs/PHASE_REPORT.md",
+      "destination": "docs/PHASE_REPORT.md",
+      "reason": "historical detailed report or frozen phase snapshot",
+      "bytes": 6747,
+      "file_count": 1,
+      "tracked_files": [
+        "docs/PHASE_REPORT.md"
+      ]
+    },
+    {
+      "source": "docs/PHASE7_REPORT.md",
+      "destination": "docs/PHASE7_REPORT.md",
+      "reason": "historical detailed report or frozen phase snapshot",
+      "bytes": 9892,
+      "file_count": 1,
+      "tracked_files": [
+        "docs/PHASE7_REPORT.md"
+      ]
+    },
+    {
+      "source": "docs/GEORT_TRAINED_EVALUATION.md",
+      "destination": "docs/GEORT_TRAINED_EVALUATION.md",
+      "reason": "historical detailed report or frozen phase snapshot",
+      "bytes": 8495,
+      "file_count": 1,
+      "tracked_files": [
+        "docs/GEORT_TRAINED_EVALUATION.md"
+      ]
+    },
+    {
+      "source": "docs/PHASE3_REPORT.md",
+      "destination": "docs/PHASE3_REPORT.md",
+      "reason": "historical detailed report or frozen phase snapshot",
+      "bytes": 7002,
+      "file_count": 1,
+      "tracked_files": [
+        "docs/PHASE3_REPORT.md"
+      ]
+    },
+    {
+      "source": "tests/test_phase5_anydex.py",
+      "destination": "tests/test_phase5_anydex.py",
+      "reason": "historical phase/coordinate/range tests; current runtime regression tests retained",
+      "bytes": 7558,
+      "file_count": 1,
+      "tracked_files": [
+        "tests/test_phase5_anydex.py"
+      ]
+    },
+    {
+      "source": "tests/test_quest_parity.py",
+      "destination": "tests/test_quest_parity.py",
+      "reason": "historical phase/coordinate/range tests; current runtime regression tests retained",
+      "bytes": 1571,
+      "file_count": 1,
+      "tracked_files": [
+        "tests/test_quest_parity.py"
+      ]
+    },
+    {
+      "source": "tests/test_geort_reference_ranges.py",
+      "destination": "tests/test_geort_reference_ranges.py",
+      "reason": "historical phase/coordinate/range tests; current runtime regression tests retained",
+      "bytes": 2088,
+      "file_count": 1,
+      "tracked_files": [
+        "tests/test_geort_reference_ranges.py"
+      ]
+    },
+    {
+      "source": "tests/test_phase3_tracking.py",
+      "destination": "tests/test_phase3_tracking.py",
+      "reason": "historical phase/coordinate/range tests; current runtime regression tests retained",
+      "bytes": 9005,
+      "file_count": 1,
+      "tracked_files": [
+        "tests/test_phase3_tracking.py"
+      ]
+    },
+    {
+      "source": "tests/test_geort_range_experiment.py",
+      "destination": "tests/test_geort_range_experiment.py",
+      "reason": "historical phase/coordinate/range tests; current runtime regression tests retained",
+      "bytes": 1436,
+      "file_count": 1,
+      "tracked_files": [
+        "tests/test_geort_range_experiment.py"
+      ]
+    },
+    {
+      "source": "tests/test_phase4_manus.py",
+      "destination": "tests/test_phase4_manus.py",
+      "reason": "historical phase/coordinate/range tests; current runtime regression tests retained",
+      "bytes": 10324,
+      "file_count": 1,
+      "tracked_files": [
+        "tests/test_phase4_manus.py"
+      ]
+    },
+    {
+      "source": "tests/__pycache__",
+      "destination": "tests/__pycache__",
+      "reason": "historical phase/coordinate/range tests; current runtime regression tests retained",
+      "bytes": 150622,
+      "file_count": 18,
+      "tracked_files": []
+    },
+    {
+      "source": "tests/test_quest_observed_ranges.py",
+      "destination": "tests/test_quest_observed_ranges.py",
+      "reason": "historical phase/coordinate/range tests; current runtime regression tests retained",
+      "bytes": 1220,
+      "file_count": 1,
+      "tracked_files": [
+        "tests/test_quest_observed_ranges.py"
+      ]
+    },
+    {
+      "source": "tests/test_phase6_wuji.py",
+      "destination": "tests/test_phase6_wuji.py",
+      "reason": "historical phase/coordinate/range tests; current runtime regression tests retained",
+      "bytes": 8518,
+      "file_count": 1,
+      "tracked_files": [
+        "tests/test_phase6_wuji.py"
+      ]
+    },
+    {
+      "source": "tests/test_hand_validation.py",
+      "destination": "tests/test_hand_validation.py",
+      "reason": "historical phase/coordinate/range tests; current runtime regression tests retained",
+      "bytes": 3058,
+      "file_count": 1,
+      "tracked_files": [
+        "tests/test_hand_validation.py"
+      ]
+    },
+    {
+      "source": "tests/test_phase3_transport.py",
+      "destination": "tests/test_phase3_transport.py",
+      "reason": "historical phase/coordinate/range tests; current runtime regression tests retained",
+      "bytes": 6301,
+      "file_count": 1,
+      "tracked_files": [
+        "tests/test_phase3_transport.py"
+      ]
+    },
+    {
+      "source": "benchmark/geort_support/range_experiment.py",
+      "destination": "benchmark/geort_support/range_experiment.py",
+      "reason": "superseded experiment module, unused audit environment, duplicate model, or cache",
+      "bytes": 3620,
+      "file_count": 1,
+      "tracked_files": [
+        "benchmark/geort_support/range_experiment.py"
+      ]
+    },
+    {
+      "source": "benchmark/geort_support/reference_ranges.py",
+      "destination": "benchmark/geort_support/reference_ranges.py",
+      "reason": "superseded experiment module, unused audit environment, duplicate model, or cache",
+      "bytes": 7118,
+      "file_count": 1,
+      "tracked_files": [
+        "benchmark/geort_support/reference_ranges.py"
+      ]
+    },
+    {
+      "source": "benchmark/datasets/quest_parity.py",
+      "destination": "benchmark/datasets/quest_parity.py",
+      "reason": "superseded experiment module, unused audit environment, duplicate model, or cache",
+      "bytes": 2148,
+      "file_count": 1,
+      "tracked_files": [
+        "benchmark/datasets/quest_parity.py"
+      ]
+    },
+    {
+      "source": "benchmark/tracking/hand_validation.py",
+      "destination": "benchmark/tracking/hand_validation.py",
+      "reason": "superseded experiment module, unused audit environment, duplicate model, or cache",
+      "bytes": 5218,
+      "file_count": 1,
+      "tracked_files": [
+        "benchmark/tracking/hand_validation.py"
+      ]
+    },
+    {
+      "source": "benchmark/tracking/hand_validation.html",
+      "destination": "benchmark/tracking/hand_validation.html",
+      "reason": "superseded experiment module, unused audit environment, duplicate model, or cache",
+      "bytes": 4917,
+      "file_count": 1,
+      "tracked_files": [
+        "benchmark/tracking/hand_validation.html"
+      ]
+    },
+    {
+      "source": "benchmark/tracking/hand_validation.js",
+      "destination": "benchmark/tracking/hand_validation.js",
+      "reason": "superseded experiment module, unused audit environment, duplicate model, or cache",
+      "bytes": 5791,
+      "file_count": 1,
+      "tracked_files": [
+        "benchmark/tracking/hand_validation.js"
+      ]
+    },
+    {
+      "source": "benchmark/experiments/trained_geort_evaluation.py",
+      "destination": "benchmark/experiments/trained_geort_evaluation.py",
+      "reason": "superseded experiment module, unused audit environment, duplicate model, or cache",
+      "bytes": 14390,
+      "file_count": 1,
+      "tracked_files": [
+        "benchmark/experiments/trained_geort_evaluation.py"
+      ]
+    },
+    {
+      "source": "benchmark/experiments/phase6_cli.py",
+      "destination": "benchmark/experiments/phase6_cli.py",
+      "reason": "superseded experiment module, unused audit environment, duplicate model, or cache",
+      "bytes": 4050,
+      "file_count": 1,
+      "tracked_files": [
+        "benchmark/experiments/phase6_cli.py"
+      ]
+    },
+    {
+      "source": "benchmark/experiments/manus_cli.py",
+      "destination": "benchmark/experiments/manus_cli.py",
+      "reason": "superseded experiment module, unused audit environment, duplicate model, or cache",
+      "bytes": 9295,
+      "file_count": 1,
+      "tracked_files": [
+        "benchmark/experiments/manus_cli.py"
+      ]
+    },
+    {
+      "source": "benchmark/experiments/manus_log.py",
+      "destination": "benchmark/experiments/manus_log.py",
+      "reason": "superseded experiment module, unused audit environment, duplicate model, or cache",
+      "bytes": 2135,
+      "file_count": 1,
+      "tracked_files": [
+        "benchmark/experiments/manus_log.py"
+      ]
+    },
+    {
+      "source": "benchmark/experiments/manus_live.html",
+      "destination": "benchmark/experiments/manus_live.html",
+      "reason": "superseded experiment module, unused audit environment, duplicate model, or cache",
+      "bytes": 1388,
+      "file_count": 1,
+      "tracked_files": [
+        "benchmark/experiments/manus_live.html"
+      ]
+    },
+    {
+      "source": "configs/geort",
+      "destination": "configs/geort",
+      "reason": "superseded experiment module, unused audit environment, duplicate model, or cache",
+      "bytes": 9940,
+      "file_count": 1,
+      "tracked_files": [
+        "configs/geort/allegro_reference_v1.json"
+      ]
+    },
+    {
+      "source": "requirements/public-quest-audit.txt",
+      "destination": "requirements/public-quest-audit.txt",
+      "reason": "superseded experiment module, unused audit environment, duplicate model, or cache",
+      "bytes": 116,
+      "file_count": 1,
+      "tracked_files": [
+        "requirements/public-quest-audit.txt"
+      ]
+    },
+    {
+      "source": ".venv-data-audit",
+      "destination": ".venv-data-audit",
+      "reason": "superseded experiment module, unused audit environment, duplicate model, or cache",
+      "bytes": 217203905,
+      "file_count": 1908,
+      "tracked_files": []
+    },
+    {
+      "source": "tesollo_model-main",
+      "destination": "tesollo_model-main",
+      "reason": "superseded experiment module, unused audit environment, duplicate model, or cache",
+      "bytes": 93872292,
+      "file_count": 260,
+      "tracked_files": [
+        "tesollo_model-main/LICENSE",
+        "tesollo_model-main/README.md",
+        "tesollo_model-main/dg5f/dg5f_left.urdf",
+        "tesollo_model-main/dg5f/dg5f_left.xml",
+        "tesollo_model-main/dg5f/dg5f_left_short.urdf",
+        "tesollo_model-main/dg5f/dg5f_left_short.xml",
+        "tesollo_model-main/dg5f/dg5f_right.urdf",
+        "tesollo_model-main/dg5f/dg5f_right.xml",
+        "tesollo_model-main/dg5f/dg5f_right_short.urdf",
+        "tesollo_model-main/dg5f/dg5f_right_short.xml",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_1_1.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_1_1_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_1_2.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_1_2_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_1_3.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_1_3_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_1_4.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_1_4_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_1_tip.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_1_tip_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_2_1.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_2_1_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_2_2.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_2_2_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_2_3.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_2_3_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_2_4.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_2_4_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_2_tip.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_2_tip_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_3_1.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_3_1_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_3_2.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_3_2_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_3_3.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_3_3_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_3_4.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_3_4_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_3_tip.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_3_tip_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_4_1.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_4_1_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_4_2.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_4_2_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_4_3.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_4_3_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_4_4.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_4_4_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_4_tip.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_4_tip_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_5_1.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_5_1_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_5_2.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_5_2_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_5_3.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_5_3_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_5_4.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_5_4_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_5_tip.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_5_tip_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_base.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_base_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_mount.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_mount_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_palm.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left/ll_dg_palm_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_1_1.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_1_1_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_1_2.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_1_2_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_1_3.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_1_3_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_1_4.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_1_4_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_1_tip.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_1_tip_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_2_1.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_2_1_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_2_2.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_2_2_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_2_3.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_2_3_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_2_4.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_2_4_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_2_tip.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_2_tip_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_3_1.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_3_1_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_3_2.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_3_2_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_3_3.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_3_3_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_3_4.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_3_4_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_3_tip.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_3_tip_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_4_1.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_4_1_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_4_2.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_4_2_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_4_3.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_4_3_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_4_4.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_4_4_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_4_tip.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_4_tip_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_5_1.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_5_1_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_5_2.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_5_2_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_5_3.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_5_3_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_5_4.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_5_4_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_5_tip.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_5_tip_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_base.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_palm.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_palm_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_s_base.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_s_base_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_s_mount.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_left_short/ll_dg_s_mount_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_1_1.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_1_1_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_1_2.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_1_2_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_1_3.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_1_3_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_1_4.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_1_4_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_1_tip.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_1_tip_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_2_1.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_2_1_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_2_2.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_2_2_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_2_3.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_2_3_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_2_4.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_2_4_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_2_tip.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_2_tip_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_3_1.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_3_1_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_3_2.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_3_2_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_3_3.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_3_3_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_3_4.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_3_4_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_3_tip.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_3_tip_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_4_1.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_4_1_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_4_2.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_4_2_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_4_3.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_4_3_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_4_4.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_4_4_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_4_tip.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_4_tip_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_5_1.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_5_1_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_5_2.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_5_2_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_5_3.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_5_3_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_5_4.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_5_4_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_5_tip.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_5_tip_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_base.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_base_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_mount.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_mount_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_palm.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right/rl_dg_palm_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_1_1.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_1_1_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_1_2.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_1_2_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_1_3.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_1_3_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_1_4.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_1_4_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_1_tip.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_1_tip_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_2_1.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_2_1_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_2_2.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_2_2_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_2_3.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_2_3_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_2_4.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_2_4_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_2_tip.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_2_tip_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_3_1.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_3_1_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_3_2.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_3_2_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_3_3.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_3_3_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_3_4.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_3_4_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_3_tip.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_3_tip_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_4_1.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_4_1_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_4_2.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_4_2_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_4_3.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_4_3_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_4_4.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_4_4_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_4_tip.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_4_tip_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_5_1.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_5_1_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_5_2.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_5_2_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_5_3.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_5_3_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_5_4.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_5_4_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_5_tip.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_5_tip_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_palm.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_palm_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_s_base.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_s_base_c.STL",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_s_mount.dae",
+        "tesollo_model-main/dg5f/meshes/dg5f_right_short/rl_dg_s_mount_c.STL",
+        "tesollo_model-main/dg5f/usd/dg5f_left/configuration/dg5f_left_base.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_left/configuration/dg5f_left_physics.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_left/configuration/dg5f_left_robot.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_left/configuration/dg5f_left_sensor.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_left/dg5f_left.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_left_short/configuration/dg5f_left_short_base.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_left_short/configuration/dg5f_left_short_physics.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_left_short/configuration/dg5f_left_short_robot.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_left_short/configuration/dg5f_left_short_sensor.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_left_short/dg5f_left_short.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_right/configuration/dg5f_right_base.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_right/configuration/dg5f_right_physics.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_right/configuration/dg5f_right_robot.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_right/configuration/dg5f_right_sensor.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_right/dg5f_right.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_right_short/configuration/dg5f_right_short_base.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_right_short/configuration/dg5f_right_short_physics.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_right_short/configuration/dg5f_right_short_robot.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_right_short/configuration/dg5f_right_short_sensor.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_right_short/dg5f_right_short.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_right_tactile/configuration/dg5f_right_tactile_base.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_right_tactile/configuration/dg5f_right_tactile_physics.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_right_tactile/configuration/dg5f_right_tactile_robot.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_right_tactile/configuration/dg5f_right_tactile_sensor.usd",
+        "tesollo_model-main/dg5f/usd/dg5f_right_tactile/dg5f_right_tactile.usd"
+      ]
+    },
+    {
+      "source": ".pytest_cache",
+      "destination": ".pytest_cache",
+      "reason": "superseded experiment module, unused audit environment, duplicate model, or cache",
+      "bytes": 16189,
+      "file_count": 5,
+      "tracked_files": []
+    },
+    {
+      "source": ".ruff_cache",
+      "destination": ".ruff_cache",
+      "reason": "superseded experiment module, unused audit environment, duplicate model, or cache",
+      "bytes": 9854,
+      "file_count": 8,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase2_replay.jsonl",
+      "destination": "results/phase2_replay.jsonl",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 538584,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_quest_observed_six_20261018",
+      "destination": "results/geort_quest_observed_six_20261018",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 368188860,
+      "file_count": 837,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_range_study_20261018",
+      "destination": "results/geort_range_study_20261018",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 386446963,
+      "file_count": 836,
+      "tracked_files": []
+    },
+    {
+      "source": "results/quest_coordinate_provenance_20261018",
+      "destination": "results/quest_coordinate_provenance_20261018",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 5987946,
+      "file_count": 6,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase6_validation_console.txt",
+      "destination": "results/phase6_validation_console.txt",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 37824,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase4-f0kuhrlh",
+      "destination": "results/phase4-f0kuhrlh",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 2375448,
+      "file_count": 4,
+      "tracked_files": []
+    },
+    {
+      "source": "results/quest_train_eval_session_audit.json",
+      "destination": "results/quest_train_eval_session_audit.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 1480,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_allegro_control_20261018",
+      "destination": "results/geort_allegro_control_20261018",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 315596175,
+      "file_count": 876,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase7_preparation_console.txt",
+      "destination": "results/phase7_preparation_console.txt",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 26668,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/quest_observed_ranges_session002",
+      "destination": "results/quest_observed_ranges_session002",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 3393968,
+      "file_count": 2,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_evaluation_console.txt",
+      "destination": "results/geort_evaluation_console.txt",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 6430,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase7_check_console.txt",
+      "destination": "results/phase7_check_console.txt",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 5569,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort-diagnosis-nsinlfay",
+      "destination": "results/geort-diagnosis-nsinlfay",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 79850435,
+      "file_count": 17,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase4-g0sl_o6j",
+      "destination": "results/phase4-g0sl_o6j",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 476425,
+      "file_count": 3,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort-recording-check-onx6c_kb",
+      "destination": "results/geort-recording-check-onx6c_kb",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 846,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase4_validation_console.txt",
+      "destination": "results/phase4_validation_console.txt",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 5708,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/live-retargeting-x2117cq6",
+      "destination": "results/live-retargeting-x2117cq6",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 215854362,
+      "file_count": 11,
+      "tracked_files": []
+    },
+    {
+      "source": "results/public_quest_audit.json",
+      "destination": "results/public_quest_audit.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 16408,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase2_open.png",
+      "destination": "results/phase2_open.png",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 50403,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase7_source_integrity.json",
+      "destination": "results/phase7_source_integrity.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 1149,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase7_runtime_check.json",
+      "destination": "results/phase7_runtime_check.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 3030,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort-diagnosis-1ultx4r8",
+      "destination": "results/geort-diagnosis-1ultx4r8",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 77555156,
+      "file_count": 3,
+      "tracked_files": []
+    },
+    {
+      "source": "results/hand_validation_public_20261018.json",
+      "destination": "results/hand_validation_public_20261018.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 1049617,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase7_training_plan.json",
+      "destination": "results/phase7_training_plan.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 1193,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/live-validation-i9_ge72p",
+      "destination": "results/live-validation-i9_ge72p",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 13582634,
+      "file_count": 12,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase4-htngpy6n",
+      "destination": "results/phase4-htngpy6n",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 300561609,
+      "file_count": 3,
+      "tracked_files": []
+    },
+    {
+      "source": "results/live-retargeting-hd_mi9ku",
+      "destination": "results/live-retargeting-hd_mi9ku",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 6163877,
+      "file_count": 10,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase4-validation-bn5rpcg6",
+      "destination": "results/phase4-validation-bn5rpcg6",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 3850304,
+      "file_count": 12,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase4_upstream_integrity.json",
+      "destination": "results/phase4_upstream_integrity.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 978,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/capture-smoke-20261017T194459",
+      "destination": "results/capture-smoke-20261017T194459",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 3174,
+      "file_count": 4,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase2_demo.csv",
+      "destination": "results/phase2_demo.csv",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 473586,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase7_recovered_sapien_cache",
+      "destination": "results/phase7_recovered_sapien_cache",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 466673,
+      "file_count": 28,
+      "tracked_files": []
+    },
+    {
+      "source": "results/tesollo_calibration_incomplete_axis_probe",
+      "destination": "results/tesollo_calibration_incomplete_axis_probe",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 1822,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase6-9k270o69",
+      "destination": "results/phase6-9k270o69",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 3840728,
+      "file_count": 8,
+      "tracked_files": []
+    },
+    {
+      "source": "results/quest_observed_ranges_session002_verified",
+      "destination": "results/quest_observed_ranges_session002_verified",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 3400882,
+      "file_count": 4,
+      "tracked_files": []
+    },
+    {
+      "source": "results/live-retargeting-o6axl2lk",
+      "destination": "results/live-retargeting-o6axl2lk",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 282259851,
+      "file_count": 10,
+      "tracked_files": []
+    },
+    {
+      "source": "results/pytest.xml",
+      "destination": "results/pytest.xml",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 8208,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/live-validation-2m43svdr",
+      "destination": "results/live-validation-2m43svdr",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 12339401,
+      "file_count": 12,
+      "tracked_files": []
+    },
+    {
+      "source": "results/live-retargeting-cq0b17q3",
+      "destination": "results/live-retargeting-cq0b17q3",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 288352362,
+      "file_count": 11,
+      "tracked_files": []
+    },
+    {
+      "source": "results/live-retargeting-wbj9uoib",
+      "destination": "results/live-retargeting-wbj9uoib",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 2995828,
+      "file_count": 10,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase3_live_preflight.json",
+      "destination": "results/phase3_live_preflight.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 517,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/tesollo-calibration-repro-szoxde2t",
+      "destination": "results/tesollo-calibration-repro-szoxde2t",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 129617,
+      "file_count": 4,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace_before_mesh_isolation",
+      "destination": "results/geort_dg5f_workspace_before_mesh_isolation",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 48059,
+      "file_count": 3,
+      "tracked_files": []
+    },
+    {
+      "source": "results/quest_train_session_002_audit.json",
+      "destination": "results/quest_train_session_002_audit.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 1338,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase4-validation-e43gofiy",
+      "destination": "results/phase4-validation-e43gofiy",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 3869156,
+      "file_count": 12,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase7-prep-parent-68uo1a_n",
+      "destination": "results/phase7-prep-parent-68uo1a_n",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 48076,
+      "file_count": 3,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_data_size_parity_20261018",
+      "destination": "results/geort_data_size_parity_20261018",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 597477770,
+      "file_count": 1275,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort-mapping-investigation-xa4v4z_5",
+      "destination": "results/geort-mapping-investigation-xa4v4z_5",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 13427,
+      "file_count": 3,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase2_validation.json",
+      "destination": "results/phase2_validation.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 2837,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/demo.jsonl",
+      "destination": "results/demo.jsonl",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 2678670,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase3-bth5ml7z",
+      "destination": "results/phase3-bth5ml7z",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 933930,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/quest_tesollo_correspondence",
+      "destination": "results/quest_tesollo_correspondence",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 8799,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase2_replay.csv",
+      "destination": "results/phase2_replay.csv",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 473587,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/hand-validation-rx87q1bu",
+      "destination": "results/hand-validation-rx87q1bu",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 323328,
+      "file_count": 5,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase5-validation-nkvj6ly7",
+      "destination": "results/phase5-validation-nkvj6ly7",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 152982391,
+      "file_count": 30,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase5_validation_latest.json",
+      "destination": "results/phase5_validation_latest.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 18965,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase5_validation_console.txt",
+      "destination": "results/phase5_validation_console.txt",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 27353,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase2_flexed.png",
+      "destination": "results/phase2_flexed.png",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 51480,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase6-jpsz3i6j",
+      "destination": "results/phase6-jpsz3i6j",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 319484,
+      "file_count": 8,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase3_pytest.xml",
+      "destination": "results/phase3_pytest.xml",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 11261,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase4_pytest.xml",
+      "destination": "results/phase4_pytest.xml",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 12602,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/live-validation-3ak2venh",
+      "destination": "results/live-validation-3ak2venh",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 12313795,
+      "file_count": 12,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase7_runtime_check_isolated_meshes.json",
+      "destination": "results/phase7_runtime_check_isolated_meshes.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 3030,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase5-crwehdxu",
+      "destination": "results/phase5-crwehdxu",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 3568670,
+      "file_count": 6,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase6_validation_latest.json",
+      "destination": "results/phase6_validation_latest.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 30494,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002_audit.json",
+      "destination": "results/video_benchmark_002_audit.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 1048,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase5-validation-5w97vq_l",
+      "destination": "results/phase5-validation-5w97vq_l",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 152922953,
+      "file_count": 30,
+      "tracked_files": []
+    },
+    {
+      "source": "results/personal-fist-diagnosis-zck6haj3",
+      "destination": "results/personal-fist-diagnosis-zck6haj3",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 110951338,
+      "file_count": 5,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort-stack-audit-f4pfvpoq",
+      "destination": "results/geort-stack-audit-f4pfvpoq",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 4857782,
+      "file_count": 10,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase5-4nuj6p43",
+      "destination": "results/phase5-4nuj6p43",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 373351,
+      "file_count": 6,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase4-gqm0qtay",
+      "destination": "results/phase4-gqm0qtay",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 1318376,
+      "file_count": 4,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase5-110okjcy",
+      "destination": "results/phase5-110okjcy",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 372892,
+      "file_count": 6,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase3_startup_smoke.jsonl",
+      "destination": "results/phase3_startup_smoke.jsonl",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 1723,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase4_validation_latest.json",
+      "destination": "results/phase4_validation_latest.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 3011,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_data_size_20261018",
+      "destination": "results/geort_data_size_20261018",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 774795451,
+      "file_count": 1667,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_evaluation_latest.json",
+      "destination": "results/geort_evaluation_latest.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 52338,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/live-retargeting-7yoeqm83",
+      "destination": "results/live-retargeting-7yoeqm83",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 593036473,
+      "file_count": 10,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase5-28__b91k",
+      "destination": "results/phase5-28__b91k",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 2704972,
+      "file_count": 6,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort-mapping-investigation-gixfo42w",
+      "destination": "results/geort-mapping-investigation-gixfo42w",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 15530,
+      "file_count": 4,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase6-ggtskdrk",
+      "destination": "results/phase6-ggtskdrk",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 5206778,
+      "file_count": 8,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort-inference-tp1txnm7",
+      "destination": "results/geort-inference-tp1txnm7",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 81975,
+      "file_count": 2,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase3_integrity.json",
+      "destination": "results/phase3_integrity.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 58,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase2_demo.mp4",
+      "destination": "results/phase2_demo.mp4",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 575752,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_allegro_reference_v1",
+      "destination": "results/geort_allegro_reference_v1",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 44848579,
+      "file_count": 10,
+      "tracked_files": []
+    },
+    {
+      "source": "results/hand-validation-laipzmcz",
+      "destination": "results/hand-validation-laipzmcz",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 193228010,
+      "file_count": 2,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase5_source_integrity.json",
+      "destination": "results/phase5_source_integrity.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 1083,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/live-geort-ranges-wyumjn3e",
+      "destination": "results/live-geort-ranges-wyumjn3e",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 2527,
+      "file_count": 2,
+      "tracked_files": []
+    },
+    {
+      "source": "results/live-retargeting-f1zscgh2",
+      "destination": "results/live-retargeting-f1zscgh2",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 1101350663,
+      "file_count": 4,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_personal_session002_eval",
+      "destination": "results/geort_personal_session002_eval",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 10359620,
+      "file_count": 3,
+      "tracked_files": []
+    },
+    {
+      "source": "results/live-geort-ranges-dfpkaios",
+      "destination": "results/live-geort-ranges-dfpkaios",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 115549557,
+      "file_count": 3,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase3_validation.json",
+      "destination": "results/phase3_validation.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 848,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase6_source_integrity.json",
+      "destination": "results/phase6_source_integrity.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 1149,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase6-validation-55jokmj4",
+      "destination": "results/phase6-validation-55jokmj4",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 222222390,
+      "file_count": 40,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase7_preparation_status.json",
+      "destination": "results/phase7_preparation_status.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 6098,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase2_demo.jsonl",
+      "destination": "results/phase2_demo.jsonl",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 538583,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/demo.csv",
+      "destination": "results/demo.csv",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 2376873,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/source_integrity.json",
+      "destination": "results/source_integrity.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 978,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase3_browser_mock.json",
+      "destination": "results/phase3_browser_mock.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 380,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/live-validation-_y3whbcq",
+      "destination": "results/live-validation-_y3whbcq",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 13668886,
+      "file_count": 12,
+      "tracked_files": []
+    },
+    {
+      "source": "results/phase3_upstream_integrity.json",
+      "destination": "results/phase3_upstream_integrity.json",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 978,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort-evaluation-yw5i3hyk",
+      "destination": "results/geort-evaluation-yw5i3hyk",
+      "reason": "historical experiment output; current checkpoint, TLS and video source state retained",
+      "bytes": 105031663,
+      "file_count": 28,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/video_010s.jpg",
+      "destination": "results/video_benchmark_002/video_010s.jpg",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 365130,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/slate_040.png",
+      "destination": "results/video_benchmark_002/slate_040.png",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 204570,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/slate_020.png",
+      "destination": "results/video_benchmark_002/slate_020.png",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 196132,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/replay_large_framed",
+      "destination": "results/video_benchmark_002/replay_large_framed",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 82405578,
+      "file_count": 19,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/replay_smoke",
+      "destination": "results/video_benchmark_002/replay_smoke",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 3453060,
+      "file_count": 23,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/published_large",
+      "destination": "results/video_benchmark_002/published_large",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 89321344,
+      "file_count": 11,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/replay_large",
+      "destination": "results/video_benchmark_002/replay_large",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 94471955,
+      "file_count": 19,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/published_palm",
+      "destination": "results/video_benchmark_002/published_palm",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 127128965,
+      "file_count": 89,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/slate_110.png",
+      "destination": "results/video_benchmark_002/slate_110.png",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 205387,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/slate_080.png",
+      "destination": "results/video_benchmark_002/slate_080.png",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 207977,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/video_020s.jpg",
+      "destination": "results/video_benchmark_002/video_020s.jpg",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 407966,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/published",
+      "destination": "results/video_benchmark_002/published",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 83056365,
+      "file_count": 30,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/slate_100.png",
+      "destination": "results/video_benchmark_002/slate_100.png",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 213135,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/large_view",
+      "destination": "results/video_benchmark_002/large_view",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 1058947,
+      "file_count": 7,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/video_120s.jpg",
+      "destination": "results/video_benchmark_002/video_120s.jpg",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 380997,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/video_000s.jpg",
+      "destination": "results/video_benchmark_002/video_000s.jpg",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 365854,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/published_large_framed",
+      "destination": "results/video_benchmark_002/published_large_framed",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 212979467,
+      "file_count": 90,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/readme_publication_edit.json",
+      "destination": "results/video_benchmark_002/readme_publication_edit.json",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 408,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/replay_palm",
+      "destination": "results/video_benchmark_002/replay_palm",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 58976322,
+      "file_count": 19,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/slate_010.png",
+      "destination": "results/video_benchmark_002/slate_010.png",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 201494,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/media_validation.json",
+      "destination": "results/video_benchmark_002/media_validation.json",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 3850,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/palm_view",
+      "destination": "results/video_benchmark_002/palm_view",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 447944,
+      "file_count": 4,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/video_110s.jpg",
+      "destination": "results/video_benchmark_002/video_110s.jpg",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 377169,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/slate_060.png",
+      "destination": "results/video_benchmark_002/slate_060.png",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 200378,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/source_integrity.json",
+      "destination": "results/video_benchmark_002/source_integrity.json",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 976,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/video_benchmark_002/video_060s.jpg",
+      "destination": "results/video_benchmark_002/video_060s.jpg",
+      "reason": "duplicate rendering/media layout or one-off publication check; public final media retained in docs",
+      "bytes": 394499,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-2glhel2r",
+      "destination": "results/geort_dg5f_workspace/training-2glhel2r",
+      "reason": "abandoned earlier personal model; selected full-range model retained",
+      "bytes": 184290243,
+      "file_count": 407,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_last",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_last",
+      "reason": "duplicate export; timestamped selected model retained",
+      "bytes": 79889190,
+      "file_count": 202,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_88.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_88.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_134.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_134.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_73.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_73.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_98.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_98.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_34.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_34.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_198.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_198.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_195.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_195.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_117.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_117.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_108.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_108.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_12.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_12.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_176.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_176.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_177.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_177.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_46.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_46.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_172.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_172.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_68.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_68.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_109.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_109.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_157.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_157.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_185.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_185.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_70.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_70.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_126.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_126.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_84.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_84.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_28.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_28.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_69.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_69.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_141.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_141.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_193.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_193.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_66.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_66.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_123.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_123.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_173.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_173.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_163.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_163.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_7.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_7.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 396851,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_111.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_111.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_5.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_5.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 396851,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_11.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_11.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_184.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_184.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_41.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_41.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_48.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_48.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_174.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_174.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_169.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_169.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_18.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_18.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_16.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_16.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_24.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_24.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_124.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_124.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_52.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_52.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_187.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_187.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_83.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_83.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_151.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_151.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_181.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_181.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_179.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_179.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_112.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_112.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_78.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_78.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_142.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_142.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_132.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_132.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_186.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_186.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_196.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_196.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_101.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_101.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_145.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_145.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_168.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_168.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_164.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_164.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_116.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_116.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_50.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_50.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_107.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_107.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_128.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_128.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_140.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_140.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_93.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_93.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_94.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_94.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_143.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_143.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_10.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_10.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_89.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_89.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_149.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_149.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_194.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_194.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_37.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_37.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_125.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_125.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_150.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_150.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_148.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_148.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_178.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_178.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_189.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_189.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_160.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_160.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_136.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_136.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_45.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_45.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_1.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_1.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 396851,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_30.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_30.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_15.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_15.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_104.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_104.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_2.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_2.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 396851,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_103.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_103.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_122.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_122.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_147.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_147.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_20.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_20.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_191.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_191.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_53.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_53.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_137.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_137.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_99.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_99.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_0.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_0.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 396851,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_76.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_76.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_61.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_61.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_13.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_13.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_167.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_167.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_152.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_152.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_32.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_32.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_120.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_120.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_67.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_67.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_156.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_156.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_17.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_17.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_25.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_25.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_40.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_40.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_58.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_58.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_8.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_8.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 396851,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_47.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_47.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_82.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_82.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_31.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_31.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_102.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_102.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_55.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_55.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_154.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_154.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_44.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_44.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_39.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_39.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_165.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_165.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_63.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_63.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_71.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_71.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_19.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_19.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_119.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_119.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_183.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_183.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_23.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_23.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_92.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_92.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_75.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_75.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_146.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_146.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_190.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_190.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_162.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_162.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_171.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_171.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_97.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_97.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_161.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_161.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_175.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_175.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_27.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_27.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_62.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_62.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_158.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_158.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_42.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_42.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_87.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_87.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_6.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_6.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 396851,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_135.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_135.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_121.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_121.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_131.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_131.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_33.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_33.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_166.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_166.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_64.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_64.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_77.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_77.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_192.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_192.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_9.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_9.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 396851,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_114.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_114.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_95.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_95.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_21.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_21.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_96.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_96.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_74.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_74.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_118.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_118.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_90.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_90.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_56.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_56.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_100.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_100.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_54.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_54.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_199.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_199.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_22.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_22.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_85.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_85.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_51.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_51.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_4.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_4.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 396851,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_144.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_144.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_65.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_65.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_57.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_57.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_110.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_110.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_153.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_153.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_91.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_91.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_106.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_106.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_197.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_197.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_35.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_35.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_3.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_3.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 396851,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_115.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_115.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_127.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_127.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_29.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_29.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_105.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_105.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_14.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_14.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_26.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_26.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_43.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_43.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_49.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_49.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_113.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_113.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_80.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_80.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_79.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_79.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_180.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_180.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_155.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_155.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_188.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_188.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_72.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_72.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_59.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_59.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_36.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_36.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_129.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_129.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_38.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_38.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_133.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_133.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_138.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_138.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_139.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_139.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_130.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_130.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_86.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_86.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_60.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_60.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_81.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_81.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397449,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_182.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_182.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_159.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_159.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_170.pth",
+      "destination": "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/epoch_170.pth",
+      "reason": "intermediate epoch; final last.pth and config retained",
+      "bytes": 397535,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "data/public",
+      "destination": "data/public",
+      "reason": "historical public dataset downloads",
+      "bytes": 100427073,
+      "file_count": 10,
+      "tracked_files": [
+        "data/public/anydex/LICENSE",
+        "data/public/anydex/avp1.pkl",
+        "data/public/geort/LICENSE",
+        "data/public/geort/human_alex.npy",
+        "data/public/wild_mani_kitchen/b5c916d89c771f4a09d5f6d6c59e1dc4f912bb61/README.md",
+        "data/public/wild_mani_kitchen/b5c916d89c771f4a09d5f6d6c59e1dc4f912bb61/data/chunk_0000.parquet",
+        "data/public/wild_mani_kitchen/b5c916d89c771f4a09d5f6d6c59e1dc4f912bb61/data/chunk_0001.parquet",
+        "data/public/wild_mani_kitchen/b5c916d89c771f4a09d5f6d6c59e1dc4f912bb61/meta/episode_index.parquet",
+        "data/public/wild_mani_kitchen/b5c916d89c771f4a09d5f6d6c59e1dc4f912bb61/meta/info.json",
+        "data/public/wild_mani_kitchen/b5c916d89c771f4a09d5f6d6c59e1dc4f912bb61/meta/stats.json"
+      ]
+    },
+    {
+      "source": "data/geort/geort_train_session_001",
+      "destination": "data/geort/geort_train_session_001",
+      "reason": "historical input export; selected training export retained",
+      "bytes": 3994637,
+      "file_count": 3,
+      "tracked_files": [
+        "data/geort/geort_train_session_001/human.npy",
+        "data/geort/geort_train_session_001/manifest.json",
+        "data/geort/geort_train_session_001/verification.json"
+      ]
+    },
+    {
+      "source": "data/geort/quest_eval_session_001",
+      "destination": "data/geort/quest_eval_session_001",
+      "reason": "historical input export; selected training export retained",
+      "bytes": 2005921,
+      "file_count": 2,
+      "tracked_files": [
+        "data/geort/quest_eval_session_001/human.npy",
+        "data/geort/quest_eval_session_001/manifest.json"
+      ]
+    },
+    {
+      "source": "recordings/quest_eval_session_001.jsonl",
+      "destination": "recordings/quest_eval_session_001.jsonl",
+      "reason": "historical tracking/evaluation/preflight input; current training/calibration/video input retained",
+      "bytes": 31152443,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "recordings/quest-20261017T135121-611496Z.jsonl",
+      "destination": "recordings/quest-20261017T135121-611496Z.jsonl",
+      "reason": "historical tracking/evaluation/preflight input; current training/calibration/video input retained",
+      "bytes": 1723,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "recordings/video_benchmark_001",
+      "destination": "recordings/video_benchmark_001",
+      "reason": "historical tracking/evaluation/preflight input; current training/calibration/video input retained",
+      "bytes": 66261914,
+      "file_count": 3,
+      "tracked_files": []
+    },
+    {
+      "source": "recordings/quest-20261017T134945-928013Z.jsonl",
+      "destination": "recordings/quest-20261017T134945-928013Z.jsonl",
+      "reason": "historical tracking/evaluation/preflight input; current training/calibration/video input retained",
+      "bytes": 1723,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "recordings/quest-20261017T135854-265505Z.jsonl",
+      "destination": "recordings/quest-20261017T135854-265505Z.jsonl",
+      "reason": "historical tracking/evaluation/preflight input; current training/calibration/video input retained",
+      "bytes": 1723,
+      "file_count": 1,
+      "tracked_files": []
+    },
+    {
+      "source": "recordings/quest-20261017T135937-204414Z.jsonl",
+      "destination": "recordings/quest-20261017T135937-204414Z.jsonl",
+      "reason": "historical tracking/evaluation/preflight input; current training/calibration/video input retained",
+      "bytes": 50568609,
+      "file_count": 1,
+      "tracked_files": []
+    }
+  ],
+  "relocated_within_project": [
+    {
+      "source": "com.oculus.vrshell-20261018-050834-0.mp4",
+      "destination": "recordings/video_benchmark_002/human.mp4",
+      "sha256": "08b05e6114bb33e3001e49ccaa51770e8eda634dbfa67777dce61d0eb3f9082c",
+      "reason": "keep original video with its take and outside Git inclusion"
+    }
+  ],
+  "post_cleanup_checks": [
+    {
+      "source": "results/current_smoke",
+      "archive_destination": "post_cleanup_checks/results/current_smoke"
+    },
+    {
+      "source": "results/current_smoke_palm",
+      "archive_destination": "post_cleanup_checks/results/current_smoke_palm"
+    },
+    {
+      "source": "results/current_documentation_plots",
+      "archive_destination": "post_cleanup_checks/results/current_documentation_plots"
+    },
+    {
+      "source": ".pytest_cache",
+      "archive_destination": "post_cleanup_checks/.pytest_cache"
+    },
+    {
+      "source": ".ruff_cache",
+      "archive_destination": "post_cleanup_checks/.ruff_cache"
+    }
+  ],
+  "verification": {
+    "pytest": {
+      "passed": 92,
+      "skipped": 1,
+      "reason": "isolated GeoRT runtime tested separately"
+    },
+    "isolated_geort_runtime_passed": 1,
+    "four_method_smoke_seconds": 1,
+    "same_input_digest_verified": true,
+    "actual_states_and_metrics_byte_identical": true,
+    "original_108s_plots_regenerated_without_historical_results": true,
+    "media_manifest_entries_verified": 60,
+    "markdown_local_links_valid": true,
+    "upstream_clean_checkouts": 8,
+    "ruff": "passed",
+    "git_index_unchanged": true,
+    "current_artifact_sha256": {
+      "recordings/video_benchmark_002/human.mp4": "08b05e6114bb33e3001e49ccaa51770e8eda634dbfa67777dce61d0eb3f9082c",
+      "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30/last.pth": "7a0324c7d3ae7351d9852a83b9ea509b22c8f6d6549bdf8529781e859d63816e",
+      "data/geort/quest_train_session_002/human.npy": "96a4718f60226dc0f16ecde8e36945d8a16c1b14de9059e3f673ccedee706204",
+      "configs/tesollo_calibrated/profile.json": "6ecd6f3edda0d9e0bb028636d26c58eac4eedc43e91bec02165233d3fe6936a9"
+    },
+    "note": "No live headset or new training performed during documentation/cleanup"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "purpose": "Robot-only diagnostic of inverse kinematics nonuniqueness; not a retargeter, training alteration or fabricated human dataset",
+  "positive_middle_flexion_deg": [
+    28.64788975654116,
+    40.10704565915762,
+    22.918311805232932
+  ],
+  "alternative_middle_flexion_deg": [
+    80.03978076048722,
+    -53.67911986954273,
+    50.28771513157326
+  ],
+  "exact_mujoco_middle_tip_difference_mm": 2.3027347467911255e-09,
+  "target_tip_palm_m": [
+    0.09080395431092983,
+    0.0025,
+    0.14396509645635852
+  ],
+  "same_endpoint_does_not_imply_same_intermediate_joint_pose": true,
+  "loss_limitation": "Identical single-pose fingertips do not constrain joint posture; this does not prove identical directional/curvature losses over an entire mapping"
+}

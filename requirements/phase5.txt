@@ -1,4 +1,4 @@
-# Install after uv sync --locked and requirements/phase3.txt (see README_PHASE3.md).
+# Install after uv sync --locked and requirements/phase3.txt (see docs/RUNNING.md).
 # Preserve the Phase 1–4 NumPy version. ABI-compatible native dependency pins.
 numpy==2.2.6
 pin==3.8.0

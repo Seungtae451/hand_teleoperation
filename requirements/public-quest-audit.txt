@@ -1,3 +1,0 @@
-# Isolated data preparation environment; do not replace GeoRT's NumPy 1.x environment.
-numpy==2.2.6
-pyarrow==19.0.1

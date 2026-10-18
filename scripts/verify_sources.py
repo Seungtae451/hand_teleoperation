@@ -31,7 +31,14 @@ def verify(include_original=False):
         if not ok:
             report["problems"].append(f"Changed checkout: {repo['name']}")
     if include_original:
-        hashes = json.loads((ROOT / "docs/original_files.sha256.json").read_text())
+        snapshot = ROOT / "docs/original_files.sha256.json"
+        if not snapshot.is_file():
+            report["problems"].append(
+                "Historical initial-workspace snapshot was archived; "
+                "see docs/PROJECT_LAYOUT.md. Run without --original for upstream checks."
+            )
+            return report
+        hashes = json.loads(snapshot.read_text())
         for relative, expected in hashes.items():
             path = ROOT / relative
             if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != expected:

@@ -14,7 +14,7 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from scripts.geort_range_study import save, sha  # noqa: E402
+from benchmark.artifacts import save, sha  # noqa: E402
 
 PERSONAL = (
     ROOT

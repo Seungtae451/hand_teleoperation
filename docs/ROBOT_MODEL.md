@@ -3,7 +3,7 @@
 공식 모델은 `tesollodelto/tesollo_model`의 commit
 `f648627be40f8df2e3df906ccf3c5d62103f3275`, `dg5f/dg5f_right.urdf`를 사용한다.
 원본 SHA-256은 `86fc72a59d42bd2b866e340feb03dc864315350be3722a28626b7bd4a5a385ca`다.
-기존 `tesollo_model-main/`의 같은 URDF와 일치한다. 라이선스는 BSD-3-Clause다.
+초기 `tesollo_model-main/` 사본과 같은 URDF다. 초기 사본은 현재 외부 보관했고 pinned 공식 checkout을 사용한다. 라이선스는 BSD-3-Clause다.
 
 ## 관절과 프레임
 
@@ -13,7 +13,7 @@
 - canonical order: thumb, index, middle, ring, pinky 순서로 각 손가락 joint 1~4.
 - fingertip order: 위 손가락 순서의 `rl_dg_1_tip` ~ `rl_dg_5_tip` 링크 원점.
 - m/rad/s를 사용한다. 좌표계는 URDF/MuJoCo의 오른손 좌표계다.
-  이 좌표계와 사람 손 frame의 정렬은 아직 수행하지 않았다.
+  사람 손과의 정렬은 각 adapter가 별도로 수행한다. 현재 정의는 [METHODS.md](METHODS.md)를 따른다.
 
 | canonical index | joint | local axis | lower rad | upper rad |
 |---|---|---|---:|---:|

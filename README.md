@@ -4,6 +4,43 @@ Meta Quest 3의 손 추적을 **공식 Tesollo DG-5F 오른손 URDF, 20개 관�
 
 **현재 결과:** 네 방법의 동일 입력 재생과 MuJoCo 비교 영상까지 실행했다. 이번 DG-5F/데이터/학습 조건에서 GeoRT는 손을 펴거나 주먹을 쥘 때 잘못된 자세를 출력했다. 개인 데이터와 관절 범위 제한만으로 해결되지 않았다. 모든 GeoRT 모델이나 Tesollo 설정에 대한 일반적 결론은 아니다.
 
+## 알고리즘을 처음 보는 경우
+
+각 방법이 맞추는 대상은 각도, 손의 기하 벡터, 학습된 손끝 공간으로 다르다. AnyDex와 Wuji는 공유 구조가 크다.
+
+![네 방법의 계산 경로](docs/figures/method_overview.png)
+
+| 읽을 내용 | 설명 |
+|---|---|
+| [알고리즘 원리·수식·차이](docs/METHODS.md) | MANUS 매핑, adaptive 최적화, GeoRT 네 손실과 공통 제어 |
+| [데이터 수집·평가 기준](docs/DATA_AND_EVALUATION.md) | 실제 손 영상과 WebXR 동시 기록, 시간 맞춤, 지표와 분리의 한계 |
+| [GeoRT 실패 과정](docs/GEORT_FAILURES.md) | 공개·개인 데이터, FK 대조, 범위 제한, 해결되지 않은 open/fist |
+| [실행·촬영·재현 명령](docs/RUNNING.md) | 환경 설치, 실시간 비교, 새 take 녹화와 offline 재생 |
+| [프로젝트 구조·외부 보관](docs/PROJECT_LAYOUT.md) | 현재 실험에 남긴 파일과 과거 자료의 보관 위치 |
+
+### 원리를 한눈에 보면
+
+| 방법 | 입력에서 사용하는 정보 | 로봇 관절각을 구하는 방식 |
+|---|---|---|
+| MANUS-style | 21점에서 계산한 굽힘·벌림 proxy | 제조사 piecewise 매핑; 학습·최적화 없음 |
+| AnyDex | 손목→마디 벡터, 엄지–손끝 거리·방향 | 핀치 정도에 따라 가중치를 바꾸는 제한 최적화 |
+| Wuji | 유사한 벡터·핀치 정보 | 공유 adaptive 최적화 구조, 다른 scaling 규약 |
+| GeoRT | canonical 좌표의 다섯 손끝 | 미리 학습한 손가락별 신경망, 3D 위치→4관절 |
+
+MANUS 오른손 검지 PIP의 예는 $q=\max(0,1.3(\theta-40^\circ))$다. 여기서 $\theta$는 Quest 기하 proxy이며 실제 MANUS 센서각이 아니다. AnyDex/Wuji는 다음 구조의 오차를 줄이는 $q$를 매 프레임 찾는다.
+
+$$q^*=\arg\min_{q_{\min}\le q\le q_{\max}}\sum_i\left[\alpha_i L_{\mathrm{pinch},i}+(1-\alpha_i)L_{\mathrm{shape},i}\right]+\lambda\|q-q_{\mathrm{prev}}\|^2.$$
+
+엄지와 손끝이 가까워질수록 $\alpha_i$가 커진다. 원본 기본값은 최대 0.7이므로 핀치 중에도 전체 모양 항이 남는다. 아래 그림은 수식의 작동을 그린 **설명용 그래프**이며 측정된 성능이 아니다.
+
+![매핑과 adaptive 목적함수 설명](docs/figures/mapping_and_optimizer.png)
+
+GeoRT는 손끝 $h_i$에서 $q_i=N_i(h_i)$를 예측한다. 학습은 다음 손실을 사용하며, 사람의 전체 관절각을 정답으로 삼지 않는다.
+
+$$L=L_{\mathrm{Direction}}+80L_{\mathrm{Chamfer}}+0.1L_{\mathrm{Curvature}}+L_{\mathrm{Pinch}}.$$
+
+Direction은 작은 움직임 방향, Chamfer는 손끝 점 분포, Curvature는 매핑의 국소 굽힘, Pinch는 가까운 손끝 쌍의 대응을 다룬다. 따라서 손끝이 가까워져도 중간 마디 자세가 사람과 같다고 보장하지 않는다. [손실별 수식과 개념도](docs/METHODS.md#3-geort-손끝-공간의-대응을-미리-학습한다)에 자세히 설명했다.
+
 ## 실제 손과 네 알고리즘 비교
 
 [![실제 손과 네 MuJoCo 결과](docs/media/video_benchmark_002/preview.gif)](docs/media/video_benchmark_002/comparison_all.mp4)
@@ -134,7 +171,11 @@ flowchart TD
 이 그림은 이번 영상이 아니라 **이전에 진단한 2,000프레임 평가 녹화** 결과다. 8개 distal을 0~90°로 제한한 실험과 검증된 6개 PIP/DIP에 관측 상한을 적용한 실험을 구분한다. 후자는 DIP 상한 71.29°·68.46°·74.63°, PIP 90°이며 하한 0°는 실험 제약이다. 측정한 해부학적 하한이나 공식 보정값이 아니다. 두 실험 모두 200 epoch를 마쳤지만 open 후보에서 검지·중지가 크게 굽혀지는 문제가 남았다.
 
 현재 조건에서는 GeoRT를 DG-5F의 신뢰할 수 있는 기본 모델로 채택할 근거가 부족하다. 다만 범위·초기화·workspace·손끝 기반 학습 특성을 한 원인으로 확정하지 않는다.
-[전체 진단](docs/GEORT_STACK_DIAGNOSIS.md) · [실패 분석](docs/GEORT_FAILURE_DIAGNOSIS.md) · [좌표 parity](docs/GEORT_PARITY_RESULT.md)
+[실패 과정·시도별 결과와 해석](docs/GEORT_FAILURES.md)
+
+![동일 손끝을 만드는 다른 DG-5F 중지 자세](docs/figures/ik_ambiguity.png)
+
+실제 FK에서 손끝이 같은 두 관절 자세가 존재한다. 다만 이것만으로 전체 학습 실패의 원인을 확정하지 않는다. 상세 문서에는 원래 공개 데이터부터 개인 Quest 재학습, 시뮬레이터 대조, 실패한 범위 제한까지 함께 기록했다.
 
 ## 구현 방식
 
@@ -161,7 +202,7 @@ flowchart LR
 - **Wuji:** 원본 Retargeter/AdaptiveOptimizerAnalytical을 사용한다. AnyDex와 공유하는 loss·optimizer 구조와 기본 선택 항을 유지한다. 임의 coupling이나 신전 penalty를 추가하지 않는다.
 - **GeoRT:** 원본 trainer/IK/FK/export를 사용한다. SAPIEN/Torch 환경을 분리하며 범위 실험에서는 FK 정규화 affine adapter를 명시한다.
 
-`q_vendor_raw` → `retarget_q_target` → `q_command` → `q_actual`을 로그에 구분한다. **외부 Git 소스와 공식 URDF 원본은 수정하지 않았다.** 각 단계 문서는 완료 당시 기록이며 현재 진행 상태는 이 README를 기준으로 한다.
+`q_vendor_raw` → `retarget_q_target` → `q_command` → `q_actual`을 로그에 구분한다. **외부 Git 소스와 공식 URDF 원본은 수정하지 않았다.** 과거 단계 문서는 외부에 보관했고 현재 진행 상태는 이 README를 기준으로 한다.
 
 ## 설치와 재현
 
@@ -176,8 +217,7 @@ uv pip install --python .venv/bin/python -r requirements/phase3.txt
 uv pip install --python .venv/bin/python -r requirements/phase6.txt
 ```
 
-[기본 시뮬레이터·Python API](README_SIMULATION.md) · [Quest 연결](README_PHASE3.md) · [AnyDex](README_PHASE5.md) · [Wuji](README_PHASE6.md) · [GeoRT 환경·학습](README_PHASE7.md) · [로봇 설정](README_TESOLLO_CALIBRATION.md) · [실시간 비교](README_LIVE_RETARGETING.md) · [영상 촬영](README_VIDEO_CAPTURE.md)
-
+[실행·촬영·학습·재현 안내](docs/RUNNING.md) · [시뮬레이터 API](docs/SIMULATION.md) · [보정 프로파일](configs/tesollo_calibrated/profile.json)
 이번 원본 녹화와 개인 checkpoint는 로컬 파일이며 새 clone에 자동 포함되지 않는다. 영상·그래프·요약은 `docs/media`에 포함하고 전체 JSONL/NPZ는 로컬에 보존했다.
 
 ```bash
@@ -199,36 +239,35 @@ uv pip install --python .venv/bin/python -r requirements/phase6.txt
   --alignment results/video_benchmark_002/alignment.json \
   --output results/video_take_reproduction_media
 
-# 원본 upstream과 관련 검사
+# 외부 원본 보존 확인 (과거 phase snapshot 검사는 외부 보관)
 .venv/bin/python scripts/verify_sources.py
-.venv/bin/python -m pytest -q tests/test_video_capture.py \
-  tests/test_quest_observed_ranges.py tests/test_geort_range_experiment.py \
-  tests/test_geort_reference_ranges.py
-.venv/bin/python scripts/test_capture_browser.py
+
+# 설명용 도식 + 실제 입력/FK 그래프 재생성
+.venv-geort/bin/python scripts/build_explanation_figures.py
 ```
 
-손바닥 영상은 기존 actual qpos와 수치 결과를 byte 단위로 보존하고 카메라·렌더링 해상도·배치만 변경했다. 카메라 거리는 0.48 m에서 0.44 m로 줄였고, 실제 손 확대 화면은 중앙 정사각형 crop임을 표시했다. 전체 원본 화면도 함께 보여준다. 기존 손등 방향 영상과 원본 로그는 `results/video_benchmark_002/`에 남아 있다.
+손바닥 영상은 기존 actual qpos와 수치 결과를 byte 단위로 보존하고 카메라·렌더링 해상도·배치만 변경했다. 카메라 거리는 0.48 m에서 0.44 m로 줄였고, 실제 손 확대 화면은 중앙 정사각형 crop임을 표시했다. 전체 원본 화면도 함께 보여준다. 원본 실제 상태는 `results/video_benchmark_002/replay_full/`에 유지하고 이전 영상 배치와 중복 렌더는 외부 보관했다.
 
-Export 기본 checkpoint는 이번 개인 full-range 모델이다. 다른 모델은 `--checkpoint`와 그 모델의 `--config`를 함께 지정한다. 제한 모델은 일반 full-range adapter로 불러오지 않는다. 학습 범위와 재학습 명령은 [진단 문서](docs/GEORT_STACK_DIAGNOSIS.md)에 있다.
+Export 기본 checkpoint는 이번 개인 full-range 모델이다. 다른 모델은 `--checkpoint`와 그 모델의 `--config`를 함께 지정한다. 제한 모델은 일반 full-range adapter로 불러오지 않는다. 실패한 범위 실험은 [GeoRT 실패 기록](docs/GEORT_FAILURES.md)에 설명하고 원자료를 외부 보관했다.
 
 ## 산출물과 Git 준비
 
 ```text
-README.md                             현재 결과·영상·그래프·재현
-README_SIMULATION.md                  초기 시뮬레이터 안내 원본 보존
-README_VIDEO_CAPTURE.md               실제 손 + 추적 촬영 절차
-scripts/export_take_retargeting.py     동일 입력·방법별 MuJoCo 렌더링
-scripts/publish_take_media.py          영상 시간 맞춤·동작별 분할·GIF·그래프
-scripts/rerender_take_camera.py        저장된 실제 상태의 손바닥 카메라 렌더링
-scripts/record_comparison_take.py      촬영 수신 진입점
-docs/media/video_benchmark_002/        비교 MP4 25개, 동작별 GIF 16개와 전체 GIF, PNG, 요약·hash
-recordings/video_benchmark_002/        원본 데이터, Git 제외
-results/video_benchmark_002/           JSONL·NPZ·console·대조 결과, Git 제외
+README.md                       결과·영상·그래프와 상세 안내
+benchmark/                      시뮬레이터·HandFrame·기존 알고리즘 adapter
+scripts/                        촬영·학습·동일 입력 재생·영상 출판
+configs/                        DG-5F와 고정 보정 프로파일
+requirements/                   분리 환경 설치 버전
+external_repositories.lock.json 원본 Git revision·라이선스
+external/                       원본 checkout, Git 제외
+assets/                         생성 모델, Git 제외
+docs/                          원리·평가·실패 기록·공개 영상
+recordings/                     현재 원본·학습·보정 입력, Git 제외
+data/geort/                     현재 모델의 학습 export, Git 제외
+results/                        현재 checkpoint·실제 상태·TLS, Git 제외
 ```
 
-공개용 MP4는 H.264/yuv420p로 인코딩했다. 영상·그래프를 파일로 준비했으며 **git add/commit/push는 실행하지 않았다.** 사용자가 준비한 index/staged 항목도 변경하지 않았다. 가상환경·원본 녹화·학습 checkpoint를 포함하는 전체 폴더 일괄 추가 대신 필요한 코드·README·`docs/media`를 선택해 추가할 수 있다.
-
-기존 Phase 7 snapshot은 README도 동결 대상으로 포함한다. 이번 요청에 따른 README 변경은 해당 snapshot과 다르며 초기 원본을 `README_SIMULATION.md`에 보존했다. 검증값을 덮어써서 통과시키지 않았다. 원본 upstream 검사는 `verify_sources.py`를 사용한다.
+공개 영상은 H.264/yuv420p다. 원본·개인 checkpoint·가상환경은 Git에서 제외한다. 과거 검증·범위·공개 데이터 크기 실험은 프로젝트 밖 `../Hand_teleoperation_other/`에 보존했다. [정리 목록과 복구 방법](docs/PROJECT_LAYOUT.md)을 확인할 수 있다. **git add/commit/push는 실행하지 않았으며 index도 변경하지 않았다.**
 
 ## 원본 저장소와 출처
 

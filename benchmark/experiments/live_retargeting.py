@@ -20,7 +20,7 @@ from benchmark.tracking.receiver_state import ReceiverState
 from benchmark.tracking.recorder import HandRecorder, frame_from_dict, frame_to_dict
 
 DEFAULT_MODEL = ROOT / (
-    "results/geort_dg5f_workspace/training-2glhel2r/checkpoint/dg5f_right_geort_2026-10-18_00-40-37"
+    "results/geort_dg5f_workspace/training-f9nel4wo/checkpoint/dg5f_right_geort_2026-10-18_03-29-30"
 )
 METHODS = ("manus", "anydex", "wuji", "geort")
 MODEL_CONDITIONS = ("official_3498", "quest_1000", "quest_3498", "quest_10000")

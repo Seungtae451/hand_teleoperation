@@ -14,8 +14,8 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
+from benchmark.artifacts import save, sha  # noqa: E402
 from scripts.export_take_retargeting import LABELS, METHODS  # noqa: E402
-from scripts.geort_range_study import save, sha  # noqa: E402
 
 CAMERA = {
     "azimuth": 215,

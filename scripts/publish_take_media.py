@@ -12,8 +12,8 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
+from benchmark.artifacts import save  # noqa: E402
 from scripts.export_take_retargeting import LABELS, METHODS  # noqa: E402
-from scripts.geort_range_study import save  # noqa: E402
 
 
 def clock_mapping(take, alignment):
@@ -343,9 +343,9 @@ def plots(args):
     finish(fig, "summary.png")
 
     fig, axes = plt.subplots(3, 1, figsize=(14, 9), sharex=True)
+    from benchmark.artifacts import geometry
     from benchmark.geort_support.input import canonical_points
     from benchmark.tracking.recorder import replay_frames
-    from scripts.compare_allegro_control import geometry
 
     frames = list(replay_frames(args.take / "quest_input.jsonl", handedness="right"))
     good = [f for f in frames if f.tracking_valid]
